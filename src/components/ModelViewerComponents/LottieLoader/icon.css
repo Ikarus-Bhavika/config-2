@@ -1,0 +1,14 @@
+.lottie-parent-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lottie-child-container {
+    position: relative;
+    height: 10rem; /* 40 (in Tailwind h-40 means 10rem) */
+    width: 10rem;  /* 40 (in Tailwind w-40 means 10rem) */
+  }
+  
