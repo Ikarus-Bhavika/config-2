@@ -5,7 +5,7 @@ import Menu from './components/Menu'
 function App() {
 
   return (
-    <main>
+    <main className='flex flex-col w-[100dvw] h-[100dvh] bg-[#E4E4E4] justify-end'>
       <ModelViewer />
       <Menu />
     </main>

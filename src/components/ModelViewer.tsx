@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function ModelViewer() {
   return (
-    <div>ModelViewer</div>
+    <div className='h-[35%] bg-white'>
+      ModelViewer
+    </div>
   )
 }
