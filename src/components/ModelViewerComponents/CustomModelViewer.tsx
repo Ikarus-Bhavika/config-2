@@ -40,6 +40,7 @@ import { StoreApi, UseBoundStore } from 'zustand';
 import { PresetsType } from '@react-three/drei/helpers/environment-assets';
 import { ModelViewerSettingsType } from '../../types/editorTypes';
 import getTotalModelAndMaterialsToLoad from '../../utils/getTotalModelAndMaterialsToLoad';
+import modelViewerStore from '../../store/store'
 
 const mapOfCompletedAnimation:Map<THREE.Object3D,number> = new Map()
 
@@ -130,7 +131,7 @@ export type StageProps = {
 export type ModelSettingsType = {
   verticalAdjustment: number;
   contactShadowsSettings: {
-    position?: [number, number, number];
+    position?: [number, number, number] | number[];
   } & ContactShadowsProps;
   environmentSrc: string;
   canvasSettings: CanvasPropsType;
@@ -411,65 +412,13 @@ function isInfiniteVec(a:THREE.Vector3):boolean{
 };
 
 
-const CameraAnimationEdit = ({
-  cameraFinalPosition,
-  cameraControls,
-  cameraFinalTarget,
-  modelViewerStore,
-  hotspotIndex,
-}: CameraAnimationProps) => {
-  const {
-    currentCameraPosition,
-    setTargetIndex,
-    setIsTargetUpdateInProgress,
-    isTargetUpdateInProgress,
-    updateHotspotCameraPosition,
-  } = modelViewerStore();
-  const setAnimationFinalPosition = () => {
-    // cameraSet(currentCameraPosition.clone())
-    updateHotspotCameraPosition(
-      hotspotIndex,
-      cameraControls.current?.camera.position.clone()
-    );
-  };
-  const setAnimationFinalTarget = () => {
-    setIsTargetUpdateInProgress(true);
-    setTargetIndex(hotspotIndex);
-  };
-
-  return (
-    <div className=" bg-white text-black  border font-medium p-2 rounded-md text-[10px] flex gap-1">
-      <div onClick={setAnimationFinalPosition}>
-        <button className="border border-black p-2 rounded-md text-blue-600">
-          SetCamera
-        </button>
-        <>
-          [{cameraFinalPosition.x.toFixed(2)}
-          {','}
-          {cameraFinalPosition.y.toFixed(2)}
-          {','}
-          {cameraFinalPosition.z.toFixed(2)}]
-        </>
-      </div>
-      <div onClick={setAnimationFinalTarget}>
-        <button className="border border-black p-2 rounded-md text-blue-600">
-          {isTargetUpdateInProgress ? 'SettingTarget' : 'SetTarget'}
-        </button>
-        <>
-          [{cameraFinalTarget.x.toFixed(2)}
-          {','}
-          {cameraFinalTarget.y.toFixed(2)}
-          {','}
-          {cameraFinalTarget.z.toFixed(2)}]
-        </>
-      </div>
-    </div>
-  );
-};
-
-const Hotspot = (props: HotSpotProps) => {
+const Hotspot = (props: Omit<
+  HotSpotProps,
+  "modelViewerSettings" |
+  "modelViewerStore"
+>
+) => {
   const [editMode, setEditMode] = useState(false);
-  const { removeHotspots } = props.modelViewerStore();
   // const { editHotspotMode } = editorStateStore();
   const vectorCustomCameraPosition = props.spot.customCameraPosition?.isVector3
     ? props.spot.customCameraPosition
@@ -523,7 +472,6 @@ const Hotspot = (props: HotSpotProps) => {
             <div
               onClick={(e) => {
                 e.stopPropagation();
-                removeHotspots(props.index);
               }}
               className="border w-[40px] rounded-md p-1 h-full text-blue-600 hover:cursor-pointer"
             >
@@ -532,20 +480,16 @@ const Hotspot = (props: HotSpotProps) => {
           </>
         )}
       </div>
-      {editMode && (
-        <CameraAnimationEdit
-          modelViewerStore={props.modelViewerStore}
-          cameraControls={props.cameraControls}
-          cameraFinalPosition={vectorCustomCameraPosition}
-          cameraFinalTarget={vectorCustomCameraTarget}
-          hotspotIndex={props.index}
-        />
-      )}
     </Html>
   );
 };
 
-function RenderingModel(props: RenderingModelCompProps) {
+function RenderingModel(props: Omit<
+  RenderingModelCompProps,
+  "modelViewerSettings" |
+  "modelViewerStore"
+>
+) {
   const { camera,...restcene } = useThree();
   const {
     cameraZoom,
@@ -557,7 +501,7 @@ function RenderingModel(props: RenderingModelCompProps) {
     targetIndex,
     setTargetIndex,
     setLastClickedPoint,
-  } = props.modelViewerStore();
+  } = modelViewerStore();
   const thisLoader = useGLTF(props.src);
   const [isMaterialLoaded,setIsMaterialLoaded] = useState(false);
   const loader1 = thisLoader.scene as THREE.Object3D;
@@ -740,7 +684,12 @@ function RenderingModel(props: RenderingModelCompProps) {
   );
 }
 
-function RenderingModelWrapper(props: RenderingModelWrapperType) {
+function RenderingModelWrapper(props: Omit<
+  RenderingModelWrapperType,
+  "modelViewerSettings" |
+  "modelViewerStore"
+>
+) {
   const data = getModelMaterialArray(
     props.product.value.parts,
     props.products,
@@ -751,7 +700,6 @@ function RenderingModelWrapper(props: RenderingModelWrapperType) {
           props.products.models[props.product.key]?.modelSrc && 
           <RenderingModel
             index={props.index}
-            modelViewerStore={props.modelViewerStore}
             src={props.products.models[props.product.key]?.modelSrc}
             values={props.product.value.parts}
             product={props.product}
@@ -948,12 +896,16 @@ const AxisComponent = ({
 };
 
 const ChildCanvasCustomModelViewer = (
-  props: ChildCanvasCustomModelViewerProps
+  props:Omit<
+    ChildCanvasCustomModelViewerProps,
+    "modelViewerSettings" |
+    "modelViewerStore"
+  >
 ) => {
-  const { hotspots } = props.modelViewerStore();
+  const hotspots = []
   const {scene} = useThree()
   const measurementRef = useRef<THREE.Group<THREE.Object3DEventMap>>(null);
-  const modelRef = useRef<THREE.Group<THREE.Object3DEventMap>>(null);
+  const modelRef = useRef<THREE.Group<THREE.Object3DEventMap>>(new THREE.Group());
   const [y, setY] = useState<number>(0);
   const [modelSize, setModelSize] = useState<THREE.Vector3>(
     new THREE.Vector3(0, 0, 0)
@@ -1192,8 +1144,8 @@ const ChildCanvasCustomModelViewer = (
   }, [props.showDimensions, props.currentProduct]);
 
   useEffect(() => {
-    if (modelRef!==null && modelRef.current && props.setModelRef) {
-      props?.setModelRef(modelRef);
+    if (modelRef.current && props.setModelRef) {
+      modelRef!=null && props?.setModelRef(modelRef);
     }
   }, [props.currentProduct]);
 
@@ -1230,7 +1182,7 @@ const ChildCanvasCustomModelViewer = (
     }
   });
 
-  const data = [];
+  const data:any[] = [];
   for (const [key, value] of Object.entries(props.currentProduct)) {
     data.push({ key, value });
   }
@@ -1258,28 +1210,17 @@ const ChildCanvasCustomModelViewer = (
           const distance = maxDimension * 2; // Adjust multiplier as needed
           // Set camera position and adjust CameraControls
           camera.position.set(center.x, center.y, center.z + distance); // Place camera behind the model
-          const cameraEndPosition = props.modelViewerSettings.camera.to_position;
-          if(cameraEndPosition){
-            props.cameraControls.current.setLookAt(
-              cameraEndPosition[0],
-              cameraEndPosition[1],
-              cameraEndPosition[2],
-              center.x,
-              center.y,
-              center.z,
-              true // Smooth transition
-            );
-          }else{
-            props.cameraControls.current.setLookAt(
-              center.x + 0.5,
-              center.y + 0.5,
-              center.z + distance,
-              center.x,
-              center.y,
-              center.z,
-              true // Smooth transition
-            );
-          }
+          
+          props.cameraControls.current.setLookAt(
+            center.x + 0.5,
+            center.y + 0.5,
+            center.z + distance,
+            center.x,
+            center.y,
+            center.z,
+            true // Smooth transition
+          );
+
           setPrevBoundingBox({size, volume:newVolume})
         }
       }
@@ -1344,7 +1285,6 @@ const ChildCanvasCustomModelViewer = (
               {data.map((product: any, index: number) => (
                 <Suspense key={product.key} >
                   <RenderingModelWrapper
-                    modelViewerStore={props.modelViewerStore}
                     cameraControls={props.cameraControls}
                     product={product}
                     index={index}
@@ -1369,7 +1309,6 @@ const ChildCanvasCustomModelViewer = (
           </Stage>
           {hotspots?.map((spot: any, index: number) => (
             <Hotspot
-              modelViewerStore={props.modelViewerStore}
               key={index}
               cameraControls={props.cameraControls}
               spot={spot}
@@ -1458,10 +1397,11 @@ const modelViewerSettings = {
   }
 }
 
-export default function CustomModelViewer(props:{
-  canvasRef:React.Ref<HTMLCanvasElement>
-  setModelRef?: Dispatch<SetStateAction<React.RefObject<THREE.Group<THREE.Object3DEventMap>>>>;
-}) {
+export default function CustomModelViewer(props:Omit<
+  CustomModelViewerProps,
+  "modelViewerSettings" |
+  "modelViewerStore"
+>) {
   
   const modelSettings = {
     verticalAdjustment: 0,
@@ -1489,37 +1429,37 @@ export default function CustomModelViewer(props:{
       color: '#000000',
     },
     environmentSrc: '/assets/environments/Studio02.exr',
-    camera:{
-      damping: 1,
-      fov: 45,
-      maxDistance: 20,
-      minDistance: 1.25,
-      position: [1.5, 0.8, 0.8],
-    }
   };
 
-
   const cameraControlsRef = useRef<CameraControls>(null);
+
+  const camera = {
+    damping: 1,
+    fov: 45,
+    maxDistance: 20,
+    minDistance: 1.25,
+    position: [1.5, 0.8, 0.8],
+  }
   return (
     <>
       <Suspense fallback={<LoaderLottie />}>
         <Canvas {...modelSettings.canvasSettings} ref={props.canvasRef} >
           <PerspectiveCamera name='Main Perspective Camera'
             makeDefault
-            fov={modelSettings.camera.fov}
-            position={new THREE.Vector3(...modelSettings.camera.position)}
+            fov={camera.fov}
+            position={new THREE.Vector3(...camera.position)}
             
           />
           <CameraControls ref={cameraControlsRef}
-            minDistance={modelSettings.camera.minDistance}
-            maxDistance={modelSettings.camera.maxDistance}
-            smoothTime={modelSettings.camera.damping}
+            minDistance={camera.minDistance}
+            maxDistance={camera.maxDistance}
+            smoothTime={camera.damping}
           />
           {true && (
             <ChildCanvasCustomModelViewer
               cameraControls={cameraControlsRef}
-              {...props}
               grid={false}
+              {...props}
               modelSettings={modelSettings}
               setIsModelLoaded={props.setIsModelLoaded}
             />
@@ -1529,3 +1469,4 @@ export default function CustomModelViewer(props:{
     </>
   );
 }
+
