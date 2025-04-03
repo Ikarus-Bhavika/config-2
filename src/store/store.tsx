@@ -1,0 +1,33 @@
+import { create } from "zustand";
+import { menuItemType, modelConfigInterface, productDetailsType } from "../types/configTypes";
+import { presetType } from "../types/presetTypes";
+
+type DataStoreType = {
+    modelConfig: modelConfigInterface,
+    setModelConfig: (config: modelConfigInterface) => void,
+
+    preset:presetType,
+    setPreset: (preset:presetType) => void,
+
+    menu: menuItemType[],
+    setMenu: (value:menuItemType[]) => void,
+
+    productDetails:productDetailsType,
+    setProductDetails: (value:productDetailsType) => void
+}
+
+const useDataStore = create<DataStoreType>((set)=>({
+    modelConfig: {} as modelConfigInterface,
+    setModelConfig: (modelConfig) => set({modelConfig}),
+
+    preset: {} as presetType,
+    setPreset: (preset) => set({preset}),
+
+    menu: [],
+    setMenu: (menu) => set({menu}),
+
+    productDetails: {} as productDetailsType,
+    setProductDetails: (productDetails) => set({productDetails})
+}))
+
+export default useDataStore;

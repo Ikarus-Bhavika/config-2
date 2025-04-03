@@ -1,0 +1,364 @@
+{
+    "models": {
+        "reliefLayer2": {
+            "name": "reliefLayer2",
+            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-1-v-.reliefLayer2",
+            "parts": {
+                "ReliefLayer": {
+                    "name": "ReliefLayer",
+                    "target": [
+                        "ReliefLayer"
+                    ],
+                    "materialGroups": [
+                        "Relief Layer"
+                    ],
+                    "materials": {
+                        "Relief Layer Natural": {
+                            "id": "b02WsU1sa4N4Q5eSFKAj",
+                            "name": "Relief Layer Natural",
+                            "price": 0,
+                            "roughness": 1,
+                            "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/yco8sJLdHrqlyGgRaQu4_Mattress_Cover_V1_Roughness.png.png",
+                            "metalness": 0,
+                            "metalnessMap": null,
+                            "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/yco8sJLdHrqlyGgRaQu4_Mattress_Cover_V1_Normal.png.png",
+                            "reflectivity": 1,
+                            "opacity": 1,
+                            "emissive": "#000000",
+                            "emissiveIntensity": 0,
+                            "tiling": {
+                                "y": 1,
+                                "x": 1
+                            },
+                            "doubleSide": true,
+                            "hexCode": "#ffffff",
+                            "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/yco8sJLdHrqlyGgRaQu4_Relief Layer Natural.jpg"
+                        },
+                        "Relief Layer Performance": {
+                            "id": "imP9AZS3dSFPb9G3XZDS",
+                            "name": "Relief Layer Performance",
+                            "price": 0,
+                            "roughness": 1,
+                            "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/yco8sJLdHrqlyGgRaQu4_Mattress_Cover_V1_Roughness.png.png",
+                            "metalness": 0,
+                            "metalnessMap": null,
+                            "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/yco8sJLdHrqlyGgRaQu4_Mattress_Cover_V1_Normal.png.png",
+                            "reflectivity": 1,
+                            "opacity": 1,
+                            "emissive": "#000000",
+                            "emissiveIntensity": 0,
+                            "tiling": {
+                                "y": 1,
+                                "x": 1
+                            },
+                            "doubleSide": true,
+                            "hexCode": "#6b88be",
+                            "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/yco8sJLdHrqlyGgRaQu4_Clean_Relief Layer_BaseColor_Utility - sRGB - Texture.jpg"
+                        }
+                    }
+                }
+            },
+            "animations": [
+                "alwaysAnimate"
+            ],
+            "price": 0
+        },
+        "Cover22": {
+            "name": "Cover22",
+            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-3-v-.Cover22",
+            "parts": {
+                "Cover2": {
+                "name": "Cover2",
+                "target": [
+                    "Cover2"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                }
+            },
+            "animations": [
+                "alwaysAnimate"
+            ],
+            "price": 0
+        },
+        "Cover111": {
+            "name": "Cover111",
+            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-2-v-.Cover111",
+            "parts": {
+                "Cover": {
+                "name": "Cover",
+                "target": [
+                    "Cover"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                }
+            },
+            "animations": [
+                "alwaysAnimate"
+            ],
+            "price": 0
+        },
+        "comfortModule1": {
+            "name": "comfortModule1",
+            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-1-v-.comfortModule1",
+            "parts": {
+                "ComfortModule": {
+                "name": "ComfortModule",
+                "materials": {
+                    "Performance": {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "name": "Performance",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#828ca3",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg"
+                    },
+                    "Natural": {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "name": "Natural",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#9c9694",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg"
+                    }
+                },
+                "target": [
+                    "ComfortModule"
+                ],
+                "materialGroups": [
+                    "Comfort Module"
+                ]
+                }
+            },
+            "animations": [
+                "alwaysAnimate"
+            ],
+            "price": 0
+        },
+        "Label 22": {
+            "name": "Label 22",
+            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-1-v-.Label 22",
+            "parts": {
+                "Text003": {
+                "name": "Text003",
+                "target": [
+                    "Text003"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                },
+                "Text004": {
+                "name": "Text004",
+                "target": [
+                    "Text004"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                },
+                "Text005": {
+                "name": "Text005",
+                "target": [
+                    "Text005"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                }
+            },
+            "animations": [
+                "alwaysAnimate"
+            ],
+            "price": 0
+        },
+        "Label11": {
+            "name": "Label11",
+            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-1-v-.Label11",
+            "parts": {
+                "Text": {
+                "name": "Text",
+                "target": [
+                    "Text"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                },
+                "Text001": {
+                "name": "Text001",
+                "target": [
+                    "Text001"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                },
+                "Text002": {
+                "name": "Text002",
+                "target": [
+                    "Text002"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                }
+            },
+            "animations": [
+                "alwaysAnimate"
+            ],
+            "price": 0
+        },
+        "Base": {
+            "parts": {
+                "Nest": {
+                "name": "Nest",
+                "target": [
+                    "Nest"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                },
+                "Nest001": {
+                "name": "Nest001",
+                "target": [
+                    "Nest001"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                }
+            },
+            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5dBase-v-0-v-.glb",
+            "name": "Base",
+            "animations": [],
+            "price": 0
+        },
+        "Coils2": {
+            "name": "Coils2",
+            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-1-v-.Coils2",
+            "parts": {
+                "Coil": {
+                "name": "Coil",
+                "materialGroups": [],
+                "materials": {},
+                "target": [
+                    "CoilModules"
+                ]
+                }
+            },
+            "animations": [],
+            "price": 0
+        }
+    },
+    "menu":[
+        {
+            "id":"menu1",
+            "label": "Select Cover",
+            "type":"model",
+            "options": [
+                {
+                    "label":"Covers",
+                    "baseMaps":[
+                        {
+                            "label": "Natural",
+                            "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/icons/C1.jpg.jpg",
+                            "target": "Cover22",
+                            "id": "8567d147-fdd8-4742-a0ed-14b5fed30608"
+                        },
+                        {
+                            "label": "Performance",
+                            "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/icons/C2.jpg.jpg",
+                            "target": "Cover111",
+                            "id": "6f24191f-9a56-4b6d-8c8f-e894ad9f5c2f"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"menu2",
+            "label": "Relief Layer",
+            "type": "material",
+            "target": [
+            {
+                "model": "reliefLayer2",
+                "part": "ReliefLayer"
+            }
+            ],
+            "options": [
+                {
+                    "label": "Relief Layer",
+                    "baseMaps": [
+                    {
+                        "id": "b02WsU1sa4N4Q5eSFKAj",
+                        "label": "Relief Layer Natural",
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/yco8sJLdHrqlyGgRaQu4_Relief Layer Natural.jpg",
+                        "hexCode": "#ffffff"
+                    },
+                    {
+                        "id": "imP9AZS3dSFPb9G3XZDS",
+                        "label": "Relief Layer Performance",
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/yco8sJLdHrqlyGgRaQu4_Clean_Relief Layer_BaseColor_Utility - sRGB - Texture.jpg",
+                        "hexCode": "#6b88be"
+                    }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"menu3",
+            "label": "Comfort Module",
+            "type": "material",
+            "target": [
+              {
+                "model": "comfortModule1",
+                "part": "ComfortModule"
+              }
+            ],
+            "options": [
+              {
+                "label": "Comfort Module",
+                "baseMaps": [
+                  {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "label": "Natural",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                    "hexCode": "#9c9694"
+                  },
+                  {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "label": "Performance",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                    "hexCode": "#828ca3"
+                  }
+                ]
+              }
+            ]
+          }
+    ],
+    "productDetails":{
+        "title":"Mattress Configurator",
+        "description":  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates fugit doloribus asperiores ipsum quaerat, rem ipsam in voluptatum quam odio fugiat repudiandae possimus est libero delectus esse. Optio, voluptatem."
+    }
+}
