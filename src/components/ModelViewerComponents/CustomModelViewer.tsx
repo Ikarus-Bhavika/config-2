@@ -40,7 +40,6 @@ import { StoreApi, UseBoundStore } from 'zustand';
 import { PresetsType } from '@react-three/drei/helpers/environment-assets';
 import { ModelViewerSettingsType } from '../../types/editorTypes';
 import getTotalModelAndMaterialsToLoad from '../../utils/getTotalModelAndMaterialsToLoad';
-import { modelViewerStore } from './store/modelViewerStore';
 
 const mapOfCompletedAnimation:Map<THREE.Object3D,number> = new Map()
 
@@ -471,7 +470,7 @@ const CameraAnimationEdit = ({
 const Hotspot = (props: HotSpotProps) => {
   const [editMode, setEditMode] = useState(false);
   const { removeHotspots } = props.modelViewerStore();
-  const { editHotspotMode } = editorStateStore();
+  // const { editHotspotMode } = editorStateStore();
   const vectorCustomCameraPosition = props.spot.customCameraPosition?.isVector3
     ? props.spot.customCameraPosition
     : new THREE.Vector3(
@@ -509,7 +508,7 @@ const Hotspot = (props: HotSpotProps) => {
         className=" bg-white text-black border font-medium p-2 rounded-md text-[10px] flex gap-1"
       >
         <div>{props.spot.text}</div>
-        {editHotspotMode.status && (
+        {false && (
           <>
             <div
               onClick={(e) => {
@@ -570,19 +569,17 @@ function RenderingModel(props: RenderingModelCompProps) {
   const [hovered, setHover] = useState(null);
 
   const [firstIteration,setFirstIteration] = useState<boolean>(true)
-  const { setOpenSetHotspotName, editHotspotMode } = editorStateStore();
+  // const { setOpenSetHotspotName, editHotspotMode } = editorStateStore();
 
   const handleClick = (e: any) => {
     e.stopPropagation();
     setCurrentCameraPosition(props?.cameraControls?.current?.camera?.position);
-    if (!editHotspotMode.status) return;
     if (isTargetUpdateInProgress && targetIndex !== null) {
       updateHotspotCameraTarget(targetIndex, e.point);
       setIsTargetUpdateInProgress(false);
       setTargetIndex(null);
     } else {
       setLastClickedPoint(e.point);
-      setOpenSetHotspotName({ status: true, editIndex: -1 });
     }
   };
 
@@ -1195,7 +1192,7 @@ const ChildCanvasCustomModelViewer = (
   }, [props.showDimensions, props.currentProduct]);
 
   useEffect(() => {
-    if (modelRef.current && props.setModelRef) {
+    if (modelRef!==null && modelRef.current && props.setModelRef) {
       props?.setModelRef(modelRef);
     }
   }, [props.currentProduct]);
@@ -1400,15 +1397,79 @@ const ChildCanvasCustomModelViewer = (
   );
 }
 
-export default function CustomModelViewer(props: CustomModelViewerProps) {
+const modelViewerSettings = {
+  "verticalAdjustment": 0,
+  "allowedOptions": {
+    "allowMeasurement": true,
+    "allowAr": true,
+    "allowScreenshot": true,
+    "allowZoom": true,
+    "allowFullscreen": true,
+    "allowCameraMovement": false
+  },
+  "themeSettings": {
+    "bgColor": "fff",
+    "theme": "v2"
+  },
+  "canvasSettings": {
+    "gl": {
+      "preserveDrawingBuffer": true,
+      "toneMapping": 0,
+      "toneMappingExposure": 0.7
+    },
+    "camera": {
+      "damping": 1,
+      "fov": 45,
+      "maxDistance": 20,
+      "minDistance": 1.25,
+      "position": [
+        0.8970274473002411,
+        0.6588086983930231,
+        1.5207110693434738
+      ],
+      "to_position": [
+        2.019677608110914,
+        1.1065608314007753,
+        4.730902101148846
+      ]
+    }
+  },
+  "stageSettings": {
+    "intensity": 0.1,
+    "shadows": false,
+    "adjustCamera": false,
+    "environment": {
+      "files": {
+        "name": "neutral",
+        "files": "/assets/environments/neutral.hdr"
+      }
+    }
+  },
+  "contactShadowsSettings": {
+    "opacity": 0.5,
+    "scale": 1,
+    "blur": 1.4,
+    "near": 0,
+    "far": 0.4,
+    "height": 1,
+    "width": 1,
+    "resolution": 256,
+    "color": "#000000"
+  }
+}
+
+export default function CustomModelViewer(props:{
+  canvasRef:React.Ref<HTMLCanvasElement>
+  setModelRef?: Dispatch<SetStateAction<React.RefObject<THREE.Group<THREE.Object3DEventMap>>>>;
+}) {
   
-  const modelSettings: ModelSettingsType = {
+  const modelSettings = {
     verticalAdjustment: 0,
     canvasSettings: {
       gl: {
         preserveDrawingBuffer: true,
-        toneMapping: isNaN(props.modelViewerSettings?.viewerSettings?.toneMapping)? THREE.NeutralToneMapping:props.modelViewerSettings?.viewerSettings?.toneMapping,
-        toneMappingExposure: isNaN(props.modelViewerSettings?.viewerSettings?.toneMappingExposure)? 1:props.modelViewerSettings?.viewerSettings?.toneMappingExposure,
+        toneMapping: THREE.NeutralToneMapping,
+        toneMappingExposure: 1
       },
       shadows: true,
     },
@@ -1417,50 +1478,53 @@ export default function CustomModelViewer(props: CustomModelViewerProps) {
       shadows: false,
       adjustCamera: false,
       environment: {
-        backgroundIntensity: isNaN(props.modelViewerSettings?.viewerSettings?.intensity)? 0.1:props.modelViewerSettings?.viewerSettings?.intensity,
-        files:
-          'https://d3dhh9nc6fiq1.cloudfront.net' +
-          props.modelViewerSettings.enviromentPreset,
+        backgroundIntensity: 0.1,
+        files:'https://d3dhh9nc6fiq1.cloudfront.net/environments/neutral.hdr'
       },
     },
     contactShadowsSettings: {
       position: [0, 0, 0],
-      ...props.modelViewerSettings.contactShadows,
+      ...modelViewerSettings.contactShadowsSettings,
       resolution: 256,
       color: '#000000',
     },
     environmentSrc: '/assets/environments/Studio02.exr',
+    camera:{
+      damping: 1,
+      fov: 45,
+      maxDistance: 20,
+      minDistance: 1.25,
+      position: [1.5, 0.8, 0.8],
+    }
   };
-  const { setCurrentCameraPosition } = props.modelViewerStore()
+
+
   const cameraControlsRef = useRef<CameraControls>(null);
   return (
     <>
       <Suspense fallback={<LoaderLottie />}>
-        {props.currentProduct && Object.keys(props.currentProduct).length > 0 && (
-          <Canvas {...modelSettings.canvasSettings} ref={props.canvasRef} >
-            <PerspectiveCamera name='Main Perspective Camera'
-              makeDefault
-              fov={props.modelViewerSettings.camera.fov}
-              position={props.modelViewerSettings.camera.position}
-              
+        <Canvas {...modelSettings.canvasSettings} ref={props.canvasRef} >
+          <PerspectiveCamera name='Main Perspective Camera'
+            makeDefault
+            fov={modelSettings.camera.fov}
+            position={new THREE.Vector3(...modelSettings.camera.position)}
+            
+          />
+          <CameraControls ref={cameraControlsRef}
+            minDistance={modelSettings.camera.minDistance}
+            maxDistance={modelSettings.camera.maxDistance}
+            smoothTime={modelSettings.camera.damping}
+          />
+          {true && (
+            <ChildCanvasCustomModelViewer
+              cameraControls={cameraControlsRef}
+              {...props}
+              grid={false}
+              modelSettings={modelSettings}
+              setIsModelLoaded={props.setIsModelLoaded}
             />
-            <CameraControls ref={cameraControlsRef}
-              onEnd={()=>{props.theme=="EDITOR_MODE" && cameraControlsRef?.current?.camera?.position && setCurrentCameraPosition(cameraControlsRef?.current?.camera?.position)}}
-              minDistance={props.modelViewerSettings.camera.minDistance}
-              maxDistance={props.modelViewerSettings.camera.maxDistance}
-              smoothTime={props.modelViewerSettings.camera.damping}
-            />
-            {props.product && (
-              <ChildCanvasCustomModelViewer
-                cameraControls={cameraControlsRef}
-                {...props}
-                grid={props.modelViewerSettings.grid || false}
-                modelSettings={modelSettings}
-                setIsModelLoaded={props.setIsModelLoaded}
-              />
-            )}
-          </Canvas>
-        )}
+          )}
+        </Canvas>
       </Suspense>
     </>
   );
