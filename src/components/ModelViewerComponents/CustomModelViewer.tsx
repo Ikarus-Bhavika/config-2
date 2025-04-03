@@ -1134,6 +1134,7 @@ const ChildCanvasCustomModelViewer = (
     }
   },[currentCount])
 
+
   useEffect(() => {
     showModelDimensions();
     if (!props.showDimensions) {
@@ -1181,7 +1182,7 @@ const ChildCanvasCustomModelViewer = (
       lineWidth.current = tempLineWidth;
     }
   });
-
+  console.log("props",props)
   const data:any[] = [];
   for (const [key, value] of Object.entries(props.currentProduct)) {
     data.push({ key, value });
@@ -1419,7 +1420,7 @@ export default function CustomModelViewer(props:Omit<
       adjustCamera: false,
       environment: {
         backgroundIntensity: 0.1,
-        files:'https://d3dhh9nc6fiq1.cloudfront.net/environments/neutral.hdr'
+        files:'images/neutral.hdr'
       },
     },
     contactShadowsSettings: {

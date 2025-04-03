@@ -4,9 +4,12 @@ import { Group, Object3DEventMap } from 'three'
 import { useSearchParams } from 'react-router-dom'
 import LZString from 'lz-string'
 import decompressProductJSON from '../utils/decompressProductJSON'
+import useDataStore from '../store/store'
 
 export default function ModelViewer() {
     
+    const store = useDataStore();
+
     const canvasRef = useRef<HTMLCanvasElement>(null)
     const [isModelLoaded,setIsModelLoaded] = useState<boolean>(false)
     const [modelRef,setModelRef] = useState<React.RefObject<Group<Object3DEventMap>>>(useRef(new Group()))
@@ -171,8 +174,8 @@ export default function ModelViewer() {
         <div className='h-[55%] lg:h-[100dvh] lg:w-3/5 xl:w-[75%] bg-white'>
             <CustomModelViewer
                 setModelRef={setModelRef}
-                product={product}
-                currentProduct={preset}
+                product={{models:store.modelConfig}}
+                currentProduct={store.preset}
                 canvasRef={canvasRef}
                 showDimensions={showDimensions}
                 theme={theme}

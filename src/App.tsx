@@ -8,6 +8,8 @@ import useDataStore from './store/store'
 import { useEffect } from 'react'
 import data from './data.json'
 import intializePreset from './utils/intializePreset'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Main from './components/Main'
 extend(THREE)
 
 function App() {
@@ -23,11 +25,11 @@ function App() {
   console.log(store.preset);
 
   return (
-    <main className='flex flex-col lg:flex-row w-[100dvw] h-[100dvh] justify-end'>
-      <ModelViewer />
-      <MobileMenu />
-      <Menu/>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Main/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
