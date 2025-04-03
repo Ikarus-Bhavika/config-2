@@ -1,7 +1,8 @@
-import React,{useEffect, useState} from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function MenuContainer() {
     const [expandedComponent, setExpandedComponent] = useState<string>();
+    const menuItemRef = useRef<HTMLDivElement>(null);
     const data = [
         {
             id: 'menu1',
@@ -72,21 +73,25 @@ export default function MenuContainer() {
                         <img src={'/images/arrow.png'} alt={'down arrow'} className={`w-4 h-4 ${expandedComponent==menu.id ? 'rotate-180': 'rotate-0'}`} />
                         </div>
                     </div>
-                    <div className={`flex gap-4 flex-col w-full transition-[max-height,opacity,visibility] duration-400 ease-in-out lg:pb-6
-                        ${expandedComponent === menu.id ? 'max-h-screen opacity-100 border-t-4 border-[#65646412] bg-[#FAFAFA] p-2' : 'max-h-0 opacity-0 overflow-hidden hidden'}
-                    `}>
-                        {menu.options.map((option) => (
-                            <div key={option.id} className='flex flex-col gap-[2px]'>
-                                <div className={`py-1 text-[14px]`}>{option.name}</div>
-                                <div className='flex gap-4 overflow-x-auto'>
-                                    {option.materials.map((material) => (
-                                        <div key={material.id} className='flex'>
-                                            <img src={material.img} alt={material.name} className='w-14 h-14 rounded' />
-                                        </div>
-                                    ))}
+                    <div className={`flex gap-4 flex-col w-full transition-all duration-400 ease-in-out overflow-hidden
+                        ${expandedComponent === menu.id ? 'opacity-100 border-t-4 border-[#65646412] bg-[#FAFAFA] lg:pb-6' : 'opacity-0'}
+                    `}
+                        style={expandedComponent === menu.id ? { maxHeight: menuItemRef.current?.clientHeight } : { maxHeight: 0 } }
+                    >
+                        <div ref={menuItemRef} className='p-2'>
+                            {menu.options.map((option) => (
+                                <div key={option.id} className='flex flex-col gap-[2px]'>
+                                    <div className={`py-1 text-[14px]`}>{option.name}</div>
+                                    <div className='flex gap-4 overflow-x-auto'>
+                                        {option.materials.map((material) => (
+                                            <div key={material.id} className='flex'>
+                                                <img src={material.img} alt={material.name} className='w-14 h-14 rounded' />
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
             ))
