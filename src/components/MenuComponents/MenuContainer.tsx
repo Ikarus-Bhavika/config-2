@@ -7,13 +7,24 @@ export default function MenuContainer() {
 
     function handleClick(menu:menuItemType){
         if(menu.id!=store.expandedComponent){
+
+            console.log("==>",menu)
             store.setExpandedComponent(menu.id)
-            store.setAllowHotspots({
-                for:"comfort",
-                active:store.allowHotspots.active,
-                activeMenuItemId:"",
-                activeData:[]
-            })
+            if(menu.id=="menu3"){
+                store.setAllowHotspots({
+                    for:"comfort",
+                    active:store.allowHotspots.active,
+                    activeMenuItemId:"",
+                    activeData:[]
+                })
+            }else{
+                store.setAllowHotspots({
+                    for:"",
+                    active:store.allowHotspots.active,
+                    activeMenuItemId:"",
+                    activeData:[]
+                })
+            }
         }
         else{
             store.setExpandedComponent('')

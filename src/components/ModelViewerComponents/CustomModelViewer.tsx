@@ -45,35 +45,35 @@ import MenuItemsContainer from '../MenuComponents/MenuItemsContainer';
 const mapOfCompletedAnimation:Map<THREE.Object3D,number> = new Map()
 
 const hotspotsComfort = [
-  {
+  { 
     targetMenuId:"sdfmgn58489rwpqakdofdsvn",
     text:"Edit",
-    point:{x: -0.07984117449838424, y: -0.21408305385630505, z: 1.7288521449630507}
-  },
-  {
-    targetMenuId:"smkldg903uqrwjfp498owrey",
-    text:"Edit",
-    point:{x: -0.08496748839236856, y: -0.21308741231233325, z: 0.8501431259707384}
+    point:{x: 0.6766791444822586, y: 0.6813679222740827, z: 0.9117004019628174}// 1
   },
   {
     targetMenuId:"sdjdkoejhferwp9eoa93ifdf",
     text:"Edit",
-    point:{x: -0.09151645305767886, y: -0.21229076520406814, z: 0.15375972451852804}
-  },
-  {
-    targetMenuId:"j748wio8ruhsjdfj84hfslkd",
-    text:"Edit",
-    point:{x: -1.453215951028354, y: -0.21682496563097015, z: 1.7652760490331554}
+    point:{x: 0.7030117011574357, y: 0.6810436604737075, z: 0.04079920696227002}//2s
   },
   {
     targetMenuId:"kasidsljfuiuwrhgirefsdgr",
     text:"Edit",
-    point:{x: -1.503547729045989, y: -0.21468793357354105, z: 0.8042335090708607}
+    point:{x: 0.7282728688986548, y: 0.6697711012364885, z: -0.9152415805149157}//3
+  },
+  {
+    targetMenuId:"smkldg903uqrwjfp498owrey",
+    text:"Edit",
+    point:{x: -0.6766732390605039, y: 0.6710593566063652, z: 0.9799554405555956}//4
+  },
+  {
+    targetMenuId:"j748wio8ruhsjdfj84hfslkd",
+    text:"Edit",
+    point:{x: -0.7095733423346111, y: 0.6796620255810073, z: -0.000843533360926197}//5
   },
   {
     targetMenuId:"mzodewufwehfkjsdjfhksdjf",
     text:"Edit",
-    point:{x: -1.4711464053697414, y: -0.21229089304032794, z: -0.08808489031756761}
+    point:{x: -0.7015398436968452, y: 0.6799645752805916, z: -0.950832290850886}//6
   },
 ]
 const hotspotsCoils = [
@@ -506,10 +506,23 @@ const Hotspot = (props: Omit<
   //   props.cameraControls.current?.setLookAt(Px, Py, Pz, Tx, Ty, Tz, true);
   //   // }
   // };
+  const isAllowedVisible = store.allowHotspots.for==props.layerName || store.allowHotspots.active
+  const isActiveSpot = isAllowedVisible && props.spot.targetMenuId==store.allowHotspots.activeMenuItemId
+
   function handleClick(){
     if(!store.hotspotMenu) return
 
     const { allowHotspots } = useDataStore.getState()
+    
+    if(isActiveSpot){
+      store.setAllowHotspots({
+        ...allowHotspots,
+        activeMenuItemId:"",
+        activeData:[],
+      })
+      return
+    }
+
 
     store.setAllowHotspots({
       ...allowHotspots,
@@ -519,26 +532,25 @@ const Hotspot = (props: Omit<
     console.log("CLICKED HOTSPOT")
     
   }
-  const position = props.spot.point.isVector3
-    ? props.spot.point
-    : new THREE.Vector3(
-      props.spot.point.x,
-      props.spot.point.y,
-      props.spot.point.z
-    );
 
-  const isAllowedVisible = store.allowHotspots.for==props.layerName || store.allowHotspots.active
+  const position = props.spot.point.isVector3? props.spot.point : new THREE.Vector3(props.spot.point.x,props.spot.point.y,props.spot.point.z);
+
   return (
     <Html position={[position.x, position.y, position.z]} zIndexRange={[1, 0]}>
       <div className='relative'>
         <div
           onClick={isAllowedVisible?handleClick:()=>{}}
-          className={`${!isAllowedVisible?"opacity-0":" "} bg-[#00000088] hover:bg-[#000000ff] duration-150 text-white font-medium p-2 rounded-full text-[10px] flex gap-1 aspect-square cursor-pointer`}
+          className={`
+            ${!isAllowedVisible?"opacity-0":" "} 
+            bg-[#00000088] hover:bg-[#000000ff] duration-150 text-white min-h-6 min-w-6
+            font-medium p-2 rounded-full text-[10px]
+             flex justify-center items-center gap-1 aspect-square cursor-pointer
+          `}
         >
-          <div>{props.spot.text}</div>
+          <div> {isActiveSpot? <img className=' h-5 w-5 object-cover' src='icons/cross.png' alt='cross'/>:props.spot.text}</div>
         </div>
       
-        {isAllowedVisible && props.spot.targetMenuId==store.allowHotspots.activeMenuItemId &&
+        {isActiveSpot &&
           <div className={`absolute bg-white p-2 rounded-md w-[300px]`}>
             <MenuItemsContainer 
               isHotspotMenu
@@ -716,7 +728,7 @@ function RenderingModel(props: Omit<
       position={[0, 0, 0]}
       onDoubleClick={handleClick}
       name={"Primitive_"+props.product}
-      // onClick={handleClick}
+      onClick={handleClick}
       // onPointerOver={handlePointerOver}
       // onPointerOut={handlePointerOut}
       object={meshRef.current}
