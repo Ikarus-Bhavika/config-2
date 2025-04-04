@@ -14,6 +14,9 @@ type DataStoreType = {
 
     productDetails:productDetailsType,
     setProductDetails: (value:productDetailsType) => void
+
+    expandedComponent:string,
+    setExpandedComponent: (value:string)=> void
 }
 
 const useDataStore = create<DataStoreType>((set)=>({
@@ -27,7 +30,10 @@ const useDataStore = create<DataStoreType>((set)=>({
     setMenu: (menu) => set({menu}),
 
     productDetails: {} as productDetailsType,
-    setProductDetails: (productDetails) => set({productDetails})
+    setProductDetails: (productDetails) => set({productDetails}),
+
+    expandedComponent: "",
+    setExpandedComponent: (expandedComponent) => set({expandedComponent})
 }))
 
 export default useDataStore;
