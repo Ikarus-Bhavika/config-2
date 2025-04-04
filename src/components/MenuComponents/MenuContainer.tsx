@@ -1,11 +1,8 @@
-import { useRef, useState } from 'react'
 import useDataStore from '../../store/store';
-import updateModelInPreset from '../../utils/updateModelInPreset';
-import updateMaterialInPreset from '../../utils/updateMaterialInPreset';
+import MenuItemsContainer from './MenuItemsContainer';
 
 export default function MenuContainer() {
     const store = useDataStore();
-    const menuItemRef = useRef<HTMLDivElement>(null);
 
   return (
     <div className='p-4 bg-white flex flex-col gap-4 shadow-md lg:shadow-none rounded-md'>
@@ -19,7 +16,7 @@ export default function MenuContainer() {
                         <img src={'/images/arrow.png'} alt={'down arrow'} className={`w-4 h-4 ${store.expandedComponent==menu.id ? 'rotate-180': 'rotate-0'}`} />
                         </div>
                     </div>
-                    <div className={`flex gap-4 flex-col w-full transition-all duration-400 ease-in-out overflow-hidden
+                    {/* <div className={`flex gap-4 flex-col w-full transition-all duration-400 ease-in-out overflow-hidden
                         ${store.expandedComponent === menu.id ? 'opacity-100 border-t-4 border-[#65646412] bg-[#FAFAFA]' : 'opacity-0'}
                     `}
                         style={store.expandedComponent === menu.id ? { maxHeight: menuItemRef.current?.clientHeight } : { maxHeight: 0 } }
@@ -41,7 +38,8 @@ export default function MenuContainer() {
                                 </div>
                             ))}
                         </div>
-                    </div>
+                    </div> */}
+                    <MenuItemsContainer isHotspotMenu={false} menuId={menu.id} menuOptions={menu.options} menuTarget={menu.target || []} menuType={menu.type}/>
                 </div>
             )})
         }

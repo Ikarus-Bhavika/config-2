@@ -620,7 +620,6 @@ function RenderingModel(props: Omit<
       props.products,
       props.name
     );
-    console.log("updatedMapping",updatedMapping)
     props.onSuccessfulRender()
 
     props.setCurrentCount((prev)=>(
@@ -633,19 +632,13 @@ function RenderingModel(props: Omit<
       if ((child as THREE.Mesh).isMesh) {
         updatedMapping.map((d: any, i: number) => {
           if (d?.target.includes(child.name)) {
-            // const color = new THREE.Color('#2e1403');
-            // child.material.color = color;
-            console.log("getting here ", d)
             updateMaterial(d, (child as THREE.Mesh).material,setIsMaterialLoaded);
           }
         });
-        // props.data.map((d: any, i: number) => {
-        //   if (d.target.includes(child.name)) (child as THREE.Mesh).material = d.material;
-        // });
       }
     });
-  }, [props.values]);
-  console.log("props.values",props.values)
+  }, [JSON.stringify(props.values)]);
+
   useEffect(() => {
     if (cameraZoom === 2 || cameraZoom === -2) {
       const currentDistance = props.cameraControls.current._lastDistance;
@@ -703,7 +696,7 @@ function RenderingModelWrapper(props: Omit<
           <RenderingModel
             index={props.index}
             src={props.products.models[props.product.key]?.modelSrc}
-            values={props.product.value.parts}
+            values={props.product.value.parts || {}}
             product={props.product}
             products={props.products}
             key={props.index + props.product.value.modelSrc}
@@ -1184,7 +1177,6 @@ const ChildCanvasCustomModelViewer = (
       lineWidth.current = tempLineWidth;
     }
   });
-  console.log("props",props)
   const data:any[] = [];
   for (const [key, value] of Object.entries(props.currentProduct)) {
     data.push({ key, value });

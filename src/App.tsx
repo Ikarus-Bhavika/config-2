@@ -20,9 +20,10 @@ function App() {
     store.setMenu(data.menu);
     store.setProductDetails(data.productDetails);
     store.setPreset(data.defaultPreset);
+    store.setHotSpotMenu(data.hotspotMenuItems);
   },[])
 
-  console.log(store.preset);
+  // console.log(store.preset);
 
   return (
     <BrowserRouter>

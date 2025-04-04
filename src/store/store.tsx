@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { menuItemType, modelConfigInterface, productDetailsType } from "../types/configTypes";
+import { menuHotSpotType, menuItemType, modelConfigInterface, productDetailsType } from "../types/configTypes";
 import { presetType } from "../types/presetTypes";
 
 type DataStoreType = {
@@ -16,7 +16,10 @@ type DataStoreType = {
     setProductDetails: (value:productDetailsType) => void
 
     expandedComponent:string,
-    setExpandedComponent: (value:string)=> void
+    setExpandedComponent: (value:string) => void,
+
+    hotspotMenu: menuHotSpotType | null,
+    setHotSpotMenu: (value:menuHotSpotType | null) => void,
 }
 
 const useDataStore = create<DataStoreType>((set)=>({
@@ -33,7 +36,10 @@ const useDataStore = create<DataStoreType>((set)=>({
     setProductDetails: (productDetails) => set({productDetails}),
 
     expandedComponent: "",
-    setExpandedComponent: (expandedComponent) => set({expandedComponent})
+    setExpandedComponent: (expandedComponent) => set({expandedComponent}),
+
+    hotspotMenu: null,
+    setHotSpotMenu: (hotspotMenu) => set({hotspotMenu})
 }))
 
 export default useDataStore;

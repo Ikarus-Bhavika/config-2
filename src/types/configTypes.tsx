@@ -45,11 +45,16 @@ export type menuItemOptionType = {
     baseMaps:menuItemBaseMapType[]
 }
 
+export type menuTargetType = {
+    model:string,
+    part:string
+}
+
 export type menuItemType = {
     id:string,
     label:string,
     type:string,
-    target?:{model:string,part:string}[],
+    target?:menuTargetType[],
     options: menuItemOptionType[],
 }
 
@@ -66,4 +71,10 @@ export type configType = {
     models: modelConfigInterface,
     menu: menuItemType[],
     productDetails: productDetailsType
+}
+
+export type menuHotSpotType = {
+    [key:string]:(
+        menuItemOptionType & {target:menuTargetType[]}
+    )[]
 }
