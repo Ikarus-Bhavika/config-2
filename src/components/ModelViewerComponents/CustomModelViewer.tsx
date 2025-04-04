@@ -620,6 +620,7 @@ function RenderingModel(props: Omit<
       props.products,
       props.name
     );
+    console.log("updatedMapping",updatedMapping)
     props.onSuccessfulRender()
 
     props.setCurrentCount((prev)=>(
@@ -634,6 +635,7 @@ function RenderingModel(props: Omit<
           if (d?.target.includes(child.name)) {
             // const color = new THREE.Color('#2e1403');
             // child.material.color = color;
+            console.log("getting here ", d)
             updateMaterial(d, (child as THREE.Mesh).material,setIsMaterialLoaded);
           }
         });
@@ -643,7 +645,7 @@ function RenderingModel(props: Omit<
       }
     });
   }, [props.values]);
-
+  console.log("props.values",props.values)
   useEffect(() => {
     if (cameraZoom === 2 || cameraZoom === -2) {
       const currentDistance = props.cameraControls.current._lastDistance;

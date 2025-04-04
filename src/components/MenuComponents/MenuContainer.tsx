@@ -68,8 +68,10 @@ export default function MenuContainer() {
     
   return (
     <div className='p-4 bg-white flex flex-col gap-4 shadow-md lg:shadow-none rounded-md'>
-        {store.menu.map((menu,index) => (
-                <div key={menu.id} className={`flex flex-col gap-2 pb-4 ${index!=data.length-1 && 'border-b border-[#aaa7a72e]'} pb-3`}>
+        {store.menu.map((menu,index) => {
+            // console.log(index<data.length-1)
+            return (
+                <div key={menu.id} className={`flex flex-col gap-2 pb-4 ${index<store.menu.length-1 && 'border-b border-[#aaa7a72e] pb-3'} `}>
                     <div onClick={()=>menu.id!=expandedComponent ? setExpandedComponent(menu.id) : setExpandedComponent('')} className='flex justify-between items-center cursor-pointer'>
                         <div className=' font-medium'>{menu.label}</div>
                         <div>
@@ -100,7 +102,7 @@ export default function MenuContainer() {
                         </div>
                     </div>
                 </div>
-            ))
+            )})
         }
     </div>
   )

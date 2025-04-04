@@ -360,5 +360,44 @@
     "productDetails":{
         "title":"Mattress Configurator",
         "description":  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates fugit doloribus asperiores ipsum quaerat, rem ipsam in voluptatum quam odio fugiat repudiandae possimus est libero delectus esse. Optio, voluptatem."
+    },
+    "defaultPreset":{
+        "reliefLayer2": {
+                "visible": true,
+                "parts": {
+                    "ReliefLayer": {
+                        "material": "Relief Layer Natural",
+                        "id": "b02WsU1sa4N4Q5eSFKAj"
+                    }
+                }
+        },
+        "Cover22": {
+                "visible": true
+        },
+        "Cover111": {
+                "visible": false
+        },
+        "comfortModule1": {
+                "visible": true,
+                "parts": {
+                    "ComfortModule": {
+                        "material": "Performance",
+                        "id": "va2FmUVYiENIqGfago5x"
+                    }
+                }
+        },
+        "Label 22": {
+                "visible": true
+        },
+        "Label11": {
+                "visible": true
+        },
+        "Base": {
+                "visible": true
+        },
+        "Coils2": {
+                "visible": true
+        }
     }
+    
 }
