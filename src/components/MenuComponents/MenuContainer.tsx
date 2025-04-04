@@ -61,7 +61,7 @@ export default function MenuContainer() {
                             ))}
                         </div>
                     </div> */}
-                    <MenuItemsContainer isHotspotMenu={false} menuId={menu.id} menuOptions={menu.options} menuTarget={menu.target || []} menuType={menu.type}/>
+                    <MenuItemsContainer isHotspotMenu={false} menuId={menu.id} menuOptions={menu.options} menuType={menu.type}/>
                 </div>
             )})
         }

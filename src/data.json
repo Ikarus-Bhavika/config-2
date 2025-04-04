@@ -745,74 +745,6 @@
             ],
             "price": 0
         },
-        "Label 22": {
-            "name": "Label 22",
-            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-1-v-.Label 22",
-            "parts": {
-                "Text003": {
-                "name": "Text003",
-                "target": [
-                    "Text003"
-                ],
-                "materialGroups": [],
-                "materials": {}
-                },
-                "Text004": {
-                "name": "Text004",
-                "target": [
-                    "Text004"
-                ],
-                "materialGroups": [],
-                "materials": {}
-                },
-                "Text005": {
-                "name": "Text005",
-                "target": [
-                    "Text005"
-                ],
-                "materialGroups": [],
-                "materials": {}
-                }
-            },
-            "animations": [
-                "alwaysAnimate"
-            ],
-            "price": 0
-        },
-        "Label11": {
-            "name": "Label11",
-            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-1-v-.Label11",
-            "parts": {
-                "Text": {
-                "name": "Text",
-                "target": [
-                    "Text"
-                ],
-                "materialGroups": [],
-                "materials": {}
-                },
-                "Text001": {
-                "name": "Text001",
-                "target": [
-                    "Text001"
-                ],
-                "materialGroups": [],
-                "materials": {}
-                },
-                "Text002": {
-                "name": "Text002",
-                "target": [
-                    "Text002"
-                ],
-                "materialGroups": [],
-                "materials": {}
-                }
-            },
-            "animations": [
-                "alwaysAnimate"
-            ],
-            "price": 0
-        },
         "Base": {
             "parts": {
                 "Nest": {
@@ -883,15 +815,15 @@
             "id":"menu2",
             "label": "Relief Layer",
             "type": "material",
-            "target": [
-            {
-                "model": "reliefLayer2",
-                "part": "ReliefLayer"
-            }
-            ],
             "options": [
                 {
                     "label": "Relief Layer",
+                    "target": [
+                        {
+                            "model": "reliefLayer2",
+                            "part": "ReliefLayer"
+                        }
+                    ],
                     "baseMaps": [
                     {
                         "id": "b02WsU1sa4N4Q5eSFKAj",
@@ -913,59 +845,59 @@
             "id":"menu3",
             "label": "Comfort Module",
             "type": "material",
-            "target": [
-              {
-                "model": "comfortModule1",
-                "part": "1"
-              },
-              {
-                "model": "comfortModule1",
-                "part": "B1"
-              },
-              {
-                "model": "comfortModule1",
-                "part": "2"
-              },
-              {
-                "model": "comfortModule1",
-                "part": "B2"
-              },
-              {
-                "model": "comfortModule1",
-                "part": "3"
-              },
-              {
-                "model": "comfortModule1",
-                "part": "B3"
-              },
-              {
-                "model": "comfortModule1",
-                "part": "4"
-              },
-              {
-                "model": "comfortModule1",
-                "part": "B4"
-              },
-              {
-                "model": "comfortModule1",
-                "part": "5"
-              },
-              {
-                "model": "comfortModule1",
-                "part": "B5"
-              },
-              {
-                "model": "comfortModule1",
-                "part": "6"
-              },
-              {
-                "model": "comfortModule1",
-                "part": "B6"
-              }
-            ],
             "options": [
               {
                 "label": "Comfort Module",
+                "target": [
+                    {
+                        "model": "comfortModule1",
+                        "part": "1"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B1"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "2"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B2"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "3"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B3"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "4"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B4"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "5"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B5"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "6"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B6"
+                    }
+                ],
                 "baseMaps": [
                   {
                     "id": "zVgBGa2wjrpAZ5jci3im",
@@ -982,7 +914,7 @@
                 ]
               }
             ]
-          }
+        }
     ],
     "productDetails":{
         "title":"Mattress Configurator",
@@ -1056,12 +988,6 @@
                     "id": "va2FmUVYiENIqGfago5x"
                 }
             }
-        },
-        "Label 22": {
-            "visible": true
-        },
-        "Label11": {
-            "visible": true
         },
         "Base": {
             "visible": true

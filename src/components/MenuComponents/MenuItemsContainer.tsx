@@ -10,16 +10,11 @@ export default function MenuItemsContainer(
         isHotspotMenu = false,
         menuType = "material",
         menuOptions,
-        menuTarget,
     }:{
     menuId:string,
     isHotspotMenu:boolean, 
     menuType?:string, 
-    menuOptions:menuItemOptionType[],
-    menuTarget:{
-        model: string;
-        part: string;
-    }[]
+    menuOptions:menuItemOptionType[]
 }) {
     const store = useDataStore();
     const menuItemRef = useRef<HTMLDivElement>(null);
@@ -55,10 +50,10 @@ export default function MenuItemsContainer(
                           store.preset
                         )
                       );
-                    else if (menuType == "material" && menuTarget)
+                    else if (menuType == "material" && option.target)
                       store.setPreset(
                         updateMaterialInPreset(
-                          menuTarget,
+                          option.target,
                           material.label,
                           material.id,
                           store.preset

@@ -42,6 +42,7 @@ export type menuItemBaseMapType = {
 
 export type menuItemOptionType = {
     label:string,
+    target?:menuTargetType[],
     baseMaps:menuItemBaseMapType[]
 }
 
@@ -54,7 +55,6 @@ export type menuItemType = {
     id:string,
     label:string,
     type:string,
-    target?:menuTargetType[],
     options: menuItemOptionType[],
 }
 
@@ -74,9 +74,7 @@ export type configType = {
 }
 
 export type menuHotSpotType = {
-    [key:string]:(
-        menuItemOptionType & {target:menuTargetType[]}
-    )[]
+    [key:string]:menuItemOptionType[]
 }
 export type activeHotspots = {
     for:string,

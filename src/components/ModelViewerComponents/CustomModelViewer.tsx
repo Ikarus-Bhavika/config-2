@@ -544,7 +544,7 @@ const Hotspot = (props: Omit<
               isHotspotMenu
               menuId="dfmjg543u209qwejdfhg5487o"
               menuOptions={store.allowHotspots.activeData}
-              menuTarget={store.allowHotspots.activeData.}
+              // menuTarget={store.allowHotspots.activeData.}
             />
           </div>
         }
