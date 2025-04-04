@@ -14,7 +14,7 @@ export default function MenuItemsContainer(
     }:{
     menuId:string,
     isHotspotMenu:boolean, 
-    menuType:string, 
+    menuType?:string, 
     menuOptions:menuItemOptionType[],
     menuTarget:{
         model: string;
@@ -23,6 +23,7 @@ export default function MenuItemsContainer(
 }) {
     const store = useDataStore();
     const menuItemRef = useRef<HTMLDivElement>(null);
+    
   return (
     <div
       className={`flex gap-4 flex-col w-full transition-all duration-400 ease-in-out overflow-hidden

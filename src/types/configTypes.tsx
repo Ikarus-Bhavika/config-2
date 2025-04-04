@@ -81,4 +81,8 @@ export type menuHotSpotType = {
 export type activeHotspots = {
     for:string,
     active: boolean,
+    activeMenuItemId:string,
+    activeData:(menuItemOptionType & {
+        target: menuTargetType[];
+    })[],
 }

@@ -43,10 +43,12 @@ const useDataStore = create<DataStoreType>((set)=>({
 
     hotspotMenu: null,
     setHotSpotMenu: (hotspotMenu) => set({hotspotMenu}),
-    
+
     allowHotspots:{
         for:"",
-        active:false
+        active:false,
+        activeMenuItemId:"",
+        activeData:[],
     },
     setAllowHotspots: (allowHotspots)=>set({allowHotspots}),
 }))

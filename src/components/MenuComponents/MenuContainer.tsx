@@ -10,14 +10,18 @@ export default function MenuContainer() {
             store.setExpandedComponent(menu.id)
             store.setAllowHotspots({
                 for:"comfort",
-                active:store.allowHotspots.active
+                active:store.allowHotspots.active,
+                activeMenuItemId:"",
+                activeData:[]
             })
         }
         else{
             store.setExpandedComponent('')
             store.setAllowHotspots({
                 for:"",
-                active:store.allowHotspots.active
+                active:store.allowHotspots.active,
+                activeMenuItemId:"",
+                activeData:[]
             })
         }
     }
