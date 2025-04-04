@@ -2,6 +2,7 @@ import useDataStore from '../../store/store';
 import { menuItemType } from '../../types/configTypes';
 import MenuItemsContainer from './MenuItemsContainer';
 
+
 export default function MenuContainer() {
     const store = useDataStore();
 
