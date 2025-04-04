@@ -30,7 +30,6 @@ import React, {
   Key,
 } from 'react';
 import * as THREE from 'three';
-import { getModelMaterialArray } from '../../utils/getModelMaterialArray';
 import {
   getMaterialUpdate, updateMaterial
 } from '../../utils/updateModelMaterialArray';
@@ -40,9 +39,69 @@ import { StoreApi, UseBoundStore } from 'zustand';
 import { PresetsType } from '@react-three/drei/helpers/environment-assets';
 import { ModelViewerSettingsType } from '../../types/editorTypes';
 import getTotalModelAndMaterialsToLoad from '../../utils/getTotalModelAndMaterialsToLoad';
-import modelViewerStore from '../../store/store'
+import useDataStore from '../../store/store';
+import MenuItemsContainer from '../MenuComponents/MenuItemsContainer';
 
 const mapOfCompletedAnimation:Map<THREE.Object3D,number> = new Map()
+
+const hotspotsComfort = [
+  {
+    targetMenuId:"sdfmgn58489rwpqakdofdsvn",
+    text:"Edit",
+    point:{x: -0.07984117449838424, y: -0.21408305385630505, z: 1.7288521449630507}
+  },
+  {
+    targetMenuId:"smkldg903uqrwjfp498owrey",
+    text:"Edit",
+    point:{x: -0.08496748839236856, y: -0.21308741231233325, z: 0.8501431259707384}
+  },
+  {
+    targetMenuId:"sdjdkoejhferwp9eoa93ifdf",
+    text:"Edit",
+    point:{x: -0.09151645305767886, y: -0.21229076520406814, z: 0.15375972451852804}
+  },
+  {
+    targetMenuId:"j748wio8ruhsjdfj84hfslkd",
+    text:"Edit",
+    point:{x: -1.453215951028354, y: -0.21682496563097015, z: 1.7652760490331554}
+  },
+  {
+    targetMenuId:"kasidsljfuiuwrhgirefsdgr",
+    text:"Edit",
+    point:{x: -1.503547729045989, y: -0.21468793357354105, z: 0.8042335090708607}
+  },
+  {
+    targetMenuId:"mzodewufwehfkjsdjfhksdjf",
+    text:"Edit",
+    point:{x: -1.4711464053697414, y: -0.21229089304032794, z: -0.08808489031756761}
+  },
+]
+const hotspotsCoils = [
+  {
+    text:"Edit",
+    point:{x: -0.07984117449838424, y: -0.45, z: 1.7288521449630507}
+  },
+  {
+    text:"Edit",
+    point:{x: -0.08496748839236856, y: -0.45, z: 0.8501431259707384}
+  },
+  {
+    text:"Edit",
+    point:{x: -0.09151645305767886, y: -0.45, z: 0.15375972451852804}
+  },
+  {
+    text:"Edit",
+    point:{x: -1.453215951028354, y: -0.45, z: 1.7652760490331554}
+  },
+  {
+    text:"Edit",
+    point:{x: -1.503547729045989, y: -0.45, z: 0.8042335090708607}
+  },
+  {
+    text:"Edit",
+    point:{x: -1.4711464053697414, y: -0.45, z: -0.08808489031756761}
+  },
+]
 
 export enum ETableControlIndex {
   MATERIAL_TABLE_TOP = 1,
@@ -387,6 +446,7 @@ export type AnimateProperty = (
 ) => void;
 
 export type hotspotItem = {
+  targetMenuId:string,
   point: THREE.Vector3;
   text: string | null;
   customCameraPosition?: THREE.Vector3;
@@ -398,6 +458,7 @@ export type HotSpotProps = {
   cameraControls: React.RefObject<CameraControls>;
   modelViewerStore: UseBoundStore<StoreApi<any>>;
   index: any;
+  layerName:string;
 };
 
 export type CameraAnimationProps = {
@@ -419,6 +480,8 @@ const Hotspot = (props: Omit<
 >
 ) => {
   const [editMode, setEditMode] = useState(false);
+
+  const store = useDataStore()
   // const { editHotspotMode } = editorStateStore();
   const vectorCustomCameraPosition = props.spot.customCameraPosition?.isVector3
     ? props.spot.customCameraPosition
@@ -434,15 +497,28 @@ const Hotspot = (props: Omit<
       props.spot.customCameraTarget?.y || 0,
       props.spot.customCameraTarget?.z || 0
     );
-  const animateCamera = () => {
-    // if (isAnimationSet) {
-    if (props.cameraControls.current)
-      props.cameraControls.current.smoothTime = 0.3;
-    const { x: Px, y: Py, z: Pz } = vectorCustomCameraPosition;
-    const { x: Tx, y: Ty, z: Tz } = vectorCustomCameraTarget;
-    props.cameraControls.current?.setLookAt(Px, Py, Pz, Tx, Ty, Tz, true);
-    // }
-  };
+  // const animateCamera = () => {
+  //   // if (isAnimationSet) {
+  //   if (props.cameraControls.current)
+  //     props.cameraControls.current.smoothTime = 0.3;
+  //   const { x: Px, y: Py, z: Pz } = vectorCustomCameraPosition;
+  //   const { x: Tx, y: Ty, z: Tz } = vectorCustomCameraTarget;
+  //   props.cameraControls.current?.setLookAt(Px, Py, Pz, Tx, Ty, Tz, true);
+  //   // }
+  // };
+  function handleClick(){
+    if(!store.hotspotMenu) return
+
+    const { allowHotspots } = useDataStore.getState()
+
+    store.setAllowHotspots({
+      ...allowHotspots,
+      activeMenuItemId:props.spot.targetMenuId,
+      activeData:store.hotspotMenu[props.spot.targetMenuId]
+    })
+    console.log("CLICKED HOTSPOT")
+    
+  }
   const position = props.spot.point.isVector3
     ? props.spot.point
     : new THREE.Vector3(
@@ -450,35 +526,29 @@ const Hotspot = (props: Omit<
       props.spot.point.y,
       props.spot.point.z
     );
+
+  const isAllowedVisible = store.allowHotspots.for==props.layerName || store.allowHotspots.active
   return (
     <Html position={[position.x, position.y, position.z]} zIndexRange={[1, 0]}>
-      <div
-        onClick={animateCamera}
-        className=" bg-white text-black border font-medium p-2 rounded-md text-[10px] flex gap-1"
-      >
-        <div>{props.spot.text}</div>
-        {false && (
-          <>
-            <div
-              onClick={(e) => {
-                e.stopPropagation();
-                // if (editMode) setAnimation(true)
-                setEditMode(!editMode);
-              }}
-              className="border w-[40px] rounded-md p-1 h-full text-blue-600 hover:cursor-pointer"
-            >
-              ...{editMode ? 'Save' : 'Edit'}
-            </div>
-            <div
-              onClick={(e) => {
-                e.stopPropagation();
-              }}
-              className="border w-[40px] rounded-md p-1 h-full text-blue-600 hover:cursor-pointer"
-            >
-              Delete
-            </div>
-          </>
-        )}
+      <div className='relative'>
+        <div
+          onClick={isAllowedVisible?handleClick:()=>{}}
+          className={`${!isAllowedVisible?"opacity-0":" "} bg-[#00000088] hover:bg-[#000000ff] duration-150 text-white font-medium p-2 rounded-full text-[10px] flex gap-1 aspect-square cursor-pointer`}
+        >
+          <div>{props.spot.text}</div>
+        </div>
+      
+        {isAllowedVisible && props.spot.targetMenuId==store.allowHotspots.activeMenuItemId &&
+          <div className={`absolute bg-white p-2 rounded-md w-[300px]`}>
+            <MenuItemsContainer 
+              isHotspotMenu
+              menuId="dfmjg543u209qwejdfhg5487o"
+              menuOptions={store.allowHotspots.activeData}
+              menuTarget={store.allowHotspots.activeData.}
+            />
+          </div>
+        }
+      
       </div>
     </Html>
   );
@@ -491,17 +561,9 @@ function RenderingModel(props: Omit<
 >
 ) {
   const { camera,...restcene } = useThree();
-  const {
-    cameraZoom,
-    zoomTrigger,
-    setCurrentCameraPosition,
-    updateHotspotCameraTarget,
-    isTargetUpdateInProgress,
-    setIsTargetUpdateInProgress,
-    targetIndex,
-    setTargetIndex,
-    setLastClickedPoint,
-  } = modelViewerStore();
+
+  const store = useDataStore()
+
   const thisLoader = useGLTF(props.src);
   const [isMaterialLoaded,setIsMaterialLoaded] = useState(false);
   const loader1 = thisLoader.scene as THREE.Object3D;
@@ -517,14 +579,7 @@ function RenderingModel(props: Omit<
 
   const handleClick = (e: any) => {
     e.stopPropagation();
-    setCurrentCameraPosition(props?.cameraControls?.current?.camera?.position);
-    if (isTargetUpdateInProgress && targetIndex !== null) {
-      updateHotspotCameraTarget(targetIndex, e.point);
-      setIsTargetUpdateInProgress(false);
-      setTargetIndex(null);
-    } else {
-      setLastClickedPoint(e.point);
-    }
+    console.log(e.point)
   };
 
   const handlePointerOver = (e: any) => {
@@ -559,6 +614,7 @@ function RenderingModel(props: Omit<
   };
 
   useEffect(() => {
+    
     const action = actions["alwaysAnimate"];
     if (!action || !meshRef.current) return;
     
@@ -582,6 +638,7 @@ function RenderingModel(props: Omit<
   }, [actions]);
 
   useEffect(()=>{
+    console.log("AlwaysAnimate")
     const req = {...actions}
     if (req.playOnButton && props.setPlayAnimationVisibility) {
       props.setPlayAnimationVisibility(prev=>[...prev, props.name]);
@@ -615,6 +672,7 @@ function RenderingModel(props: Omit<
   }, [props.animation]);
 
   useEffect(() => {
+    console.log("Updating Material")
     const updatedMapping = getMaterialUpdate(
       props.values,
       props.products,
@@ -630,7 +688,7 @@ function RenderingModel(props: Omit<
     ))
     loader1.traverse((child: THREE.Object3D) => {
       if ((child as THREE.Mesh).isMesh) {
-        updatedMapping.map((d: any, i: number) => {
+        updatedMapping.map((d: any) => {
           if (d?.target.includes(child.name)) {
             updateMaterial(d, (child as THREE.Mesh).material,setIsMaterialLoaded);
           }
@@ -639,19 +697,7 @@ function RenderingModel(props: Omit<
     });
   }, [JSON.stringify(props.values)]);
 
-  useEffect(() => {
-    if (cameraZoom === 2 || cameraZoom === -2) {
-      const currentDistance = props.cameraControls.current._lastDistance;
-      if (props.cameraControls.current)
-        props.cameraControls.current.smoothTime = 0.1;
-      const zoomValue = cameraZoom > 0 ? 0.08 : -0.08;
-
-      props.cameraControls?.current?.dolly(zoomValue, true);
-      // props.cameraControls?.current?.forward(zoomValue, true);
-      // props.cameraControls?.current?.zoom(zoomValue, true);
-      camera.updateProjectionMatrix();
-    }
-  }, [zoomTrigger]);
+  console.log(props.values)
 
   useEffect(()=>{
     if(isMaterialLoaded){
@@ -665,7 +711,6 @@ function RenderingModel(props: Omit<
   },[isMaterialLoaded])
 
   return (
-    // @ts-ignore
     <primitive
       ref={meshRef}
       position={[0, 0, 0]}
@@ -685,33 +730,26 @@ function RenderingModelWrapper(props: Omit<
   "modelViewerStore"
 >
 ) {
-  const data = getModelMaterialArray(
-    props.product.value.parts,
-    props.products,
-    props.product.key
-  );
-
   return  props.product.value.visible && 
-          props.products.models[props.product.key]?.modelSrc && 
-          <RenderingModel
-            index={props.index}
-            src={props.products.models[props.product.key]?.modelSrc}
-            values={props.product.value.parts || {}}
-            product={props.product}
-            products={props.products}
-            key={props.index + props.product.value.modelSrc}
-            name={props.product.key}
-            animation={props.product.value.animation}
-            visible={props.product.value.visible}
-            data={data}
-            showDimensions={props.showDimensions}
-            cameraControls={props.cameraControls}
-            playAnimation={props.playAnimation}
-            onSuccessfulRender={props.onSuccessfulRender}
-            setPlayAnimationVisibility={props.setPlayAnimationVisibility}
-            playAnimationVisibility={props.playAnimationVisibility}
-            setCurrentCount={props.setCurrentCount}
-          />
+    props.products.models[props.product.key]?.modelSrc && 
+    <RenderingModel
+      index={props.index}
+      src={props.products.models[props.product.key]?.modelSrc}
+      values={props.product.value.parts}
+      product={props.product}
+      products={props.products}
+      key={props.index + props.product.value.modelSrc}
+      name={props.product.key}
+      animation={props.product.value.animation}
+      visible={props.product.value.visible}
+      showDimensions={props.showDimensions}
+      cameraControls={props.cameraControls}
+      playAnimation={props.playAnimation}
+      onSuccessfulRender={props.onSuccessfulRender}
+      setPlayAnimationVisibility={props.setPlayAnimationVisibility}
+      playAnimationVisibility={props.playAnimationVisibility}
+      setCurrentCount={props.setCurrentCount}
+    />
 }
 
         
@@ -1302,8 +1340,18 @@ const ChildCanvasCustomModelViewer = (
               material={new THREE.LineBasicMaterial({color:'#ccc'})}
             />}
           </Stage>
-          {hotspots?.map((spot: any, index: number) => (
+          {hotspotsComfort?.map((spot: any, index: number) => (
             <Hotspot
+              layerName='comfort'
+              key={index}
+              cameraControls={props.cameraControls}
+              spot={spot}
+              index={index}
+            />
+          ))}
+          {hotspotsCoils?.map((spot: any, index: number) => (
+            <Hotspot
+              layerName='coils'
               key={index}
               cameraControls={props.cameraControls}
               spot={spot}
@@ -1313,7 +1361,6 @@ const ChildCanvasCustomModelViewer = (
         </group>
         <group name='contactShadow' visible={y ? true : false}>
           <ContactShadows
-            
             position-y={y<0 ? y : 0}
             scale={Number(contactShadowProps.scale)}
             opacity={Number(contactShadowProps.opacity)}

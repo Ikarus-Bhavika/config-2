@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { menuHotSpotType, menuItemType, modelConfigInterface, productDetailsType } from "../types/configTypes";
+import { menuHotSpotType, activeHotspots, menuItemType, modelConfigInterface, productDetailsType } from "../types/configTypes";
 import { presetType } from "../types/presetTypes";
 
 type DataStoreType = {
@@ -20,6 +20,9 @@ type DataStoreType = {
 
     hotspotMenu: menuHotSpotType | null,
     setHotSpotMenu: (value:menuHotSpotType | null) => void,
+
+    allowHotspots: activeHotspots, // coils | comfort
+    setAllowHotspots:(value:activeHotspots)=> void,
 }
 
 const useDataStore = create<DataStoreType>((set)=>({
@@ -39,7 +42,13 @@ const useDataStore = create<DataStoreType>((set)=>({
     setExpandedComponent: (expandedComponent) => set({expandedComponent}),
 
     hotspotMenu: null,
-    setHotSpotMenu: (hotspotMenu) => set({hotspotMenu})
+    setHotSpotMenu: (hotspotMenu) => set({hotspotMenu}),
+    
+    allowHotspots:{
+        for:"",
+        active:false
+    },
+    setAllowHotspots: (allowHotspots)=>set({allowHotspots}),
 }))
 
 export default useDataStore;

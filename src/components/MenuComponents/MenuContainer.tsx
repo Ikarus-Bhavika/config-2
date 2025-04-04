@@ -1,8 +1,26 @@
 import useDataStore from '../../store/store';
+import { menuItemType } from '../../types/configTypes';
 import MenuItemsContainer from './MenuItemsContainer';
 
 export default function MenuContainer() {
     const store = useDataStore();
+
+    function handleClick(menu:menuItemType){
+        if(menu.id!=store.expandedComponent){
+            store.setExpandedComponent(menu.id)
+            store.setAllowHotspots({
+                for:"comfort",
+                active:store.allowHotspots.active
+            })
+        }
+        else{
+            store.setExpandedComponent('')
+            store.setAllowHotspots({
+                for:"",
+                active:store.allowHotspots.active
+            })
+        }
+    }
 
   return (
     <div className='p-4 bg-white flex flex-col gap-4 shadow-md lg:shadow-none rounded-md'>
@@ -10,7 +28,7 @@ export default function MenuContainer() {
             // console.log(index<data.length-1)
             return (
                 <div key={menu.id} className={`flex flex-col gap-2 pb-4 ${index<store.menu.length-1 && 'border-b border-[#aaa7a72e] pb-3'} `}>
-                    <div onClick={()=>menu.id!=store.expandedComponent ? store.setExpandedComponent(menu.id) : store.setExpandedComponent('')} className='flex justify-between items-center cursor-pointer'>
+                    <div onClick={()=>handleClick(menu)} className='flex justify-between items-center cursor-pointer'>
                         <div className=' font-medium'>{menu.label}</div>
                         <div>
                         <img src={'/images/arrow.png'} alt={'down arrow'} className={`w-4 h-4 ${store.expandedComponent==menu.id ? 'rotate-180': 'rotate-0'}`} />
