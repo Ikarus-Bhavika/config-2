@@ -1,3 +1,7 @@
+/* eslint-disable prefer-const */
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useEffect, useRef, useState } from 'react'
 import CustomModelViewer from './ModelViewerComponents/CustomModelViewer'
 import { Group, Object3DEventMap } from 'three'

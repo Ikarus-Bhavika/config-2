@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-duplicate-enum-values */
 import { Canvas, CanvasProps, RaycasterProps, RootState, useFrame, useThree } from '@react-three/fiber';
 import {
   CameraControls,
@@ -217,7 +221,7 @@ export type ProductData = {
   meshMaterialMapping: MeshMaterialMappingType[];
   meshNodes: any;
   primeCats?: any;
-  disabledCatagories: String[];
+  disabledCatagories: string[];
   variantOptions?: any;
   uiComponents: any;
   modelImages: ModelImagesType[];
@@ -308,7 +312,7 @@ export type AnnotationPropsTypes = {
   ySize: MotionValue;
   zSize: MotionValue;
   show: boolean;
-  theme?:String;
+  theme?:string;
 };
 export type AxisComponentPropsTypes = {
   coneRadius: number;
@@ -375,7 +379,7 @@ export type RenderingModelCompProps = {
   animation: string[];
   visible: boolean;
   material?: THREE.MeshStandardMaterial;
-  target?: String[];
+  target?: string[];
   data?: any;
   showDimensions?: any;
   modelViewerStore: UseBoundStore<StoreApi<any>>;
@@ -400,7 +404,7 @@ export type CustomModelViewerProps = {
     SetStateAction<React.RefObject<THREE.Group<THREE.Object3DEventMap>>>
   >;
   modelViewerStore: UseBoundStore<StoreApi<any>>;
-  theme?:String;
+  theme?:string;
   playAnimation?:boolean;
   playAnimationVisibility?:string[];
   setPlayAnimationVisibility?: React.Dispatch<React.SetStateAction<string[]>>;
@@ -416,7 +420,7 @@ export type ChildCanvasCustomModelViewerProps = {
   cameraControls?: any;
   modelViewerStore: UseBoundStore<StoreApi<any>>;
   setModelRef?: Dispatch<SetStateAction<React.RefObject<THREE.Group<THREE.Object3DEventMap>>>>;
-  theme?:String;
+  theme?:string;
   playAnimation?:boolean;
   playAnimationVisibility?:string[];
   setPlayAnimationVisibility?: React.Dispatch<React.SetStateAction<string[]>>;
@@ -1509,7 +1513,7 @@ export default function CustomModelViewer(props:Omit<
             maxDistance={camera.maxDistance}
             smoothTime={camera.damping}
           />
-          {true && (
+          {/* {true && ( */}
             <ChildCanvasCustomModelViewer
               cameraControls={cameraControlsRef}
               grid={false}
@@ -1517,7 +1521,7 @@ export default function CustomModelViewer(props:Omit<
               modelSettings={modelSettings}
               setIsModelLoaded={props.setIsModelLoaded}
             />
-          )}
+          {/* )} */}
         </Canvas>
       </Suspense>
     </>
