@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { menuHotSpotType, activeHotspots, menuItemType, modelConfigInterface, productDetailsType } from "../types/configTypes";
 import { presetType } from "../types/presetTypes";
-
+import * as THREE from 'three';
 type DataStoreType = {
     modelConfig: modelConfigInterface,
     setModelConfig: (config: modelConfigInterface) => void,
@@ -23,6 +23,9 @@ type DataStoreType = {
 
     allowHotspots: activeHotspots, // coils | comfort
     setAllowHotspots:(value:activeHotspots)=> void,
+
+    outLineObjects:THREE.Object3D<THREE.Object3DEventMap>[],
+    setOutLineObjects: (value:THREE.Object3D<THREE.Object3DEventMap>[]) => void,
 }
 
 const useDataStore = create<DataStoreType>((set)=>({
@@ -51,6 +54,9 @@ const useDataStore = create<DataStoreType>((set)=>({
         activeData:[],
     },
     setAllowHotspots: (allowHotspots)=>set({allowHotspots}),
+
+    outLineObjects:[],
+    setOutLineObjects:(outLineObjects) =>set({outLineObjects})
 }))
 
 export default useDataStore;

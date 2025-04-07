@@ -1,8 +1,6 @@
 export default function PriceContainer() {
-  return (
-    <>
-      {/* mobile */}
-      <div className=" flex lg:hidden flex-col lg:flex-row gap-4 items-center">
+  return window.innerWidth<1024 ? (
+      <div className=" flex flex-col lg:flex-row gap-4 items-center">
         <div className="px-2 w-full flex lg:flex-col justify-between font-semibold text-[18px] lg:text-[16px]">
           <div className="lg:text-[14px] lg:font-medium">Total Price</div>
           <div className="lg:text-[18px] lg:font-medium">$120.00</div>
@@ -12,9 +10,8 @@ export default function PriceContainer() {
           <button className="px-1 flex w-full justify-center items-center text-[18px] lg:text-[14px] lg:whitespace-nowrap lg:px-4 bg-black text-white py-2 lg:py-3 rounded-md font-semibold">Add to Cart</button>
         </div>
       </div>
-
-      {/* laptop */}
-      <div className="hidden lg:flex flex-col lg:flex-row gap-4 items-center 3xl:pt-2">
+    ):(
+      <div className="flex flex-col lg:flex-row gap-4 items-center 3xl:pt-2">
         <div className="w-1/3 flex flex-col">
           <div className="lg:text-[14px] lg:font-medium">Total Price</div>
           <div className="lg:text-[18px] lg:font-medium">$120.00</div>
@@ -24,6 +21,5 @@ export default function PriceContainer() {
           <button className="w-1/2 3xl:py-3 bg-black rounded-md text-white whitespace-nowrap p-2 text-[14px]">Add To Cart</button>
         </div>
       </div>
-    </>
   )
 }

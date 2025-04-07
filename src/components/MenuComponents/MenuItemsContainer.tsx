@@ -39,11 +39,11 @@ export default function MenuItemsContainer(
       }
     >
       <div ref={menuItemRef} className="p-2">
-        <div className="flex gap-4 border-b border-[#aaa7a72e]">
+        {menuOptions.length>1 && <div className="flex gap-4 xl:gap-6 border-b border-[#aaa7a72e]">
           {!isHotspotMenu && menuOptions.map((option,index)=>(
-            <div key={option.label+"KEYFORMENUITEM"} className="text-[14px] py-1 cursor-pointer hover:underline" onClick={()=>setSelectedIndex(index)}>{option.label}</div>
+            <div key={option.label+"KEYFORMENUITEM"} className={`text-[14px] py-1 cursor-pointer ${index==selectedIndex?'text-black':'text-gray-500'}`} onClick={()=>setSelectedIndex(index)}>{option.label}</div>
           ))}
-        </div>
+        </div>}
         {!isHotspotMenu && (
           <div key={menuOptions[selectedIndex].label} className="flex flex-col gap-[2px] lg:pb-6">
             <div className={`py-1 text-[15px]`}>{menuOptions[selectedIndex].label}</div>

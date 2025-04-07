@@ -45,6 +45,8 @@ import { ModelViewerSettingsType } from '../../types/editorTypes';
 import getTotalModelAndMaterialsToLoad from '../../utils/getTotalModelAndMaterialsToLoad';
 import useDataStore from '../../store/store';
 import MenuItemsContainer from '../MenuComponents/MenuItemsContainer';
+import { OutlineEffectManager } from './PostProcessing/OutlineEffectManager';
+
 
 const mapOfCompletedAnimation:Map<THREE.Object3D,number> = new Map()
 
@@ -714,6 +716,30 @@ function RenderingModel(props: Omit<
       }
     });
   }, [JSON.stringify(props.values)]);
+
+  useEffect(()=>{
+    const meshes = meshRef.current.children;
+    const menu1 = ['Cover','Cover2'];
+    const menu2 = ['ReliefLayer'];
+    const menu3 = ['1','2','3','4','5','6','B1','B2','B3','B4','B5','B6']
+    if(store.expandedComponent=="menu1"){
+      if(meshes.find(child=>menu1.includes(child.name))){
+        console.log("getting here");
+        store.setOutLineObjects(meshes);
+      }
+    }else if(store.expandedComponent=="menu2"){
+      if(meshes.find(child=>menu2.includes(child.name))){
+        store.setOutLineObjects(meshes);    
+      }
+    }else if(store.expandedComponent=="menu3"){
+      if(meshes.find(child=>menu3.includes(child.name))){
+        store.setOutLineObjects(meshes);  
+      }
+    }else{
+      store.setOutLineObjects([]);
+    }
+    console.log("---------->",store.expandedComponent,store.outLineObjects,meshes)
+  },[store.expandedComponent]);
 
   useEffect(()=>{
     if(isMaterialLoaded){
@@ -1501,7 +1527,8 @@ export default function CustomModelViewer(props:Omit<
   return (
     <>
       <Suspense fallback={<LoaderLottie />}>
-        <Canvas {...modelSettings.canvasSettings} ref={props.canvasRef} >
+        <Canvas {...modelSettings.canvasSettings} ref={props.canvasRef}>
+          <OutlineEffectManager />
           <PerspectiveCamera name='Main Perspective Camera'
             makeDefault
             fov={camera.fov}
