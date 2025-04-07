@@ -7,7 +7,10 @@ export default function PriceContainer() {
           <div className="lg:text-[14px] lg:font-medium">Total Price</div>
           <div className="lg:text-[18px] lg:font-medium">$120.00</div>
         </div>
-        <button className="px-1 flex w-full justify-center items-center text-[18px] lg:text-[14px] lg:whitespace-nowrap lg:px-4 bg-black text-white py-2 lg:py-3 rounded-md font-semibold">Add to Cart</button>
+        <div className="flex flex-col gap-2 w-full">
+          <button className="px-1 flex w-full justify-center items-center text-[18px] lg:text-[14px] lg:whitespace-nowrap lg:px-4 border border-black  py-2 lg:py-3 rounded-md font-semibold">Save</button>
+          <button className="px-1 flex w-full justify-center items-center text-[18px] lg:text-[14px] lg:whitespace-nowrap lg:px-4 bg-black text-white py-2 lg:py-3 rounded-md font-semibold">Add to Cart</button>
+        </div>
       </div>
 
       {/* laptop */}

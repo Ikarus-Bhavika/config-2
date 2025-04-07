@@ -912,6 +912,90 @@
                     "hexCode": "#828ca3"
                   }
                 ]
+              },
+              {"label": "Right Side",
+                "target": [
+                    {
+                        "model": "comfortModule1",
+                        "part": "4"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B4"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "5"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B5"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "6"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B6"
+                    }
+                ],
+                "baseMaps": [
+                  {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "label": "Natural",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                    "hexCode": "#9c9694"
+                  },
+                  {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "label": "Performance",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                    "hexCode": "#828ca3"
+                  }
+                ]
+              },
+              {"label": "Left Side",
+                "target": [
+                    {
+                        "model": "comfortModule1",
+                        "part": "1"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B1"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "2"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B2"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "3"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B3"
+                    }
+                ],
+                "baseMaps": [
+                  {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "label": "Natural",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                    "hexCode": "#9c9694"
+                  },
+                  {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "label": "Performance",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                    "hexCode": "#828ca3"
+                  }
+                ]
               }
             ]
         }
