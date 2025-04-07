@@ -41,7 +41,7 @@ export default function MenuItemsContainer(
       <div ref={menuItemRef} className="p-2">
         <div className="flex gap-4 border-b border-[#aaa7a72e]">
           {!isHotspotMenu && menuOptions.map((option,index)=>(
-            <div className="text-[14px] py-1 cursor-pointer hover:underline" onClick={()=>setSelectedIndex(index)}>{option.label}</div>
+            <div key={option.label+"KEYFORMENUITEM"} className="text-[14px] py-1 cursor-pointer hover:underline" onClick={()=>setSelectedIndex(index)}>{option.label}</div>
           ))}
         </div>
         {!isHotspotMenu && (

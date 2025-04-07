@@ -533,7 +533,6 @@ const Hotspot = (props: Omit<
       activeMenuItemId:props.spot.targetMenuId,
       activeData:store.hotspotMenu[props.spot.targetMenuId]
     })
-    console.log("CLICKED HOTSPOT")
     
   }
 
@@ -541,21 +540,27 @@ const Hotspot = (props: Omit<
 
   return (
     <Html position={[position.x, position.y, position.z]} zIndexRange={[1, 0]}>
-      <div className='relative'>
+      <div className='relative z-50'>
         <div
           onClick={isAllowedVisible?handleClick:()=>{}}
           className={`
             ${!isAllowedVisible?"opacity-0":" "} 
-            bg-[#00000088] hover:bg-[#000000ff] duration-150 text-white min-h-6 min-w-6
-            font-medium p-2 rounded-full text-[10px]
+            bg-[#00000088] hover:bg-[#000000ff] duration-150 text-white min-h-8 min-w-8
+            font-medium p-1 rounded-full text-[10px]
              flex justify-center items-center gap-1 aspect-square cursor-pointer
           `}
         >
-          <div> {isActiveSpot? <img className=' h-5 w-5 object-cover' src='icons/cross.png' alt='cross'/>:props.spot.text}</div>
+          <div> {isActiveSpot
+            ?<img height={40} width={40} src='icons/cross.png' alt='cross'/>
+            :<img height={40} width={40} src='icons/Edit.png' alt='cross'/>
+          }</div>
         </div>
       
         {isActiveSpot &&
-          <div className={`absolute bg-white p-2 rounded-md w-[300px]`}>
+          <div className={`absolute bg-white p-2 rounded-md w-[300px] shadow-lg`}>
+            <h2 className='p-2'>
+              Comfort Layer
+            </h2>
             <MenuItemsContainer 
               isHotspotMenu
               menuId="dfmjg543u209qwejdfhg5487o"
@@ -595,7 +600,6 @@ function RenderingModel(props: Omit<
 
   const handleClick = (e: any) => {
     e.stopPropagation();
-    console.log(e.point)
   };
 
   const handlePointerOver = (e: any) => {
@@ -654,7 +658,6 @@ function RenderingModel(props: Omit<
   }, [actions]);
 
   useEffect(()=>{
-    console.log("AlwaysAnimate")
     const req = {...actions}
     if (req.playOnButton && props.setPlayAnimationVisibility) {
       props.setPlayAnimationVisibility(prev=>[...prev, props.name]);
@@ -688,7 +691,6 @@ function RenderingModel(props: Omit<
   }, [props.animation]);
 
   useEffect(() => {
-    console.log("Updating Material")
     const updatedMapping = getMaterialUpdate(
       props.values,
       props.products,
@@ -712,8 +714,6 @@ function RenderingModel(props: Omit<
       }
     });
   }, [JSON.stringify(props.values)]);
-
-  console.log(props.values)
 
   useEffect(()=>{
     if(isMaterialLoaded){
