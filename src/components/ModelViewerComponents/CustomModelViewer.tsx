@@ -48,7 +48,7 @@ import MenuItemsContainer from '../MenuComponents/MenuItemsContainer';
 import { OutlineEffectManager } from './PostProcessing/OutlineEffectManager';
 
 
-const mapOfCompletedAnimation:Map<THREE.Object3D,number> = new Map()
+
 
 const hotspotsComfort = [
   { 
@@ -577,6 +577,8 @@ const Hotspot = (props: Omit<
   );
 };
 
+let animationCompletionDuration:number;
+
 function RenderingModel(props: Omit<
   RenderingModelCompProps,
   "modelViewerSettings" |
@@ -592,7 +594,7 @@ function RenderingModel(props: Omit<
     initialAnimationCompleted,
     setInitialAnimationCompleted,
     ...store
-  } = useDataStore()
+  } = useDataStore() 
 
   const thisLoader = useGLTF(props.src);
   const [isMaterialLoaded,setIsMaterialLoaded] = useState(false);
@@ -601,6 +603,8 @@ function RenderingModel(props: Omit<
   const { animations } = thisLoader;
   const [currentAnimation, setCurrentAnimation] = useState<string[]>([]);
   const { actions } = useAnimations(animations, meshRef);
+  
+  const [newRender,setNewRender] = useState<boolean>(false)
   //Hovering with responses
   const [hovered, setHover] = useState(null);
 
@@ -643,26 +647,27 @@ function RenderingModel(props: Omit<
   };
 
   useEffect(() => {
-    console.log("ALSO PlayingThis");
-  
+    
     const action = actions["alwaysAnimate"];
-    if (!action || !meshRef.current) return;
-  
+    if (initialAnimationCompleted || !action || !meshRef.current) return;
+    
     const mesh = meshRef.current;
     const mixer = action.getMixer();
-  
-    const duration = mapOfCompletedAnimation.get(mesh);
-  
+    
+    const duration = animationCompletionDuration;
+    
     function handleFinish(e) {
       if (action && e.action.getClip().name === action.getClip().name) {
-        mapOfCompletedAnimation.set(mesh, e.action.getClip().duration);
+        console.log("Setting mesh")
+        animationCompletionDuration=e.action.getClip().duration;
       }
-      console.log("Initial Animation completed")
+      console.log("Initial Animation completed",animationCompletionDuration)
       setInitialAnimationCompleted(true)
-      mixer.removeEventListener("finished", handleFinish); // prevent duplicates
+      mixer.removeEventListener("finished", handleFinish);
     }
     function playInitialAnimation(){
-      if(!action) return;
+      if(!action || initialAnimationCompleted) return;
+      
       mixer.removeEventListener("finished", handleFinish); // prevent duplicates
       mixer.addEventListener("finished", handleFinish);
       
@@ -678,11 +683,15 @@ function RenderingModel(props: Omit<
     }
     setTimeout(playInitialAnimation,2000)
 
+    if (duration) {
+      action.time = duration;
+      action.play().setLoop(THREE.LoopOnce, 1);
+    }
   
     return () => {
       mixer.removeEventListener("finished", handleFinish);
     };
-  }, []);
+  }, [actions]);
   
   useEffect(() => {
     
@@ -691,39 +700,53 @@ function RenderingModel(props: Omit<
     console.log("PlayingThis");
 
     const mixer = action.getMixer();
+    const mesh = meshRef.current;
     
     function handleFinish() {
       setEnableButtons(!enableButtons);
     }
-
-    console.log()
     
-    mixer.removeEventListener("finished", handleFinish); // clean old
-    mixer.addEventListener("finished", handleFinish); // add new
-  
-    const duration = action.getClip().duration;
-  
-    action.reset();
-    action.setLoop(THREE.LoopOnce, 1);
-    action.clampWhenFinished = true;
-    action.enabled = true;
-  
-    if (expandModel) {
-      action.timeScale = 1;
-      action.time = 0;
-    } else {
-      action.timeScale = -1;
-      action.time = duration;
+    function playAnimation(){
+      if(!action) return
+
+      
+      mixer.removeEventListener("finished", handleFinish); // clean old
+      mixer.addEventListener("finished", handleFinish); // add new
+      
+      const duration = animationCompletionDuration || action.getClip().duration;
+    
+      action.reset();
+      action.setLoop(THREE.LoopOnce, 1);
+      action.clampWhenFinished = true;
+      action.enabled = true;
+    
+      if (expandModel) {
+        action.timeScale = 1;
+        action.time = 0;
+      } else {
+        action.timeScale = -1;
+        action.time = duration;
+      }
+    
+      action.play();
     }
-  
-    action.play();
+    
 
-
+    if(newRender || !expandModel){
+      playAnimation()
+      setNewRender(true)
+    }else{
+      const duration = 2;
+      action.clampWhenFinished = true;
+      action.enabled = true;
+      action.time = duration;
+      action.play().setLoop(THREE.LoopOnce, 1);
+    }
     // debugger
     return () => {
       mixer.removeEventListener("finished", handleFinish);
     };
-  }, [actions,expandModel]);
+  }, [newRender,expandModel]);
 
 
   useEffect(() => {
