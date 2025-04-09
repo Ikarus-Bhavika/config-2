@@ -26,6 +26,15 @@ type DataStoreType = {
 
     outLineObjects:THREE.Object3D<THREE.Object3DEventMap>[],
     setOutLineObjects: (value:THREE.Object3D<THREE.Object3DEventMap>[]) => void,
+
+    expandModel:boolean,
+    setExpandModel:(value:boolean)=>void,
+    
+    enableButtons:boolean,
+    setEnableButtons:(value:boolean)=>void,
+    
+    initialAnimationCompleted:boolean,
+    setInitialAnimationCompleted:(value:boolean)=>void,
 }
 
 const useDataStore = create<DataStoreType>((set)=>({
@@ -56,7 +65,16 @@ const useDataStore = create<DataStoreType>((set)=>({
     setAllowHotspots: (allowHotspots)=>set({allowHotspots}),
 
     outLineObjects:[],
-    setOutLineObjects:(outLineObjects) =>set({outLineObjects})
+    setOutLineObjects:(outLineObjects) =>set({outLineObjects}),
+
+    expandModel:true,
+    setExpandModel:(expandModel)=>set({expandModel}),
+    
+    enableButtons:false,
+    setEnableButtons:(enableButtons)=>set({enableButtons}),
+
+    initialAnimationCompleted:false,
+    setInitialAnimationCompleted:(initialAnimationCompleted:boolean)=>set({initialAnimationCompleted}),
 }))
 
 export default useDataStore;

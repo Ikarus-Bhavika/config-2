@@ -2,7 +2,7 @@
     "models": {
         "reliefLayer2": {
             "name": "reliefLayer2",
-            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-1-v-.reliefLayer2",
+            "modelSrc": "/models/reliefLayer2.glb",
             "parts": {
                 "ReliefLayer": {
                     "name": "ReliefLayer",
@@ -59,13 +59,14 @@
                 }
             },
             "animations": [
-                "alwaysAnimate"
+                "alwaysAnimate",
+                "Toggle"
             ],
             "price": 0
         },
         "Cover22": {
             "name": "Cover22",
-            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-3-v-.Cover22",
+            "modelSrc": "/models/Cover22.glb",
             "parts": {
                 "Cover2": {
                 "name": "Cover2",
@@ -77,7 +78,8 @@
                 }
             },
             "animations": [
-                "alwaysAnimate"
+                "alwaysAnimate",
+                "Toggle"
             ],
             "price": 0
         },
@@ -95,13 +97,14 @@
                 }
             },
             "animations": [
-                "alwaysAnimate"
+                "alwaysAnimate",
+                "Toggle"
             ],
             "price": 0
         },
         "comfortModule1": {
             "name": "comfortModule1",
-            "modelSrc": "/models/comfortModule1 (2).glb",
+            "modelSrc": "/models/comfortModule1 (1).glb",
             "parts": {
                 "1": {
                 "name": "1",
@@ -741,7 +744,8 @@
                 }
             },
             "animations": [
-                "alwaysAnimate"
+                "alwaysAnimate",
+                "Toggle"
             ],
             "price": 0
         },
@@ -771,7 +775,7 @@
         },
         "Coils2": {
             "name": "Coils2",
-            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-1-v-.Coils2",
+            "modelSrc": "/models/Coils2.glb",
             "parts": {
                 "Coil": {
                 "name": "Coil",

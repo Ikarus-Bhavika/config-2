@@ -585,7 +585,14 @@ function RenderingModel(props: Omit<
 ) {
   const { camera,...restcene } = useThree();
 
-  const store = useDataStore()
+  const {expandModel,
+    setExpandModel,
+    enableButtons,
+    setEnableButtons,
+    initialAnimationCompleted,
+    setInitialAnimationCompleted,
+    ...store
+  } = useDataStore()
 
   const thisLoader = useGLTF(props.src);
   const [isMaterialLoaded,setIsMaterialLoaded] = useState(false);
@@ -636,48 +643,88 @@ function RenderingModel(props: Omit<
   };
 
   useEffect(() => {
-    
+    console.log("ALSO PlayingThis");
+  
     const action = actions["alwaysAnimate"];
     if (!action || !meshRef.current) return;
+  
+    const mesh = meshRef.current;
+    const mixer = action.getMixer();
+  
+    const duration = mapOfCompletedAnimation.get(mesh);
+  
+    function handleFinish(e) {
+      if (action && e.action.getClip().name === action.getClip().name) {
+        mapOfCompletedAnimation.set(mesh, e.action.getClip().duration);
+      }
+      console.log("Initial Animation completed")
+      setInitialAnimationCompleted(true)
+      mixer.removeEventListener("finished", handleFinish); // prevent duplicates
+    }
+    function playInitialAnimation(){
+      if(!action) return;
+      mixer.removeEventListener("finished", handleFinish); // prevent duplicates
+      mixer.addEventListener("finished", handleFinish);
+      
+      if (duration) {
+        action.time = duration;
+        action.play().setLoop(THREE.LoopOnce, 1);
+      } else {
+        action.reset().fadeIn(0.5).play().setLoop(THREE.LoopOnce, 1);
+      }
     
-    const duration = mapOfCompletedAnimation.get(meshRef.current)
-    if (duration) {
-      action.time = duration; // Move to last frame
-      action.play().setLoop(THREE.LoopOnce, 1)
+      action.enabled = true;
       action.clampWhenFinished = true;
-      return;
     }
-    
-    action.reset().fadeIn(0.5).play().setLoop(THREE.LoopOnce, 1);
-    
-    action.enabled = true;
-    action.clampWhenFinished = true;
-  
-    action.getMixer().addEventListener("finished", (e) => {
-      mapOfCompletedAnimation.set(meshRef.current, e.action.getClip().duration);
-    });
-  
-  }, [actions]);
+    setTimeout(playInitialAnimation,2000)
 
-  useEffect(()=>{
-    const req = {...actions}
-    if (req.playOnButton && props.setPlayAnimationVisibility) {
-      props.setPlayAnimationVisibility(prev=>[...prev, props.name]);
-      if (props.playAnimation) {
-        req["playOnButton"].paused=false;
-        req["playOnButton"]?.setLoop(THREE.LoopRepeat,Infinity);
-        req["playOnButton"]?.play();
-      }else if(firstIteration){
-        req["playOnButton"].paused=false;
-        req["playOnButton"]?.setLoop(THREE.LoopOnce,1);
-        req["playOnButton"]?.play();
-        setFirstIteration(false)
-      }
-      else {
-        req["playOnButton"].paused=true;
-      }
+  
+    return () => {
+      mixer.removeEventListener("finished", handleFinish);
+    };
+  }, []);
+  
+  useEffect(() => {
+    
+    const action = actions["alwaysAnimate"];
+    if (!initialAnimationCompleted || !action || !meshRef.current) return;
+    console.log("PlayingThis");
+
+    const mixer = action.getMixer();
+    
+    function handleFinish() {
+      setEnableButtons(!enableButtons);
     }
-  },[actions,props.playAnimation,props.values]);
+
+    console.log()
+    
+    mixer.removeEventListener("finished", handleFinish); // clean old
+    mixer.addEventListener("finished", handleFinish); // add new
+  
+    const duration = action.getClip().duration;
+  
+    action.reset();
+    action.setLoop(THREE.LoopOnce, 1);
+    action.clampWhenFinished = true;
+    action.enabled = true;
+  
+    if (expandModel) {
+      action.timeScale = 1;
+      action.time = 0;
+    } else {
+      action.timeScale = -1;
+      action.time = duration;
+    }
+  
+    action.play();
+
+
+    // debugger
+    return () => {
+      mixer.removeEventListener("finished", handleFinish);
+    };
+  }, [actions,expandModel]);
+
 
   useEffect(() => {
     // Check if the animations need to be updated
@@ -1528,7 +1575,7 @@ export default function CustomModelViewer(props:Omit<
     <>
       <Suspense fallback={<LoaderLottie />}>
         <Canvas {...modelSettings.canvasSettings} ref={props.canvasRef}>
-          <OutlineEffectManager />
+          {/* <OutlineEffectManager /> */}
           <PerspectiveCamera name='Main Perspective Camera'
             makeDefault
             fov={camera.fov}

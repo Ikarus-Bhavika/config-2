@@ -219,6 +219,7 @@ export default function ModelViewer() {
       )}
       <UIOverlay
         toggleDimension={() => setShowDimensions(!showDimensions)}
+        disableDimension={() => setShowDimensions(false)}
         getScreenShot={screenshot}
         isFullScreen={fullscreen}
         toggleFullScreen={handleFullScreen}
