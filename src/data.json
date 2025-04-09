@@ -1,0 +1,1377 @@
+{
+    "models": {
+        "reliefLayer2": {
+            "name": "reliefLayer2",
+            "modelSrc": "/models/reliefLayer2.glb",
+            "parts": {
+                "ReliefLayer": {
+                    "name": "ReliefLayer",
+                    "target": [
+                        "ReliefLayer"
+                    ],
+                    "materialGroups": [
+                        "Relief Layer"
+                    ],
+                    "materials": {
+                        "Relief Layer Natural": {
+                            "id": "b02WsU1sa4N4Q5eSFKAj",
+                            "name": "Relief Layer Natural",
+                            "price": 0,
+                            "roughness": 1,
+                            "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/yco8sJLdHrqlyGgRaQu4_Mattress_Cover_V1_Roughness.png.png",
+                            "metalness": 0,
+                            "metalnessMap": null,
+                            "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/yco8sJLdHrqlyGgRaQu4_Mattress_Cover_V1_Normal.png.png",
+                            "reflectivity": 1,
+                            "opacity": 1,
+                            "emissive": "#000000",
+                            "emissiveIntensity": 0,
+                            "tiling": {
+                                "y": 1,
+                                "x": 1
+                            },
+                            "doubleSide": true,
+                            "hexCode": "#ffffff",
+                            "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/yco8sJLdHrqlyGgRaQu4_Relief Layer Natural.jpg"
+                        },
+                        "Relief Layer Performance": {
+                            "id": "imP9AZS3dSFPb9G3XZDS",
+                            "name": "Relief Layer Performance",
+                            "price": 0,
+                            "roughness": 1,
+                            "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/yco8sJLdHrqlyGgRaQu4_Mattress_Cover_V1_Roughness.png.png",
+                            "metalness": 0,
+                            "metalnessMap": null,
+                            "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/yco8sJLdHrqlyGgRaQu4_Mattress_Cover_V1_Normal.png.png",
+                            "reflectivity": 1,
+                            "opacity": 1,
+                            "emissive": "#000000",
+                            "emissiveIntensity": 0,
+                            "tiling": {
+                                "y": 1,
+                                "x": 1
+                            },
+                            "doubleSide": true,
+                            "hexCode": "#6b88be",
+                            "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/yco8sJLdHrqlyGgRaQu4_Clean_Relief Layer_BaseColor_Utility - sRGB - Texture.jpg"
+                        }
+                    }
+                }
+            },
+            "animations": [
+                "alwaysAnimate",
+                "Toggle"
+            ],
+            "price": 0
+        },
+        "Cover22": {
+            "name": "Cover22",
+            "modelSrc": "/models/Cover22.glb",
+            "parts": {
+                "Cover2": {
+                "name": "Cover2",
+                "target": [
+                    "Cover2"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                }
+            },
+            "animations": [
+                "alwaysAnimate",
+                "Toggle"
+            ],
+            "price": 0
+        },
+        "Cover111": {
+            "name": "Cover111",
+            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-2-v-.Cover111",
+            "parts": {
+                "Cover": {
+                "name": "Cover",
+                "target": [
+                    "Cover"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                }
+            },
+            "animations": [
+                "alwaysAnimate",
+                "Toggle"
+            ],
+            "price": 0
+        },
+        "comfortModule1": {
+            "name": "comfortModule1",
+            "modelSrc": "/models/comfortModule1 (1).glb",
+            "parts": {
+                "1": {
+                "name": "1",
+                "materials": {
+                    "Performance": {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "name": "Performance",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#828ca3",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg"
+                    },
+                    "Natural": {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "name": "Natural",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#9c9694",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg"
+                    }
+                },
+                "target": [
+                    "1"
+                ],
+                "materialGroups": [
+                    "Comfort Module"
+                ]
+                },
+                "2": {
+                "name": "2",
+                "materials": {
+                    "Performance": {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "name": "Performance",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#828ca3",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg"
+                    },
+                    "Natural": {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "name": "Natural",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#9c9694",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg"
+                    }
+                },
+                "target": [
+                    "2"
+                ],
+                "materialGroups": [
+                    "Comfort Module"
+                ]
+                },
+                "3": {
+                "name": "3",
+                "materials": {
+                    "Performance": {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "name": "Performance",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#828ca3",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg"
+                    },
+                    "Natural": {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "name": "Natural",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#9c9694",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg"
+                    }
+                },
+                "target": [
+                    "3"
+                ],
+                "materialGroups": [
+                    "Comfort Module"
+                ]
+                },
+                "4": {
+                "name": "4",
+                "materials": {
+                    "Performance": {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "name": "Performance",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#828ca3",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg"
+                    },
+                    "Natural": {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "name": "Natural",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#9c9694",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg"
+                    }
+                },
+                "target": [
+                    "4"
+                ],
+                "materialGroups": [
+                    "Comfort Module"
+                ]
+                },
+                "5": {
+                "name": "5",
+                "materials": {
+                    "Performance": {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "name": "Performance",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#828ca3",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg"
+                    },
+                    "Natural": {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "name": "Natural",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#9c9694",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg"
+                    }
+                },
+                "target": [
+                    "5"
+                ],
+                "materialGroups": [
+                    "Comfort Module"
+                ]
+                },
+                "6": {
+                "name": "6",
+                "materials": {
+                    "Performance": {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "name": "Performance",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#828ca3",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg"
+                    },
+                    "Natural": {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "name": "Natural",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#9c9694",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg"
+                    }
+                },
+                "target": [
+                    "6"
+                ],
+                "materialGroups": [
+                    "Comfort Module"
+                ]
+                },
+                "B1": {
+                "name": "B1",
+                "materials": {
+                    "Performance": {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "name": "Performance",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#828ca3",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg"
+                    },
+                    "Natural": {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "name": "Natural",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#9c9694",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg"
+                    }
+                },
+                "target": [
+                    "B1"
+                ],
+                "materialGroups": [
+                    "Comfort Module"
+                ]
+                },
+                "B2": {
+                "name": "B2",
+                "materials": {
+                    "Performance": {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "name": "Performance",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#828ca3",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg"
+                    },
+                    "Natural": {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "name": "Natural",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#9c9694",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg"
+                    }
+                },
+                "target": [
+                    "B2"
+                ],
+                "materialGroups": [
+                    "Comfort Module"
+                ]
+                },
+                "B3": {
+                "name": "B3",
+                "materials": {
+                    "Performance": {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "name": "Performance",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#828ca3",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg"
+                    },
+                    "Natural": {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "name": "Natural",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#9c9694",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg"
+                    }
+                },
+                "target": [
+                    "B3"
+                ],
+                "materialGroups": [
+                    "Comfort Module"
+                ]
+                },
+                "B4": {
+                "name": "B4",
+                "materials": {
+                    "Performance": {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "name": "Performance",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#828ca3",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg"
+                    },
+                    "Natural": {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "name": "Natural",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#9c9694",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg"
+                    }
+                },
+                "target": [
+                    "B4"
+                ],
+                "materialGroups": [
+                    "Comfort Module"
+                ]
+                },
+                "B5": {
+                "name": "B5",
+                "materials": {
+                    "Performance": {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "name": "Performance",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#828ca3",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg"
+                    },
+                    "Natural": {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "name": "Natural",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#9c9694",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg"
+                    }
+                },
+                "target": [
+                    "B5"
+                ],
+                "materialGroups": [
+                    "Comfort Module"
+                ]
+                },
+                "B6": {
+                "name": "B6",
+                "materials": {
+                    "Performance": {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "name": "Performance",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#828ca3",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg"
+                    },
+                    "Natural": {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "name": "Natural",
+                    "price": 0,
+                    "roughness": 1,
+                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/j6L9U2QwOd91tSJcDsWq_Mattress_Roughness.png.png",
+                    "metalness": 0,
+                    "metalnessMap": null,
+                    "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/j6L9U2QwOd91tSJcDsWq_Mattress_Normal.png.png",
+                    "reflectivity": 1,
+                    "opacity": 1,
+                    "emissive": "#000000",
+                    "emissiveIntensity": 1,
+                    "tiling": {
+                        "y": 1,
+                        "x": 1
+                    },
+                    "doubleSide": true,
+                    "hexCode": "#9c9694",
+                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg"
+                    }
+                },
+                "target": [
+                    "B6"
+                ],
+                "materialGroups": [
+                    "Comfort Module"
+                ]
+                }
+            },
+            "animations": [
+                "alwaysAnimate",
+                "Toggle"
+            ],
+            "price": 0
+        },
+        "Base": {
+            "parts": {
+                "Nest": {
+                "name": "Nest",
+                "target": [
+                    "Nest"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                },
+                "Nest001": {
+                "name": "Nest001",
+                "target": [
+                    "Nest001"
+                ],
+                "materialGroups": [],
+                "materials": {}
+                }
+            },
+            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5dBase-v-0-v-.glb",
+            "name": "Base",
+            "animations": [],
+            "price": 0
+        },
+        "Coils2": {
+            "name": "Coils2",
+            "modelSrc": "/models/Coils2.glb",
+            "parts": {
+                "Coil": {
+                "name": "Coil",
+                "materialGroups": [],
+                "materials": {},
+                "target": [
+                    "CoilModules"
+                ]
+                }
+            },
+            "animations": [],
+            "price": 0
+        }
+    },
+    "menu":[
+        {
+            "id":"menu1",
+            "label": "Select Cover",
+            "type":"model",
+            "options": [
+                {
+                    "label":"Covers",
+                    "baseMaps":[
+                        {
+                            "label": "Natural",
+                            "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/icons/C1.jpg.jpg",
+                            "target": "Cover22",
+                            "id": "8567d147-fdd8-4742-a0ed-14b5fed30608"
+                        },
+                        {
+                            "label": "Performance",
+                            "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/icons/C2.jpg.jpg",
+                            "target": "Cover111",
+                            "id": "6f24191f-9a56-4b6d-8c8f-e894ad9f5c2f"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"menu2",
+            "label": "Relief Layer",
+            "type": "material",
+            "options": [
+                {
+                    "label": "Relief Layer",
+                    "target": [
+                        {
+                            "model": "reliefLayer2",
+                            "part": "ReliefLayer"
+                        }
+                    ],
+                    "baseMaps": [
+                    {
+                        "id": "b02WsU1sa4N4Q5eSFKAj",
+                        "label": "Relief Layer Natural",
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/yco8sJLdHrqlyGgRaQu4_Relief Layer Natural.jpg",
+                        "hexCode": "#ffffff"
+                    },
+                    {
+                        "id": "imP9AZS3dSFPb9G3XZDS",
+                        "label": "Relief Layer Performance",
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/yco8sJLdHrqlyGgRaQu4_Clean_Relief Layer_BaseColor_Utility - sRGB - Texture.jpg",
+                        "hexCode": "#6b88be"
+                    }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"menu3",
+            "label": "Comfort Module",
+            "type": "material",
+            "options": [
+              {
+                "label": "Comfort Module",
+                "target": [
+                    {
+                        "model": "comfortModule1",
+                        "part": "1"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B1"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "2"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B2"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "3"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B3"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "4"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B4"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "5"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B5"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "6"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B6"
+                    }
+                ],
+                "baseMaps": [
+                  {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "label": "Natural",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                    "hexCode": "#9c9694"
+                  },
+                  {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "label": "Performance",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                    "hexCode": "#828ca3"
+                  }
+                ]
+              },
+              {"label": "Right Side",
+                "target": [
+                    {
+                        "model": "comfortModule1",
+                        "part": "4"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B4"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "5"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B5"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "6"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B6"
+                    }
+                ],
+                "baseMaps": [
+                  {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "label": "Natural",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                    "hexCode": "#9c9694"
+                  },
+                  {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "label": "Performance",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                    "hexCode": "#828ca3"
+                  }
+                ]
+              },
+              {"label": "Left Side",
+                "target": [
+                    {
+                        "model": "comfortModule1",
+                        "part": "1"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B1"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "2"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B2"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "3"
+                    },
+                    {
+                        "model": "comfortModule1",
+                        "part": "B3"
+                    }
+                ],
+                "baseMaps": [
+                  {
+                    "id": "zVgBGa2wjrpAZ5jci3im",
+                    "label": "Natural",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                    "hexCode": "#9c9694"
+                  },
+                  {
+                    "id": "va2FmUVYiENIqGfago5x",
+                    "label": "Performance",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                    "hexCode": "#828ca3"
+                  }
+                ]
+              }
+            ]
+        }
+    ],
+    "productDetails":{
+        "title":"Mattress Configurator",
+        "description":  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates fugit doloribus asperiores ipsum quaerat, rem ipsam in voluptatum quam odio fugiat repudiandae possimus est libero delectus esse. Optio, voluptatem."
+    },
+    "defaultPreset":{
+        "reliefLayer2": {
+            "visible": true,
+            "parts": {
+                "ReliefLayer": {
+                    "material": "Relief Layer Natural",
+                    "id": "b02WsU1sa4N4Q5eSFKAj"
+                }
+            }
+        },
+        "Cover22": {
+            "visible": true
+        },
+        "Cover111": {
+            "visible": false
+        },
+        "comfortModule1": {
+            "visible": true,
+            "parts": {
+                "1": {
+                    "material": "Performance",
+                    "id": "va2FmUVYiENIqGfago5x"
+                },
+                "2": {
+                    "material": "Performance",
+                    "id": "va2FmUVYiENIqGfago5x"
+                },
+                "3": {
+                    "material": "Performance",
+                    "id": "va2FmUVYiENIqGfago5x"
+                },
+                "4": {
+                    "material": "Performance",
+                    "id": "va2FmUVYiENIqGfago5x"
+                },
+                "5": {
+                    "material": "Performance",
+                    "id": "va2FmUVYiENIqGfago5x"
+                },
+                "6": {
+                    "material": "Performance",
+                    "id": "va2FmUVYiENIqGfago5x"
+                },
+                "B1": {
+                    "material": "Performance",
+                    "id": "va2FmUVYiENIqGfago5x"
+                },
+                "B2": {
+                    "material": "Performance",
+                    "id": "va2FmUVYiENIqGfago5x"
+                },
+                "B3": {
+                    "material": "Performance",
+                    "id": "va2FmUVYiENIqGfago5x"
+                },
+                "B4": {
+                    "material": "Performance",
+                    "id": "va2FmUVYiENIqGfago5x"
+                },
+                "B5": {
+                    "material": "Performance",
+                    "id": "va2FmUVYiENIqGfago5x"
+                },
+                "B6": {
+                    "material": "Performance",
+                    "id": "va2FmUVYiENIqGfago5x"
+                }
+            }
+        },
+        "Base": {
+            "visible": true
+        },
+        "Coils2": {
+            "visible": true
+        }
+    },
+    "hotspotMenuItems":{
+        "sdfmgn58489rwpqakdofdsvn":[
+            {
+                "label":"Comfort Module Upper",
+                "target":[
+                    {
+                        "model":"comfortModule1",
+                        "part":"1"
+                    }
+                ],
+                "baseMaps":[
+                    {
+                      "id": "zVgBGa2wjrpAZ5jci3im",
+                      "label": "Natural",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                      "hexCode": "#9c9694"
+                    },
+                    {
+                      "id": "va2FmUVYiENIqGfago5x",
+                      "label": "Performance",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                      "hexCode": "#828ca3"
+                    }
+                ]
+            },
+            {
+                "label":"Comfort Module Bottom",
+                "target":[
+                    {
+                        "model":"comfortModule1",
+                        "part":"B1"
+                    }
+                ],
+                "baseMaps":[
+                    {
+                      "id": "zVgBGa2wjrpAZ5jci3im",
+                      "label": "Natural",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                      "hexCode": "#9c9694"
+                    },
+                    {
+                      "id": "va2FmUVYiENIqGfago5x",
+                      "label": "Performance",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                      "hexCode": "#828ca3"
+                    }
+                ]
+            }
+        ],
+        "smkldg903uqrwjfp498owrey":[
+            {
+                "label":"Comfort Module Upper",
+                "target":[
+                    {
+                        "model":"comfortModule1",
+                        "part":"2"
+                    }
+                ],
+                "baseMaps":[
+                    {
+                      "id": "zVgBGa2wjrpAZ5jci3im",
+                      "label": "Natural",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                      "hexCode": "#9c9694"
+                    },
+                    {
+                      "id": "va2FmUVYiENIqGfago5x",
+                      "label": "Performance",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                      "hexCode": "#828ca3"
+                    }
+                ]
+            },
+            {
+                "label":"Comfort Module Bottom",
+                "target":[
+                    {
+                        "model":"comfortModule1",
+                        "part":"B2"
+                    }
+                ],
+                "baseMaps":[
+                    {
+                      "id": "zVgBGa2wjrpAZ5jci3im",
+                      "label": "Natural",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                      "hexCode": "#9c9694"
+                    },
+                    {
+                      "id": "va2FmUVYiENIqGfago5x",
+                      "label": "Performance",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                      "hexCode": "#828ca3"
+                    }
+                ]
+            }
+        ],
+        "sdjdkoejhferwp9eoa93ifdf":[
+            {
+                "label":"Comfort Module Upper",
+                "target":[
+                    {
+                        "model":"comfortModule1",
+                        "part":"3"
+                    }
+                ],
+                "baseMaps":[
+                    {
+                      "id": "zVgBGa2wjrpAZ5jci3im",
+                      "label": "Natural",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                      "hexCode": "#9c9694"
+                    },
+                    {
+                      "id": "va2FmUVYiENIqGfago5x",
+                      "label": "Performance",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                      "hexCode": "#828ca3"
+                    }
+                ]
+            },
+            {
+                "label":"Comfort Module Bottom",
+                "target":[
+                    {
+                        "model":"comfortModule1",
+                        "part":"B3"
+                    }
+                ],
+                "baseMaps":[
+                    {
+                      "id": "zVgBGa2wjrpAZ5jci3im",
+                      "label": "Natural",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                      "hexCode": "#9c9694"
+                    },
+                    {
+                      "id": "va2FmUVYiENIqGfago5x",
+                      "label": "Performance",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                      "hexCode": "#828ca3"
+                    }
+                ]
+            }
+        ],
+        "j748wio8ruhsjdfj84hfslkd":[
+            {
+                "label":"Comfort Module Upper",
+                "target":[
+                    {
+                        "model":"comfortModule1",
+                        "part":"4"
+                    }
+                ],
+                "baseMaps":[
+                    {
+                      "id": "zVgBGa2wjrpAZ5jci3im",
+                      "label": "Natural",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                      "hexCode": "#9c9694"
+                    },
+                    {
+                      "id": "va2FmUVYiENIqGfago5x",
+                      "label": "Performance",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                      "hexCode": "#828ca3"
+                    }
+                ]
+            },
+            {
+                "label":"Comfort Module Bottom",
+                "target":[
+                    {
+                        "model":"comfortModule1",
+                        "part":"B4"
+                    }
+                ],
+                "baseMaps":[
+                    {
+                      "id": "zVgBGa2wjrpAZ5jci3im",
+                      "label": "Natural",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                      "hexCode": "#9c9694"
+                    },
+                    {
+                      "id": "va2FmUVYiENIqGfago5x",
+                      "label": "Performance",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                      "hexCode": "#828ca3"
+                    }
+                ]
+            }
+        ],
+        "kasidsljfuiuwrhgirefsdgr":[
+            {
+                "label":"Comfort Module Upper",
+                "target":[
+                    {
+                        "model":"comfortModule1",
+                        "part":"5"
+                    }
+                ],
+                "baseMaps":[
+                    {
+                      "id": "zVgBGa2wjrpAZ5jci3im",
+                      "label": "Natural",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                      "hexCode": "#9c9694"
+                    },
+                    {
+                      "id": "va2FmUVYiENIqGfago5x",
+                      "label": "Performance",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                      "hexCode": "#828ca3"
+                    }
+                ]
+            },
+            {
+                "label":"Comfort Module Bottom",
+                "target":[
+                    {
+                        "model":"comfortModule1",
+                        "part":"B5"
+                    }
+                ],
+                "baseMaps":[
+                    {
+                      "id": "zVgBGa2wjrpAZ5jci3im",
+                      "label": "Natural",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                      "hexCode": "#9c9694"
+                    },
+                    {
+                      "id": "va2FmUVYiENIqGfago5x",
+                      "label": "Performance",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                      "hexCode": "#828ca3"
+                    }
+                ]
+            }
+        ],
+        "mzodewufwehfkjsdjfhksdjf":[
+            {
+                "label":"Comfort Module Upper",
+                "target":[
+                    {
+                        "model":"comfortModule1",
+                        "part":"6"
+                    }
+                ],
+                "baseMaps":[
+                    {
+                      "id": "zVgBGa2wjrpAZ5jci3im",
+                      "label": "Natural",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                      "hexCode": "#9c9694"
+                    },
+                    {
+                      "id": "va2FmUVYiENIqGfago5x",
+                      "label": "Performance",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                      "hexCode": "#828ca3"
+                    }
+                ]
+            },
+            {
+                "label":"Comfort Module Bottom",
+                "target":[
+                    {
+                        "model":"comfortModule1",
+                        "part":"B6"
+                    }
+                ],
+                "baseMaps":[
+                    {
+                      "id": "zVgBGa2wjrpAZ5jci3im",
+                      "label": "Natural",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Natural.jpg",
+                      "hexCode": "#9c9694"
+                    },
+                    {
+                      "id": "va2FmUVYiENIqGfago5x",
+                      "label": "Performance",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/j6L9U2QwOd91tSJcDsWq_Comfort Module Performance.jpg",
+                      "hexCode": "#828ca3"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,80 @@
+/* Container takes up the full viewport height minus specific pixel values based on screen size */
+.container {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 48px);
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: calc(100vh - 58px); /* For tablet screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    height: calc(100vh - 82px); /* For laptop screens */
+  }
+}
+
+/* Style for the AR button */
+.ar-button {
+  /* position: absolute; */
+  /* top: 8px; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  /* z-index: 10; */
+  background-color: #cf462a;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+}
+
+.loadingBarContainer{
+  width: 90%;
+  margin: 1rem 0 0.5rem 0;
+  overflow: hidden;
+  border: solid #cf462a 1px;
+  border-radius: 2px;
+}
+.loadingBar{
+  height: 4px;
+  width: 0px;
+  background-color: #cf462a;
+}
+.loadingBarAnimate{
+  animation-name: fakeLoader;
+  animation-fill-mode: forwards;
+  animation-duration: 6000ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fakeLoader {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 95%;
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+
+/* Loader size for larger screens (laptop) */
+@media (min-width: 1024px) {
+  .loader {
+    height: 160px;
+    width: 160px;
+  }
+}
+.hidden {
+  display: none;
+}
