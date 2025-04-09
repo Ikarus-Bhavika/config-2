@@ -2,6 +2,7 @@ import { create } from "zustand";
 import { menuHotSpotType, activeHotspots, menuItemType, modelConfigInterface, productDetailsType } from "../types/configTypes";
 import { presetType } from "../types/presetTypes";
 import * as THREE from 'three';
+import { MeshTranlationDataItemType } from "../types/viewerTypes";
 type DataStoreType = {
     modelConfig: modelConfigInterface,
     setModelConfig: (config: modelConfigInterface) => void,
@@ -35,6 +36,9 @@ type DataStoreType = {
     
     initialAnimationCompleted:boolean,
     setInitialAnimationCompleted:(value:boolean)=>void,
+
+    meshTranslationData: {[key:string]: MeshTranlationDataItemType}
+    setMeshTranslationData: (value: {[key:string]: MeshTranlationDataItemType}) =>void,
 }
 
 const useDataStore = create<DataStoreType>((set)=>({
@@ -75,6 +79,9 @@ const useDataStore = create<DataStoreType>((set)=>({
 
     initialAnimationCompleted:false,
     setInitialAnimationCompleted:(initialAnimationCompleted:boolean)=>set({initialAnimationCompleted}),
+
+    meshTranslationData: {},
+    setMeshTranslationData: (meshTranslationData:{[key:string]: MeshTranlationDataItemType}) => set({meshTranslationData})
 }))
 
 export default useDataStore;

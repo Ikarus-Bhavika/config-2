@@ -315,4 +315,10 @@ export enum ETableControlIndex {
     cameraControls: React.RefObject<CameraControls>;
     hotspotIndex: number;
   };
-  
+
+  export type MeshTranlationDataItemType = {
+    loader:THREE.Object3D
+    isTranslated: boolean,
+    translationPosition: THREE.Vector3,
+    cameraPosition: THREE.Vector3
+}

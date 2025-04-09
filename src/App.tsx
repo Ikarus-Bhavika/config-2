@@ -24,8 +24,7 @@ function App() {
     store.setPreset(data.defaultPreset);
     store.setHotSpotMenu(data.hotspotMenuItems);
   },[])
-
-
+console.log(store.meshTranslationData)
   return (
     <ModelViewerContextProvider>
       <BrowserRouter>

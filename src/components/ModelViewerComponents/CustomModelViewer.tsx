@@ -46,6 +46,8 @@ import getTotalModelAndMaterialsToLoad from '../../utils/getTotalModelAndMateria
 import useDataStore from '../../store/store';
 import MenuItemsContainer from '../MenuComponents/MenuItemsContainer';
 import { OutlineEffectManager } from './PostProcessing/OutlineEffectManager';
+import { MeshTranlationDataItemType } from '../../types/viewerTypes';
+import { lerp } from 'three/src/math/MathUtils.js';
 
 
 
@@ -646,6 +648,29 @@ function RenderingModel(props: Omit<
     });
   };
 
+  const setInitialMeshTranslationData = (loader: THREE.Object3D) => {
+    console.log("model position",loader.parent?.position)
+    const box = new THREE.Box3().setFromObject(loader);
+    const center = new THREE.Vector3();
+    box.getCenter(center);
+
+    const size = new THREE.Vector3();
+    box.getSize(size);
+
+    const offset = new THREE.Vector3(center.x + size.x, 0, 0);
+    const startPos = loader.position.clone();
+    const endPos = startPos.clone().add(offset);
+    const tempData = store.meshTranslationData;
+    const newData:MeshTranlationDataItemType = {
+      loader:loader,
+      cameraPosition: new THREE.Vector3(4.579316020011902, 4.511467328295112, 4.575059533119202),
+      isTranslated: false,
+      translationPosition: endPos,
+    }
+    tempData[props.name] = newData;
+    store.setMeshTranslationData(tempData); 
+  }
+
   useEffect(() => {
     
     const action = actions["alwaysAnimate"];
@@ -663,6 +688,7 @@ function RenderingModel(props: Omit<
       }
       console.log("Initial Animation completed",animationCompletionDuration)
       setInitialAnimationCompleted(true)
+      setInitialMeshTranslationData(loader1);
       mixer.removeEventListener("finished", handleFinish);
     }
     function playInitialAnimation(){
@@ -787,6 +813,78 @@ function RenderingModel(props: Omit<
     });
   }, [JSON.stringify(props.values)]);
 
+  const translateMesh = (
+    name:string
+  ) => {
+    console.log(name)
+    const tempData = store.meshTranslationData;
+    const duration = 500;
+    if(!tempData["Cover111"] && tempData['Cover22']){
+      tempData["Cover111"] = {...tempData["Cover22"]}
+      tempData["Cover111"].isTranslated = false
+    }
+    //here tempData[props.name].translationPosition is the offset that we need to change in model position
+    Object.keys(tempData).map((key)=>{
+      let start:THREE.Vector3;
+      let end:THREE.Vector3;
+      const data = tempData[key];
+      let loader:THREE.Object3D;
+      loader = data.loader;
+      
+      const box = new THREE.Box3().setFromObject(loader);
+      const center = new THREE.Vector3();
+      box.getCenter(center);
+      const size = new THREE.Vector3();
+      box.getSize(size);
+      const startPos = loader.position.clone();
+      // const startPos = new THREE.Vector3();
+      const endPos = data.translationPosition;
+      if(name==key){
+        if(name=="Cover111"){
+          loader = loader1;
+          tempData["Cover111"].loader = loader1;
+        }
+        // console.log("getting here",name,startPos,endPos)
+        start = startPos;
+        end = endPos;
+        const startTime = performance.now();
+  
+        const animate = (currentTime: number) => {
+          const elapsed = currentTime - startTime;
+          const t = Math.min(elapsed / duration, 1); // interpolation factor [0,1]
+          // console.log("loader",loader);
+          loader.position.lerpVectors(start, end, t);
+      
+          if (t < 1) {
+            requestAnimationFrame(animate);
+          }
+        };
+      
+        requestAnimationFrame(animate);
+        tempData[name].isTranslated = true;
+      }else if(data.isTranslated){
+        end = new THREE.Vector3();
+        start = startPos;
+        const startTime = performance.now();
+  
+        const animate = (currentTime: number) => {
+          const elapsed = currentTime - startTime;
+          const t = Math.min(elapsed / duration, 1); // interpolation factor [0,1]
+      
+          loader.position.lerpVectors(start, end, t);
+      
+          if (t < 1) {
+            requestAnimationFrame(animate);
+          }
+        };
+      
+        requestAnimationFrame(animate);
+        tempData[key].isTranslated = false;
+      } 
+    })
+    store.setMeshTranslationData(tempData);
+  };
+
   useEffect(()=>{
     const meshes = meshRef.current.children;
     const menu1 = ['Cover','Cover2'];
@@ -794,22 +892,26 @@ function RenderingModel(props: Omit<
     const menu3 = ['1','2','3','4','5','6','B1','B2','B3','B4','B5','B6']
     if(store.expandedComponent=="menu1"){
       if(meshes.find(child=>menu1.includes(child.name))){
-        console.log("getting here");
+        translateMesh(props.name)
         store.setOutLineObjects(meshes);
+      }else{
+        console.log("meshes",meshes); 
       }
     }else if(store.expandedComponent=="menu2"){
       if(meshes.find(child=>menu2.includes(child.name))){
+        translateMesh(props.name)
         store.setOutLineObjects(meshes);    
       }
     }else if(store.expandedComponent=="menu3"){
       if(meshes.find(child=>menu3.includes(child.name))){
+        translateMesh(props.name)
         store.setOutLineObjects(meshes);  
       }
     }else{
+      translateMesh("")
       store.setOutLineObjects([]);
     }
-    console.log("---------->",store.expandedComponent,store.outLineObjects,meshes)
-  },[store.expandedComponent]);
+  },[store.expandedComponent,store.preset]);
 
   useEffect(()=>{
     if(isMaterialLoaded){
@@ -1335,10 +1437,13 @@ const ChildCanvasCustomModelViewer = (
 
   const {camera,gl} = useThree();
 
+  const store = useDataStore();
+
 
   useEffect(() => {
     setTimeout(()=>{
-      if (props.theme!=="EDITOR_MODE" && props?.product?.viewerSettings?.allowedOptions?.allowCameraMovement && modelRef.current && props.cameraControls.current) {
+
+      if (props.theme!=="EDITOR_MODE" && props?.product?.viewerSettings?.allowedOptions?.allowCameraMovement && store.initialAnimationCompleted && modelRef.current && props.cameraControls.current) {
         // Calculate the bounding box of the modelRef
         const boundingBox = new THREE.Box3().setFromObject(modelRef.current);
         const size = new THREE.Vector3();
@@ -1346,6 +1451,8 @@ const ChildCanvasCustomModelViewer = (
   
         // Calculate the volume of the bounding box
         const newVolume = size.x * size.y * size.z;
+
+        // console.log("camera position",camera.position)
         if(!prevBoundingBox ||Math.abs(newVolume-prevBoundingBox.volume)>0.01){
           const center = new THREE.Vector3();
           boundingBox.getCenter(center);
@@ -1355,11 +1462,13 @@ const ChildCanvasCustomModelViewer = (
           const distance = maxDimension * 2; // Adjust multiplier as needed
           // Set camera position and adjust CameraControls
           camera.position.set(center.x, center.y, center.z + distance); // Place camera behind the model
-          
+          console.log(center.x + distance+0.5,
+            center.y + 4,
+            center.z + distance+0.5,)
           props.cameraControls.current.setLookAt(
-            center.x + 0.5,
-            center.y + 0.5,
-            center.z + distance,
+            center.x + distance+0.5,
+            center.y + 4,
+            center.z + distance+0.5,
             center.x,
             center.y,
             center.z,
@@ -1370,7 +1479,7 @@ const ChildCanvasCustomModelViewer = (
         }
       }
     },500)
-  }, [modelRef, camera,props.currentProduct, prevBoundingBox]);
+  }, [modelRef, camera, props.currentProduct, prevBoundingBox, store.meshTranslationData, props.theme, props.cameraControls, store.initialAnimationCompleted]);
 
   const contactShadowProps = props.modelSettings.contactShadowsSettings;
 
