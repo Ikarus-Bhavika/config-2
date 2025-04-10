@@ -56,32 +56,32 @@ const hotspotsComfort = [
   { 
     targetMenuId:"sdfmgn58489rwpqakdofdsvn",
     text:"Edit",
-    point:{x: 0.6766791444822586, y: 0.6813679222740827, z: 0.9117004019628174}// 1
+    point:{x: 2.163306866133267, y: 0.6808313630565799, z: 0.7266957592936525}// 1
   },
   {
     targetMenuId:"sdjdkoejhferwp9eoa93ifdf",
     text:"Edit",
-    point:{x: 0.7030117011574357, y: 0.6810436604737075, z: 0.04079920696227002}//2s
+    point:{x: 2.1693037831961828, y: 0.679665979995681, z: 0.07512792061767617}//2s
   },
   {
     targetMenuId:"kasidsljfuiuwrhgirefsdgr",
     text:"Edit",
-    point:{x: 0.7282728688986548, y: 0.6697711012364885, z: -0.9152415805149157}//3
+    point:{x: 2.1495794663848313, y: 0.6813673455730772, z: -0.709863264912324}//3
   },
   {
     targetMenuId:"smkldg903uqrwjfp498owrey",
     text:"Edit",
-    point:{x: -0.6766732390605039, y: 0.6710593566063652, z: 0.9799554405555956}//4
+    point:{x: 0.7646976058974313, y: 0.6813678396909473, z: 0.652572240579195}//4
   },
   {
     targetMenuId:"j748wio8ruhsjdfj84hfslkd",
     text:"Edit",
-    point:{x: -0.7095733423346111, y: 0.6796620255810073, z: -0.000843533360926197}//5
+    point:{x: 0.7681522741080182, y: 0.6813675686509474, z: -0.0784104725733182}//5
   },
   {
     targetMenuId:"mzodewufwehfkjsdjfhksdjf",
     text:"Edit",
-    point:{x: -0.7015398436968452, y: 0.6799645752805916, z: -0.950832290850886}//6
+    point:{x: 0.7656144616063827, y: 0.6813673456890164, z: -0.6709727926677533}//6
   },
 ]
 const hotspotsCoils = [
@@ -615,6 +615,7 @@ function RenderingModel(props: Omit<
 
   const handleClick = (e: any) => {
     e.stopPropagation();
+    console.log(e.point)
   };
 
   const handlePointerOver = (e: any) => {
