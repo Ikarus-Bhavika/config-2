@@ -85,7 +85,7 @@
         },
         "Cover111": {
             "name": "Cover111",
-            "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/99f6c975-8426-4bd4-ac3b-50586b85fc5d-v-2-v-.Cover111",
+            "modelSrc": "/models/Cover11.glb",
             "parts": {
                 "Cover": {
                 "name": "Cover",

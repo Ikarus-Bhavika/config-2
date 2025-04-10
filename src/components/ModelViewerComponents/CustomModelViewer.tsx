@@ -848,7 +848,7 @@ function RenderingModel(props: Omit<
         start = startPos;
         end = endPos;
         const startTime = performance.now();
-  
+        
         const animate = (currentTime: number) => {
           const elapsed = currentTime - startTime;
           const t = Math.min(elapsed / duration, 1); // interpolation factor [0,1]
@@ -1443,7 +1443,7 @@ const ChildCanvasCustomModelViewer = (
   useEffect(() => {
     setTimeout(()=>{
 
-      if (props.theme!=="EDITOR_MODE" && props?.product?.viewerSettings?.allowedOptions?.allowCameraMovement && store.initialAnimationCompleted && modelRef.current && props.cameraControls.current) {
+      if (props.theme!=="EDITOR_MODE" && store.initialAnimationCompleted && modelRef.current && props.cameraControls.current) {
         // Calculate the bounding box of the modelRef
         const boundingBox = new THREE.Box3().setFromObject(modelRef.current);
         const size = new THREE.Vector3();
@@ -1466,9 +1466,9 @@ const ChildCanvasCustomModelViewer = (
             center.y + 4,
             center.z + distance+0.5,)
           props.cameraControls.current.setLookAt(
-            center.x + distance+0.5,
-            center.y + 4,
-            center.z + distance+0.5,
+            center.x + distance/2,
+            center.y + 3,
+            center.z + distance/2,
             center.x,
             center.y,
             center.z,
@@ -1479,7 +1479,7 @@ const ChildCanvasCustomModelViewer = (
         }
       }
     },500)
-  }, [modelRef, camera, props.currentProduct, prevBoundingBox, store.meshTranslationData, props.theme, props.cameraControls, store.initialAnimationCompleted]);
+  }, [modelRef, camera, props.currentProduct,store.expandedComponent ,prevBoundingBox, store.meshTranslationData, props.theme, props.cameraControls, store.initialAnimationCompleted]);
 
   const contactShadowProps = props.modelSettings.contactShadowsSettings;
 

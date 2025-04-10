@@ -22,12 +22,15 @@ export default function UIOverlay({
     const {
         expandModel,
         setExpandModel,
-
+        setAllowHotspots,
+        setExpandedComponent,
         enableButtons,
     } = useDataStore()
 
     function handleToggleExpand(){
         if(expandModel){
+            setAllowHotspots({active:false,activeData:[], for:"",activeMenuItemId:""})
+            setExpandedComponent("");
             setExpandModel(false)
         }else{
             setExpandModel(true)
