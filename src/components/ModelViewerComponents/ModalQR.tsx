@@ -53,7 +53,7 @@ export default function ModalQR({
             const signedJWT = LZString.compressToEncodedURIComponent(stringifiedJWT)
             // link.href = URL.createObjectURL(blob);
             const windowUrl = `${window.location.protocol}//${window.location.hostname}${window.location.port ? `:${window.location.port}` : ''}`
-            const siteurl = `${windowUrl}/shared?sharedVarients=${signedJWT}`;
+            const siteurl = `${windowUrl}?sharedVarients=${signedJWT}`;
             changePropsState({ 
               url: URL.createObjectURL(blob),
               blob, 
