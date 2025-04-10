@@ -23,6 +23,7 @@ export default function ModalQR({
   const [qrCodeData, setQrCodeData] = useState()
   const navigate = useNavigate()
 
+  
   const bIsOnSmallScreen = window.innerWidth < 1024;
 
   const { changePropsState } = useModelViewerStates()
