@@ -81,7 +81,7 @@ export default function ModalQR({
         const stringifiedJWT = JSON.stringify(newJSON)
         const signedJWT = LZString.compressToEncodedURIComponent(stringifiedJWT)
         const windowUrl = `${window.location.protocol}//${window.location.hostname}${window.location.port ? `:${window.location.port}` : ''}`
-        const shareableURL = `${windowUrl}/shared?sharedVarients=${signedJWT}&ar=${true}`
+        const shareableURL = `${windowUrl}/?sharedVarients=${signedJWT}&ar=${true}`
         console.log("shareableURL",shareableURL)
         console.log("qrcode",newJSON)
         QRCode.toDataURL(shareableURL, { errorCorrectionLevel: 'M' })
