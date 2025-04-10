@@ -615,6 +615,7 @@ function RenderingModel(props: Omit<
 
   const handleClick = (e: any) => {
     e.stopPropagation();
+    console.log(e.object.name);
     console.log(e.point)
   };
 
