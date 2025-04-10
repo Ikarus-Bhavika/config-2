@@ -25,7 +25,7 @@ const View = () => {
     <div className='container'>
       <Link
         to={states.siteURL}
-        style={{position:'absolute',top:20, left:20, borderWidth:'2px', borderRadius:'10px', padding:'10px'}}
+        style={{position:'absolute',top:20, left:20, borderWidth:'1px', borderRadius:'10px', padding:'10px'}}
       >
         {"<-"} Go back
       </Link>

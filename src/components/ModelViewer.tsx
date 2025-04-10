@@ -46,7 +46,7 @@ export default function ModelViewer() {
   const [playAnimationVisibility, setPlayAnimationVisibility] = useState<
     string[]
   >([]);
-
+  const [startAR,setStartAR] = useState<boolean>(false);
   const [showQrCode, setShowQrCode] = useState<boolean>(false);
 
   const setProductFromJSON = (product) => setProduct(product);
@@ -186,6 +186,10 @@ export default function ModelViewer() {
     }
   }, [product]);
 
+  useEffect(()=>{
+    setStartAR(showQrCode);
+  },[showQrCode]);
+
   async function screenshot() {
     setShowDimensions(false);
     handleTakeScreenshot(canvasRef);
@@ -201,42 +205,51 @@ export default function ModelViewer() {
       }
     }
   }
-
+  console.log("showQrCode",showQrCode);
   return (
-    <div
-      ref={modelViewerRef}
-      className="h-[55%] lg:h-[100dvh] lg:w-3/5 xl:w-[75%] bg-white relative"
-    >
-      {showQrCode && (
-        <ModalQR
-          currentProduct={store.preset}
-          openAR={
-            isModelLoaded && isSharedVariants && modelRef?.current != null
-          }
-          close={() => setShowQrCode(false)}
-          modelRef={modelRef}
+    <>
+      {showQrCode && <div className="absolute lg:hidden top-0 left-0 w-full h-full z-10 flex justify-center items-center">
+          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+          <div className="bg-white p-3 rounded-md z-10 flex gap-2 justify-center items-center">
+            <div className="w-6 h-6 border-4 border-gray-500 border-t-transparent rounded-full animate-spin"></div>
+            <div className="">Getting your model ready for AR</div>
+          </div>
+        </div>}
+      <div
+        ref={modelViewerRef}
+        className="h-[55%] lg:h-[100dvh] lg:w-3/5 xl:w-[75%] bg-white relative"
+      >
+        {startAR && (
+          <ModalQR
+            currentProduct={store.preset}
+            openAR={
+              isModelLoaded && isSharedVariants && modelRef?.current != null
+            }
+            close={() => setShowQrCode(false)}
+            modelRef={modelRef}
+          />
+        )}
+        <UIOverlay
+          toggleDimension={() => setShowDimensions(!showDimensions)}
+          disableDimension={() => setShowDimensions(false)}
+          getScreenShot={screenshot}
+          isFullScreen={fullscreen}
+          toggleFullScreen={handleFullScreen}
+          toggleAR={() => setShowQrCode(!showQrCode)}
         />
-      )}
-      <UIOverlay
-        toggleDimension={() => setShowDimensions(!showDimensions)}
-        disableDimension={() => setShowDimensions(false)}
-        getScreenShot={screenshot}
-        isFullScreen={fullscreen}
-        toggleFullScreen={handleFullScreen}
-        toggleAR={() => setShowQrCode(!showQrCode)}
-      />
-      <CustomModelViewer
-        setModelRef={setModelRef}
-        product={{ models: store.modelConfig }}
-        currentProduct={store.preset}
-        canvasRef={canvasRef}
-        showDimensions={showDimensions}
-        theme={theme}
-        setIsModelLoaded={setIsModelLoaded}
-        playAnimation={playAnimation}
-        playAnimationVisibility={playAnimationVisibility}
-        setPlayAnimationVisibility={setPlayAnimationVisibility}
-      />
-    </div>
+        <CustomModelViewer
+          setModelRef={setModelRef}
+          product={{ models: store.modelConfig }}
+          currentProduct={store.preset}
+          canvasRef={canvasRef}
+          showDimensions={showDimensions}
+          theme={theme}
+          setIsModelLoaded={setIsModelLoaded}
+          playAnimation={playAnimation}
+          playAnimationVisibility={playAnimationVisibility}
+          setPlayAnimationVisibility={setPlayAnimationVisibility}
+        />
+      </div>
+    </>
   );
 }

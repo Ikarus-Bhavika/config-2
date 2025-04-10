@@ -917,7 +917,7 @@
                   }
                 ]
               },
-              {"label": "Right Side",
+              {"label": "Left Side",
                 "target": [
                     {
                         "model": "comfortModule1",
@@ -929,11 +929,11 @@
                     },
                     {
                         "model": "comfortModule1",
-                        "part": "5"
+                        "part": "2"
                     },
                     {
                         "model": "comfortModule1",
-                        "part": "B5"
+                        "part": "B2"
                     },
                     {
                         "model": "comfortModule1",
@@ -959,7 +959,7 @@
                   }
                 ]
               },
-              {"label": "Left Side",
+              {"label": "Right Side",
                 "target": [
                     {
                         "model": "comfortModule1",
@@ -971,11 +971,11 @@
                     },
                     {
                         "model": "comfortModule1",
-                        "part": "2"
+                        "part": "5"
                     },
                     {
                         "model": "comfortModule1",
-                        "part": "B2"
+                        "part": "B5"
                     },
                     {
                         "model": "comfortModule1",
