@@ -7,7 +7,7 @@ import * as THREE from 'three'
 import useDataStore from './store/store'
 import { useEffect } from 'react'
 import data from './data.json'
-// import intializePreset from './utils/intializePreset'
+import intializePreset from './utils/intializePreset'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Main from './components/Main'
 import ARView from './components/ar-view/ARView'
@@ -22,9 +22,10 @@ function App() {
     store.setMenu(data.menu);
     store.setProductDetails(data.productDetails);
     store.setPreset(data.defaultPreset);
+    console.log(intializePreset(data.models))
     store.setHotSpotMenu(data.hotspotMenuItems);
   },[])
-console.log(store.meshTranslationData)
+console.log(store.preset)
   return (
     <ModelViewerContextProvider>
       <BrowserRouter>

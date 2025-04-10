@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import useDataStore from '../../store/store';
 
 export default function UIOverlay({
@@ -25,18 +25,34 @@ export default function UIOverlay({
         setAllowHotspots,
         setExpandedComponent,
         enableButtons,
+        preset,
+        setPreset
     } = useDataStore()
 
+    const [rerenderPreset,setRerenderPreset] = useState<boolean>(false);
+
+    useEffect(()=>{
+        if(rerenderPreset){
+            setExpandModel(true)
+            disableDimension()
+            setRerenderPreset(false)
+        }
+    },[rerenderPreset])
+    
     function handleToggleExpand(){
         if(expandModel){
             setAllowHotspots({active:false,activeData:[], for:"",activeMenuItemId:""})
             setExpandedComponent("");
             setExpandModel(false)
         }else{
-            setExpandModel(true)
-            disableDimension()
-        }
-    }
+            
+            const tempPreset = {...preset};
+            if(tempPreset["Coils2"]?.visible !=undefined) tempPreset["Coils2"].visible = true
+            if(tempPreset["comfortModule1"]?.visible !=undefined) tempPreset["comfortModule1"].visible = true
+            if(tempPreset["reliefLayer2"]?.visible !=undefined) tempPreset["reliefLayer2"].visible = true
+            setPreset(tempPreset);
+            setRerenderPreset(true);
+    }}
 
     const iconSize=25
 

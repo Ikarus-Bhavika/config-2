@@ -17,6 +17,13 @@ export default function MenuContainer() {
                     activeMenuItemId:"",
                     activeData:[]
                 })
+            }else if(id=="menu4"){
+                store.setAllowHotspots({
+                    for:"coils",
+                    active:store.allowHotspots.active,
+                    activeMenuItemId:"",
+                    activeData:[]
+                })
             }else{
                 store.setAllowHotspots({
                     for:"",

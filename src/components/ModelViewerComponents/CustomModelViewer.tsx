@@ -50,64 +50,71 @@ import { MeshTranlationDataItemType } from '../../types/viewerTypes';
 import { lerp } from 'three/src/math/MathUtils.js';
 
 
+const diplayedOnce={}
 
 
 const hotspotsComfort = [
   { 
     targetMenuId:"sdfmgn58489rwpqakdofdsvn",
     text:"Edit",
-    point:{x: 2.163306866133267, y: 0.6808313630565799, z: 0.7266957592936525}// 1
+    point:{x: 2.163306866133267, y: 0.9, z: 0.7266957592936525}// 1
   },
   {
     targetMenuId:"sdjdkoejhferwp9eoa93ifdf",
     text:"Edit",
-    point:{x: 2.1693037831961828, y: 0.679665979995681, z: 0.07512792061767617}//2s
+    point:{x: 2.1693037831961828, y: 0.9, z: 0.07512792061767617}//2s
   },
   {
     targetMenuId:"kasidsljfuiuwrhgirefsdgr",
     text:"Edit",
-    point:{x: 2.1495794663848313, y: 0.6813673455730772, z: -0.709863264912324}//3
+    point:{x: 2.1495794663848313, y: 0.9, z: -0.709863264912324}//3
   },
   {
     targetMenuId:"smkldg903uqrwjfp498owrey",
     text:"Edit",
-    point:{x: 0.7646976058974313, y: 0.6813678396909473, z: 0.652572240579195}//4
+    point:{x: 0.7646976058974313, y: 0.9, z: 0.652572240579195}//4
   },
   {
     targetMenuId:"j748wio8ruhsjdfj84hfslkd",
     text:"Edit",
-    point:{x: 0.7681522741080182, y: 0.6813675686509474, z: -0.0784104725733182}//5
+    point:{x: 0.7681522741080182, y: 0.9, z: -0.0784104725733182}//5
   },
   {
     targetMenuId:"mzodewufwehfkjsdjfhksdjf",
     text:"Edit",
-    point:{x: 0.7656144616063827, y: 0.6813673456890164, z: -0.6709727926677533}//6
+    point:{x: 0.7656144616063827, y: 0.9, z: -0.6709727926677533}//6
   },
 ]
 const hotspotsCoils = [
-  {
+  { 
+    targetMenuId:"sdfmgn58489rwpqakdofdsvn",
     text:"Edit",
-    point:{x: -0.07984117449838424, y: -0.45, z: 1.7288521449630507}
+    point:{x: 2.163306866133267, y: 0.6, z: 0.7266957592936525}// 1
   },
   {
+    targetMenuId:"sdjdkoejhferwp9eoa93ifdf",
     text:"Edit",
-    point:{x: -0.08496748839236856, y: -0.45, z: 0.8501431259707384}
+    point:{x: 2.1693037831961828, y: 0.6, z: 0.07512792061767617}//2s
   },
   {
+    targetMenuId:"kasidsljfuiuwrhgirefsdgr",
     text:"Edit",
-    point:{x: -0.09151645305767886, y: -0.45, z: 0.15375972451852804}
+    point:{x: 2.1495794663848313, y: 0.6, z: -0.709863264912324}//3
   },
   {
+    targetMenuId:"smkldg903uqrwjfp498owrey",
     text:"Edit",
-    point:{x: -1.453215951028354, y: -0.45, z: 1.7652760490331554}
+    point:{x: 0.7646976058974313, y: 0.6, z: 0.652572240579195}//4
   },
   {
+    targetMenuId:"j748wio8ruhsjdfj84hfslkd",
     text:"Edit",
-    point:{x: -1.503547729045989, y: -0.45, z: 0.8042335090708607}
+    point:{x: 0.7681522741080182, y: 0.6, z: -0.0784104725733182}//5
   },
   {
+    targetMenuId:"mzodewufwehfkjsdjfhksdjf",
     text:"Edit",
-    point:{x: -1.4711464053697414, y: -0.45, z: -0.08808489031756761}
+    point:{x: 0.7656144616063827, y: 0.6, z: -0.6709727926677533}//6
   },
 ]
 
@@ -606,7 +613,7 @@ function RenderingModel(props: Omit<
   const [currentAnimation, setCurrentAnimation] = useState<string[]>([]);
   const { actions } = useAnimations(animations, meshRef);
   
-  const [newRender,setNewRender] = useState<boolean>(false)
+  const [newRender,setNewRender] = useState<boolean>(diplayedOnce[props.name]!=undefined?diplayedOnce[props.name]:true)
   //Hovering with responses
   const [hovered, setHover] = useState(null);
 
@@ -732,6 +739,16 @@ function RenderingModel(props: Omit<
     
     function handleFinish() {
       setEnableButtons(!enableButtons);
+      console.log("expandModel",expandModel)
+      const tempPreset = {...store.preset};
+      if(tempPreset["Coils2"]?.visible) tempPreset["Coils2"].visible = expandModel
+      if(tempPreset["comfortModule1"]?.visible) tempPreset["comfortModule1"].visible = expandModel
+      if(tempPreset["reliefLayer2"]?.visible) tempPreset["reliefLayer2"].visible = expandModel
+
+      diplayedOnce["Coils2"]=false
+      diplayedOnce["comfortModule1"]=false
+      diplayedOnce["reliefLayer2"]=false
+      store.setPreset(tempPreset);
     }
     
     function playAnimation(){
@@ -760,9 +777,10 @@ function RenderingModel(props: Omit<
     }
     
 
-    if(newRender || !expandModel){
+    if(!newRender || !expandModel){
       playAnimation()
-      setNewRender(true)
+      setNewRender(false)
+      diplayedOnce[props.name] = true
     }else{
       const duration = 2;
       action.clampWhenFinished = true;
@@ -892,6 +910,7 @@ function RenderingModel(props: Omit<
     const menu1 = ['Cover','Cover2'];
     const menu2 = ['ReliefLayer'];
     const menu3 = ['1','2','3','4','5','6','B1','B2','B3','B4','B5','B6']
+    const menu4 = ['C1','C2','C3','C4','C5','C6']
     if(store.expandedComponent=="menu1"){
       if(meshes.find(child=>menu1.includes(child.name))){
         translateMesh(props.name)
@@ -906,6 +925,11 @@ function RenderingModel(props: Omit<
       }
     }else if(store.expandedComponent=="menu3"){
       if(meshes.find(child=>menu3.includes(child.name))){
+        translateMesh(props.name)
+        store.setOutLineObjects(meshes);  
+      }
+    }else if(store.expandedComponent=="menu4"){
+      if(meshes.find(child=>menu4.includes(child.name))){
         translateMesh(props.name)
         store.setOutLineObjects(meshes);  
       }
@@ -1534,10 +1558,10 @@ const ChildCanvasCustomModelViewer = (
 
         <group
           name='mainModel'
-          ref={modelRef}
           position={[0, props.modelSettings.verticalAdjustment, 0]}
         >
           <Stage {...props.modelSettings.stageSettings}>
+            <group ref={modelRef}>
               {data.map((product: any, index: number) => (
                 <Suspense key={product.key} >
                   <RenderingModelWrapper
@@ -1555,6 +1579,7 @@ const ChildCanvasCustomModelViewer = (
                   />
                   </Suspense>
               ))}
+            </group>
               
             {props.grid && <gridHelper
               castShadow={false}

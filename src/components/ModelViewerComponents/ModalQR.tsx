@@ -45,13 +45,15 @@ export default function ModalQR({
           modelRef.current,
           function (glb) {
             console.log("FILE",glb)
-            const output = JSON.stringify(glb, null, 2)
+            const output = JSON.stringify(glb)
             const blob = new Blob([output], { type: 'text/plain' });
-            // const link = document.createElement('a');
+            const link = document.createElement('a');
             const newJSON = compressProductJSON(currentProduct);
             const stringifiedJWT = JSON.stringify(newJSON)
             const signedJWT = LZString.compressToEncodedURIComponent(stringifiedJWT)
-            // link.href = URL.createObjectURL(blob);
+            link.href = URL.createObjectURL(blob);
+            link.download="model.glb"
+            link.click()
             const windowUrl = `${window.location.protocol}//${window.location.hostname}${window.location.port ? `:${window.location.port}` : ''}`
             const siteurl = `${windowUrl}?sharedVarients=${signedJWT}`;
             changePropsState({ 
