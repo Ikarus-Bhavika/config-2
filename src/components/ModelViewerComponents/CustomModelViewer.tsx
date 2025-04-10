@@ -48,6 +48,7 @@ import MenuItemsContainer from '../MenuComponents/MenuItemsContainer';
 import { OutlineEffectManager } from './PostProcessing/OutlineEffectManager';
 import { MeshTranlationDataItemType } from '../../types/viewerTypes';
 import { lerp } from 'three/src/math/MathUtils.js';
+import { useSearchParams } from 'react-router-dom';
 
 
 const diplayedOnce={}
@@ -595,7 +596,7 @@ function RenderingModel(props: Omit<
 >
 ) {
   const { camera,...restcene } = useThree();
-
+  const [params] = useSearchParams();
   const {expandModel,
     setExpandModel,
     enableButtons,
@@ -684,7 +685,6 @@ function RenderingModel(props: Omit<
     
     const action = actions["alwaysAnimate"];
     if (initialAnimationCompleted || !action || !meshRef.current) return;
-    
     const mesh = meshRef.current;
     const mixer = action.getMixer();
     

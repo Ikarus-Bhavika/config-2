@@ -23,7 +23,7 @@ export default function ModalQR({
   const [qrCodeData, setQrCodeData] = useState()
   const navigate = useNavigate()
 
-  
+
   const bIsOnSmallScreen = window.innerWidth < 1024;
 
   const { changePropsState } = useModelViewerStates()
@@ -54,7 +54,7 @@ export default function ModalQR({
             const signedJWT = LZString.compressToEncodedURIComponent(stringifiedJWT)
             link.href = URL.createObjectURL(blob);
             link.download="model.glb"
-            link.click()
+            // link.click()
             const windowUrl = `${window.location.protocol}//${window.location.hostname}${window.location.port ? `:${window.location.port}` : ''}`
             const siteurl = `${windowUrl}?sharedVarients=${signedJWT}`;
             changePropsState({ 
