@@ -77,7 +77,7 @@ export default function ModelViewer() {
         setThemeLoad(true);
       }, 200);
     }
-  }, [store.preset, store.enableButtons]);
+  }, [store.preset]);
 
   useEffect(() => {
     if (isModelLoaded && sharedVariants) {
