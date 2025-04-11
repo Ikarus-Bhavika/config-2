@@ -1555,7 +1555,7 @@ const ChildCanvasCustomModelViewer = (
           <Stage {...props.modelSettings.stageSettings}>
             <group ref={modelRef}>
               {data.map((product: any, index: number) => (
-                <Suspense key={product.key} >
+                // <Suspense  >
                   <RenderingModelWrapper
                     cameraControls={props.cameraControls}
                     product={product}
@@ -1569,7 +1569,7 @@ const ChildCanvasCustomModelViewer = (
                     onSuccessfulRender={setContactShadowY}
                     setCurrentCount={setCurrentCount}
                   />
-                  </Suspense>
+                  // </Suspense>
               ))}
             </group>
               
@@ -1712,6 +1712,10 @@ export default function CustomModelViewer(props:Omit<
     },
     environmentSrc: '/assets/environments/Studio02.exr',
   };
+
+  useEffect(()=>{
+    THREE.Cache.enabled = true;
+  },[])
 
   const cameraControlsRef = useRef<CameraControls>(null);
 
