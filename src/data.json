@@ -14,7 +14,7 @@
               "Light gray": {
                 "id": "EyjuwSL5edoJusns0NWY",
                 "name": "Light gray",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -35,7 +35,7 @@
               "Dark Grey": {
                 "id": "T4IZq98C0g3LbLo1e6VB",
                 "name": "Dark Grey",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -56,7 +56,7 @@
               "White Head": {
                 "id": "XxJS38r2Eis2wN07XTIQ",
                 "name": "White Head",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -88,7 +88,7 @@
               "Light gray": {
                 "id": "EyjuwSL5edoJusns0NWY",
                 "name": "Light gray",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -109,7 +109,7 @@
               "Dark Grey": {
                 "id": "T4IZq98C0g3LbLo1e6VB",
                 "name": "Dark Grey",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -130,7 +130,7 @@
               "White Head": {
                 "id": "XxJS38r2Eis2wN07XTIQ",
                 "name": "White Head",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -162,7 +162,7 @@
               "Light gray": {
                 "id": "EyjuwSL5edoJusns0NWY",
                 "name": "Light gray",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -183,7 +183,7 @@
               "Dark Grey": {
                 "id": "T4IZq98C0g3LbLo1e6VB",
                 "name": "Dark Grey",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -204,7 +204,7 @@
               "White Head": {
                 "id": "XxJS38r2Eis2wN07XTIQ",
                 "name": "White Head",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -236,7 +236,7 @@
               "Light gray": {
                 "id": "EyjuwSL5edoJusns0NWY",
                 "name": "Light gray",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -257,7 +257,7 @@
               "Dark Grey": {
                 "id": "T4IZq98C0g3LbLo1e6VB",
                 "name": "Dark Grey",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -278,7 +278,7 @@
               "White Head": {
                 "id": "XxJS38r2Eis2wN07XTIQ",
                 "name": "White Head",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -310,7 +310,7 @@
               "Light gray": {
                 "id": "EyjuwSL5edoJusns0NWY",
                 "name": "Light gray",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -331,7 +331,7 @@
               "Dark Grey": {
                 "id": "T4IZq98C0g3LbLo1e6VB",
                 "name": "Dark Grey",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -352,7 +352,7 @@
               "White Head": {
                 "id": "XxJS38r2Eis2wN07XTIQ",
                 "name": "White Head",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -384,7 +384,7 @@
               "Light gray": {
                 "id": "EyjuwSL5edoJusns0NWY",
                 "name": "Light gray",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -405,7 +405,7 @@
               "Dark Grey": {
                 "id": "T4IZq98C0g3LbLo1e6VB",
                 "name": "Dark Grey",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -426,7 +426,7 @@
               "White Head": {
                 "id": "XxJS38r2Eis2wN07XTIQ",
                 "name": "White Head",
-                "price": 0,
+                "price": 200,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -468,7 +468,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -489,7 +489,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -510,7 +510,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -531,7 +531,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -552,7 +552,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -573,7 +573,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -605,7 +605,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -626,7 +626,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -647,7 +647,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -668,7 +668,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -689,7 +689,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -710,7 +710,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -742,7 +742,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -763,7 +763,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -784,7 +784,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -805,7 +805,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -826,7 +826,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -847,7 +847,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -879,7 +879,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -900,7 +900,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -921,7 +921,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -942,7 +942,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -963,7 +963,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -984,7 +984,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1016,7 +1016,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1037,7 +1037,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1058,7 +1058,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1079,7 +1079,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1100,7 +1100,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1121,7 +1121,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1153,7 +1153,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1174,7 +1174,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1195,7 +1195,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1216,7 +1216,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1237,7 +1237,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1258,7 +1258,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1290,7 +1290,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1311,7 +1311,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1332,7 +1332,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1353,7 +1353,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1374,7 +1374,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1395,7 +1395,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1427,7 +1427,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1448,7 +1448,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1469,7 +1469,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1490,7 +1490,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1511,7 +1511,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1532,7 +1532,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1564,7 +1564,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1585,7 +1585,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1606,7 +1606,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1627,7 +1627,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1648,7 +1648,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1669,7 +1669,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1701,7 +1701,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1722,7 +1722,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1743,7 +1743,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1764,7 +1764,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1785,7 +1785,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1806,7 +1806,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1838,7 +1838,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1859,7 +1859,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1880,7 +1880,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1901,7 +1901,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1922,7 +1922,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1943,7 +1943,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1975,7 +1975,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -1996,7 +1996,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2017,7 +2017,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2038,7 +2038,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2059,7 +2059,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2080,7 +2080,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2122,7 +2122,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2143,7 +2143,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2164,7 +2164,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2185,7 +2185,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2206,7 +2206,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2227,7 +2227,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2253,7 +2253,7 @@
         "animations": [
           "alwaysAnimate"
         ],
-        "price": 0
+        "price": 1500
       },
       "Base": {
         "parts": {
@@ -2269,7 +2269,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2290,7 +2290,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2311,7 +2311,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2332,7 +2332,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2353,7 +2353,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2374,7 +2374,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2406,7 +2406,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2427,7 +2427,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2448,7 +2448,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2469,7 +2469,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2490,7 +2490,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2511,7 +2511,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2535,7 +2535,7 @@
         "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/831776ab-3bbf-4c59-953b-767c6306c3cfBase-v-0-v-.glb",
         "name": "Base",
         "animations": [],
-        "price": 0
+        "price": 200
       },
       "reliefLayer2": {
         "parts": {
@@ -2551,7 +2551,7 @@
               "Mattress Cover": {
                 "id": "DgBBHZuhb1lr6TDDHKgI",
                 "name": "Mattress Cover",
-                "price": 0,
+                "price": 500,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/pvtKSu25Hc4mteawrVdR_Mattress_Cover_Roughness.png.png",
                 "metalness": 0.1,
@@ -2572,7 +2572,7 @@
               "Relief Layer Performance": {
                     "id": "imP9AZS3dSFPb9G3XZDS",
                     "name": "Relief Layer Performance",
-                    "price": 0,
+                    "price": 500,
                     "roughness": 1,
                     "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/yco8sJLdHrqlyGgRaQu4_Mattress_Cover_V1_Roughness.png.png",
                     "metalness": 0,
@@ -2614,7 +2614,7 @@
               "Dark tan": {
                 "id": "BjPhiitkaY3qkmNHhOBk",
                 "name": "Dark tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2635,7 +2635,7 @@
               "Dark blue": {
                 "id": "BudBPD9zWZF4fwvg3K7W",
                 "name": "Dark blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2656,7 +2656,7 @@
               "Mid blue": {
                 "id": "CMB9MUjF8ubdjO8ESqdx",
                 "name": "Mid blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2677,7 +2677,7 @@
               "Light tan": {
                 "id": "MJuZEjy8ZOTE8ZWb2zuc",
                 "name": "Light tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2698,7 +2698,7 @@
               "Light Blue": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
                 "name": "Light Blue",
-                "price": 0,
+                "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2719,7 +2719,7 @@
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
                 "name": "Med tan",
-                "price": 0,
+                "price": 400,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
                 "metalness": 0.1,
@@ -2745,7 +2745,7 @@
         "animations": [
           "alwaysAnimate"
         ],
-        "price": 0
+        "price": 1000
       }
     },
     "menu":[
@@ -3960,5 +3960,19 @@
                 ]
             }
         ]
+    },
+    "price":{
+      "Covers":{
+        "Natural": 1000,
+        "Performance":1500
+      },
+      "Relief Layer": {
+        "Performance": 500,
+        "Natural":500
+      },
+      "Comfort Layer": {
+        "Performance": 300,
+        "Natural": 400
+      }
     }
 }

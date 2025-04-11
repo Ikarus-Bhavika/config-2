@@ -1555,7 +1555,7 @@ const ChildCanvasCustomModelViewer = (
           <Stage {...props.modelSettings.stageSettings}>
             <group ref={modelRef}>
               {data.map((product: any, index: number) => (
-                // <Suspense  >
+                <Suspense  key={product.key}>
                   <RenderingModelWrapper
                     cameraControls={props.cameraControls}
                     product={product}
@@ -1569,7 +1569,7 @@ const ChildCanvasCustomModelViewer = (
                     onSuccessfulRender={setContactShadowY}
                     setCurrentCount={setCurrentCount}
                   />
-                  // </Suspense>
+                  </Suspense>
               ))}
             </group>
               
