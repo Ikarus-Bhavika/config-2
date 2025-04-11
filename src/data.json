@@ -447,7 +447,7 @@
             }
           }
         },
-        "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/nullCoils2-v-0-v-.glb",
+        "modelSrc": "/models/Coil3.glb",
         "name": "Coils2",
         "animations": [
           "alwaysAnimate"
