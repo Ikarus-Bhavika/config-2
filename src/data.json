@@ -3773,6 +3773,192 @@
                       }
                 ]
             }
+        ],
+        "sdfmgn58489rwpqakdofdsv1":[
+            {
+                "label": "Coils Module",
+                "target": [
+                    {
+                      "model": "Coils2",
+                      "part": "C1"
+                    }
+                ],
+                "baseMaps": [
+                    {
+                      "id": "T4IZq98C0g3LbLo1e6VB",
+                      "label": "Dark Grey",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    },
+                    {
+                      "id": "EyjuwSL5edoJusns0NWY",
+                      "label": "Light gray",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    },
+                    {
+                      "id": "XxJS38r2Eis2wN07XTIQ",
+                      "label": "White Head",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    }
+                ]
+            }
+        ],
+        "smkldg903uqrwjfp498owre2":[
+            {
+                "label": "Coils Module",
+                "target": [
+                    {
+                      "model": "Coils2",
+                      "part": "C2"
+                    }
+                ],
+                "baseMaps": [
+                    {
+                      "id": "T4IZq98C0g3LbLo1e6VB",
+                      "label": "Dark Grey",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    },
+                    {
+                      "id": "EyjuwSL5edoJusns0NWY",
+                      "label": "Light gray",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    },
+                    {
+                      "id": "XxJS38r2Eis2wN07XTIQ",
+                      "label": "White Head",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    }
+                ]
+            }
+        ],
+        "sdjdkoejhferwp9eoa93ifd3":[
+            {
+                "label": "Coils Module",
+                "target": [
+                    {
+                      "model": "Coils2",
+                      "part": "C3"
+                    }
+                ],
+                "baseMaps": [
+                    {
+                      "id": "T4IZq98C0g3LbLo1e6VB",
+                      "label": "Dark Grey",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    },
+                    {
+                      "id": "EyjuwSL5edoJusns0NWY",
+                      "label": "Light gray",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    },
+                    {
+                      "id": "XxJS38r2Eis2wN07XTIQ",
+                      "label": "White Head",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    }
+                ]
+            }
+        ],
+        "j748wio8ruhsjdfj84hfslk4":[
+            {
+                "label": "Coils Module",
+                "target": [
+                    {
+                      "model": "Coils2",
+                      "part": "C4"
+                    }
+                ],
+                "baseMaps": [
+                    {
+                      "id": "T4IZq98C0g3LbLo1e6VB",
+                      "label": "Dark Grey",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    },
+                    {
+                      "id": "EyjuwSL5edoJusns0NWY",
+                      "label": "Light gray",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    },
+                    {
+                      "id": "XxJS38r2Eis2wN07XTIQ",
+                      "label": "White Head",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    }
+                ]
+            }
+        ],
+        "kasidsljfuiuwrhgirefsdg5":[
+            {
+                "label": "Coils Module",
+                "target": [
+                    {
+                      "model": "Coils2",
+                      "part": "C5"
+                    }
+                ],
+                "baseMaps": [
+                    {
+                      "id": "T4IZq98C0g3LbLo1e6VB",
+                      "label": "Dark Grey",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    },
+                    {
+                      "id": "EyjuwSL5edoJusns0NWY",
+                      "label": "Light gray",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    },
+                    {
+                      "id": "XxJS38r2Eis2wN07XTIQ",
+                      "label": "White Head",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    }
+                ]
+            }
+        ],
+        "mzodewufwehfkjsdjfhksdj6":[
+            {
+                "label": "Coils Module",
+                "target": [
+                    {
+                      "model": "Coils2",
+                      "part": "C6"
+                    }
+                ],
+                "baseMaps": [
+                    {
+                      "id": "T4IZq98C0g3LbLo1e6VB",
+                      "label": "Dark Grey",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    },
+                    {
+                      "id": "EyjuwSL5edoJusns0NWY",
+                      "label": "Light gray",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    },
+                    {
+                      "id": "XxJS38r2Eis2wN07XTIQ",
+                      "label": "White Head",
+                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg",
+                      "hexCode": "#ffffff"
+                    }
+                ]
+            }
         ]
     }
 }

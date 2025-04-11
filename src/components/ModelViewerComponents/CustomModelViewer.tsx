@@ -58,62 +58,62 @@ const hotspotsComfort = [
   { 
     targetMenuId:"sdfmgn58489rwpqakdofdsvn",
     text:"Edit",
-    point:{x: 2.163306866133267, y: 0.9, z: 0.7266957592936525}// 1
+    point:{x: 2.163306866133267, y: 0.8, z: 0.7266957592936525}// 1
   },
   {
     targetMenuId:"sdjdkoejhferwp9eoa93ifdf",
     text:"Edit",
-    point:{x: 2.1693037831961828, y: 0.9, z: 0.07512792061767617}//2s
+    point:{x: 2.1693037831961828, y: 0.8, z: 0.07512792061767617}//2s
   },
   {
     targetMenuId:"kasidsljfuiuwrhgirefsdgr",
     text:"Edit",
-    point:{x: 2.1495794663848313, y: 0.9, z: -0.709863264912324}//3
+    point:{x: 2.1495794663848313, y: 0.8, z: -0.709863264912324}//3
   },
   {
     targetMenuId:"smkldg903uqrwjfp498owrey",
     text:"Edit",
-    point:{x: 0.7646976058974313, y: 0.9, z: 0.652572240579195}//4
+    point:{x: 0.7646976058974313, y: 0.8, z: 0.652572240579195}//4
   },
   {
     targetMenuId:"j748wio8ruhsjdfj84hfslkd",
     text:"Edit",
-    point:{x: 0.7681522741080182, y: 0.9, z: -0.0784104725733182}//5
+    point:{x: 0.7681522741080182, y: 0.8, z: -0.0784104725733182}//5
   },
   {
     targetMenuId:"mzodewufwehfkjsdjfhksdjf",
     text:"Edit",
-    point:{x: 0.7656144616063827, y: 0.9, z: -0.6709727926677533}//6
+    point:{x: 0.7656144616063827, y: 0.8, z: -0.6709727926677533}//6
   },
 ]
 const hotspotsCoils = [
   { 
-    targetMenuId:"sdfmgn58489rwpqakdofdsvn",
+    targetMenuId:"smkldg903uqrwjfp498owre2",
     text:"Edit",
     point:{x: 2.163306866133267, y: 0.6, z: 0.7266957592936525}// 1
   },
   {
-    targetMenuId:"sdjdkoejhferwp9eoa93ifdf",
+    targetMenuId:"sdjdkoejhferwp9eoa93ifd3",
     text:"Edit",
     point:{x: 2.1693037831961828, y: 0.6, z: 0.07512792061767617}//2s
   },
   {
-    targetMenuId:"kasidsljfuiuwrhgirefsdgr",
+    targetMenuId:"kasidsljfuiuwrhgirefsdg5",
     text:"Edit",
     point:{x: 2.1495794663848313, y: 0.6, z: -0.709863264912324}//3
   },
   {
-    targetMenuId:"smkldg903uqrwjfp498owrey",
+    targetMenuId:"sdfmgn58489rwpqakdofdsv1",
     text:"Edit",
     point:{x: 0.7646976058974313, y: 0.6, z: 0.652572240579195}//4
   },
   {
-    targetMenuId:"j748wio8ruhsjdfj84hfslkd",
+    targetMenuId:"j748wio8ruhsjdfj84hfslk4",
     text:"Edit",
     point:{x: 0.7681522741080182, y: 0.6, z: -0.0784104725733182}//5
   },
   {
-    targetMenuId:"mzodewufwehfkjsdjfhksdjf",
+    targetMenuId:"mzodewufwehfkjsdjfhksdj6",
     text:"Edit",
     point:{x: 0.7656144616063827, y: 0.6, z: -0.6709727926677533}//6
   },
