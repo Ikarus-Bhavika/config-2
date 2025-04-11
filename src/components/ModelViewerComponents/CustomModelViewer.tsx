@@ -569,9 +569,9 @@ const Hotspot = (props: Omit<
         </div>
       
         {isActiveSpot &&
-          <div className={`absolute bg-white p-2 rounded-md w-[300px] shadow-lg`}>
+          <div className={`absolute bg-white p-2 rounded-md w-[200px] xl:w-[300px] shadow-lg`}>
             <h2 className='p-2'>
-              Comfort Layer
+              {store.expandedComponent=="menu3" ? "Comfort" : "Coils"} Layer
             </h2>
             <MenuItemsContainer 
               isHotspotMenu
@@ -739,16 +739,16 @@ function RenderingModel(props: Omit<
     
     function handleFinish() {
       setEnableButtons(!enableButtons);
-      console.log("expandModel",expandModel)
-      const tempPreset = {...store.preset};
-      if(tempPreset["Coils2"]?.visible) tempPreset["Coils2"].visible = expandModel
-      if(tempPreset["comfortModule1"]?.visible) tempPreset["comfortModule1"].visible = expandModel
-      if(tempPreset["reliefLayer2"]?.visible) tempPreset["reliefLayer2"].visible = expandModel
+      // console.log("expandModel",expandModel)
+      // const tempPreset = {...store.preset};
+      // if(tempPreset["Coils2"]?.visible) tempPreset["Coils2"].visible = expandModel
+      // if(tempPreset["comfortModule1"]?.visible) tempPreset["comfortModule1"].visible = expandModel
+      // if(tempPreset["reliefLayer2"]?.visible) tempPreset["reliefLayer2"].visible = expandModel
 
-      diplayedOnce["Coils2"]=false
-      diplayedOnce["comfortModule1"]=false
-      diplayedOnce["reliefLayer2"]=false
-      store.setPreset(tempPreset);
+      // diplayedOnce["Coils2"]=false
+      // diplayedOnce["comfortModule1"]=false
+      // diplayedOnce["reliefLayer2"]=false
+      // store.setPreset(tempPreset);
     }
     
     function playAnimation(){
@@ -824,6 +824,7 @@ function RenderingModel(props: Omit<
     ))
     loader1.traverse((child: THREE.Object3D) => {
       if ((child as THREE.Mesh).isMesh) {
+        if (Object.keys(store.meshTranslationData).length>0 && !store.meshTranslationData[props.name]) setInitialMeshTranslationData(loader1);
         updatedMapping.map((d: any) => {
           if (d?.target.includes(child.name)) {
             updateMaterial(d, (child as THREE.Mesh).material,setIsMaterialLoaded);
@@ -839,17 +840,12 @@ function RenderingModel(props: Omit<
     console.log(name)
     const tempData = store.meshTranslationData;
     const duration = 500;
-    if(!tempData["Cover111"] && tempData['Cover22']){
-      tempData["Cover111"] = {...tempData["Cover22"]}
-      tempData["Cover111"].isTranslated = false
-    }
     //here tempData[props.name].translationPosition is the offset that we need to change in model position
     Object.keys(tempData).map((key)=>{
       let start:THREE.Vector3;
       let end:THREE.Vector3;
       const data = tempData[key];
-      let loader:THREE.Object3D;
-      loader = data.loader;
+      const loader = data.loader;
       
       const box = new THREE.Box3().setFromObject(loader);
       const center = new THREE.Vector3();
@@ -860,10 +856,6 @@ function RenderingModel(props: Omit<
       // const startPos = new THREE.Vector3();
       const endPos = data.translationPosition;
       if(name==key){
-        if(name=="Cover111"){
-          loader = loader1;
-          tempData["Cover111"].loader = loader1;
-        }
         // console.log("getting here",name,startPos,endPos)
         start = startPos;
         end = endPos;

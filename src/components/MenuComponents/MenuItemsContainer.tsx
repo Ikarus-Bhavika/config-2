@@ -41,13 +41,14 @@ export default function MenuItemsContainer(
       <div ref={menuItemRef} className="p-2">
         {menuOptions.length>1 && <div className="flex gap-4 xl:gap-6 border-b border-[#aaa7a72e]">
           {!isHotspotMenu && menuOptions.map((option,index)=>(
-            <div key={option.label+"KEYFORMENUITEM"} className={`text-[14px] py-1 cursor-pointer ${index==selectedIndex?'text-black':'text-gray-500'}`} onClick={()=>setSelectedIndex(index)}>{option.label}</div>
+            <div key={option.label+"KEYFORMENUITEM"} className={`text-[12px] xl:text-[14px] py-1 cursor-pointer ${index==selectedIndex?'text-black':'text-gray-500'}`} onClick={()=>setSelectedIndex(index)}>{option.label}</div>
           ))}
         </div>}
         {!isHotspotMenu && (
           <div key={menuOptions[selectedIndex].label} className="flex flex-col gap-[2px] lg:pb-6">
-            <div className={`py-1 text-[15px]`}>{menuOptions[selectedIndex].label}</div>
-            <div className="flex gap-4 overflow-x-auto">
+            <div className={`py-1 text-[13px] xl:text-[15px]`}>{menuOptions[selectedIndex].label}</div>
+            {/* overflow not working in this */}
+            <div className="flex gap-4 overflow-x-auto w-full">
               {menuOptions[selectedIndex].baseMaps.map((material) => (
                 <div
                   onClick={() => {
@@ -70,7 +71,7 @@ export default function MenuItemsContainer(
                       );
                   }}
                   key={material.id}
-                  className="flex cursor-pointer"
+                  className="w-14 h-14 cursor-pointer shrink-0"
                 >
                   <img
                     src={material.icon}
@@ -84,7 +85,7 @@ export default function MenuItemsContainer(
         )}
         {isHotspotMenu && menuOptions.map((option) => (
         <div key={option.label} className="flex flex-col gap-[2px] lg:pb-6">
-            <div className={`py-1 text-[15px]`}>{option.label}</div>
+            <div className={`py-1 text-[13px] xl:text-[15px]`}>{option.label}</div>
             <div className="flex gap-4 overflow-x-auto">
               {option.baseMaps.map((material) => (
                 <div
@@ -108,12 +109,12 @@ export default function MenuItemsContainer(
                       );
                   }}
                   key={material.id}
-                  className="flex cursor-pointer"
+                  className="flex cursor-pointer shrink-0"
                 >
                   <img
                     src={material.icon}
                     alt={material.label}
-                    className="w-14 h-14 rounded"
+                    className="w-10 h-10 rounded"
                   />
                 </div>
               ))}

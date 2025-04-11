@@ -41,32 +41,32 @@ export default function ModalQR({
       //   // a.click()
     
 
-        const exporter = new GLTFExporter()
-        exporter.parse(
-          modelRef.current,
-          function (glb) {
-            console.log("FILE",glb)
-            const output = JSON.stringify(glb)
-            const blob = new Blob([output], { type: 'text/plain' });
-            const link = document.createElement('a');
-            const newJSON = compressProductJSON(currentProduct);
-            const stringifiedJWT = JSON.stringify(newJSON)
-            const signedJWT = LZString.compressToEncodedURIComponent(stringifiedJWT)
-            link.href = URL.createObjectURL(blob);
-            link.download="model.glb"
-            // link.click()
-            const windowUrl = `${window.location.protocol}//${window.location.hostname}${window.location.port ? `:${window.location.port}` : ''}`
-            const siteurl = `${windowUrl}?sharedVarients=${signedJWT}`;
-            changePropsState({ 
-              url: URL.createObjectURL(blob),
-              blob, 
-              // iosURL:iosSrc,
-              siteURL: siteurl
-            })
-            navigate(`/ar-view`,{replace:true})
-          },
-          err => console.error('ERR->', err)
-        )
+        // const exporter = new GLTFExporter()
+        // exporter.parse(
+        //   modelRef.current,
+        //   function (glb) {
+        //     console.log("FILE",glb)
+        //     const output = JSON.stringify(glb)
+        //     const blob = new Blob([output], { type: 'text/plain' });
+        //     const link = document.createElement('a');
+        //     link.href = URL.createObjectURL(blob);
+        //     link.download="model.glb"
+        //     // link.click()
+        //   },
+        //   err => console.error('ERR->', err)
+        // )
+        const newJSON = compressProductJSON(currentProduct);
+        const stringifiedJWT = JSON.stringify(newJSON)
+        const signedJWT = LZString.compressToEncodedURIComponent(stringifiedJWT)
+        const windowUrl = `${window.location.protocol}//${window.location.hostname}${window.location.port ? `:${window.location.port}` : ''}`
+        const siteurl = `${windowUrl}?sharedVarients=${signedJWT}`;
+        changePropsState({ 
+          url: currentProduct['Cover22'].visible ? '/models/Matress_natural.glb':'models/Matress_Performance.glb' ,
+          blob:null, 
+          // iosURL:iosSrc,
+          siteURL: siteurl
+        })
+        navigate(`/ar-view`,{replace:true})
     }
 
     console.log(bIsOnSmallScreen)
