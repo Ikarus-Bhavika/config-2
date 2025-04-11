@@ -63,7 +63,7 @@ export default function ModalQR({
         changePropsState({ 
           url: currentProduct['Cover22'].visible ? '/models/Matress_natural.glb':'models/Matress_Performance.glb' ,
           blob:null, 
-          // iosURL:iosSrc,
+          iosURL:currentProduct['Cover22'].visible ? '/models/Matress_natural.usdz':'models/Matress_Performance.usdz',
           siteURL: siteurl
         })
         navigate(`/ar-view`,{replace:true})

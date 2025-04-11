@@ -30,7 +30,7 @@ const ARCustomModelViewer = props => {
     <model-viewer
       ref={props.modelRef}
       src={props.url}
-      // ios-src={props.iosURL}
+      ios-src={props.iosURL}
       style={{ height: '100%', width: '100%'}}
       ar
       ar-modes='quick-look webxr scene-viewer'
