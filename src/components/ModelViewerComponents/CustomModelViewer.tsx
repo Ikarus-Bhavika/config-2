@@ -1725,7 +1725,7 @@ export default function CustomModelViewer(props:Omit<
   return (
     <>
       <Suspense fallback={<LoaderLottie />}>
-        <Canvas {...modelSettings.canvasSettings} ref={props.canvasRef}>
+        <Canvas dpr={Math.min(window.devicePixelRatio, 2)}  {...modelSettings.canvasSettings} ref={props.canvasRef}>
           {/* <OutlineEffectManager /> */}
           <PerspectiveCamera name='Main Perspective Camera'
             makeDefault
