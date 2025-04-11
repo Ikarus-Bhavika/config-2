@@ -25,7 +25,7 @@ export default function MenuItemsContainer(
     
   return (
     <div
-      className={`flex gap-4 flex-col w-full transition-all duration-400 ease-in-out overflow-hidden cursor-default
+      className={`flex gap-4 flex-col w-full transition-all duration-400 ease-in-out overflow-hidden relative cursor-default
         ${
             (store.expandedComponent === menuId || isHotspotMenu)
             ? "opacity-100 border-t-4 border-[#65646412] bg-[#FAFAFA]"
