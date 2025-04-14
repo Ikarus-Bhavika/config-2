@@ -205,7 +205,7 @@ export default function ModelViewer() {
       }
     }
   }
-  console.log("showQrCode",showQrCode);
+  // console.log("showQrCode",showQrCode);
   return (
     <>
       {showQrCode && <div className="absolute lg:hidden top-0 left-0 w-full h-full z-10 flex justify-center items-center">

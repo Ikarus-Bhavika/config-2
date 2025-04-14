@@ -29,7 +29,6 @@ import React, {
   useState,
   Dispatch,
   SetStateAction,
-  MutableRefObject,
   CSSProperties,
   Key,
 } from 'react';
@@ -45,10 +44,10 @@ import { ModelViewerSettingsType } from '../../types/editorTypes';
 import getTotalModelAndMaterialsToLoad from '../../utils/getTotalModelAndMaterialsToLoad';
 import useDataStore from '../../store/store';
 import MenuItemsContainer from '../MenuComponents/MenuItemsContainer';
-import { OutlineEffectManager } from './PostProcessing/OutlineEffectManager';
 import { MeshTranlationDataItemType } from '../../types/viewerTypes';
-import { lerp } from 'three/src/math/MathUtils.js';
 import { useSearchParams } from 'react-router-dom';
+import { Perf } from 'r3f-perf'
+import cacheTexture from '../../utils/cacheTexture.js';
 
 
 const diplayedOnce={}
@@ -623,8 +622,8 @@ function RenderingModel(props: Omit<
 
   const handleClick = (e: any) => {
     e.stopPropagation();
-    console.log(e.object.name);
-    console.log(e.point)
+    // console.log(e.object.name);
+    // console.log(e.point)
   };
 
   const handlePointerOver = (e: any) => {
@@ -659,7 +658,7 @@ function RenderingModel(props: Omit<
   };
 
   const setInitialMeshTranslationData = (loader: THREE.Object3D) => {
-    console.log("model position",loader.parent?.position)
+    // console.log("model position",loader.parent?.position)
     const box = new THREE.Box3().setFromObject(loader);
     const center = new THREE.Vector3();
     box.getCenter(center);
@@ -692,10 +691,10 @@ function RenderingModel(props: Omit<
     
     function handleFinish(e) {
       if (action && e.action.getClip().name === action.getClip().name) {
-        console.log("Setting mesh")
+        // console.log("Setting mesh")
         animationCompletionDuration=e.action.getClip().duration;
       }
-      console.log("Initial Animation completed",animationCompletionDuration)
+      // console.log("Initial Animation completed",animationCompletionDuration)
       setInitialAnimationCompleted(true)
       setInitialMeshTranslationData(loader1);
       mixer.removeEventListener("finished", handleFinish);
@@ -808,7 +807,25 @@ function RenderingModel(props: Omit<
     }
   }, [props.animation]);
 
+  const applyTextureOnNodes = async (loader: THREE.Object3D,updatedMapping:any) => {
+    const res = await cacheTexture(updatedMapping, {});
+    console.log("textureCache",res);
+    loader.traverse(async (child: THREE.Object3D) => {
+      if ((child as THREE.Mesh).isMesh) {
+        const mesh = child as THREE.Mesh;
+        if (Object.keys(store.meshTranslationData).length>0 && !store.meshTranslationData[props.name]) setInitialMeshTranslationData(loader1);
+        updatedMapping.map(async (d: any) => {
+          if (d?.target.includes(child.name)) {
+            // console.log(child.name)
+            await updateMaterial(d, (child as THREE.Mesh).material,setIsMaterialLoaded,res);
+          }
+        });
+      }
+    });
+  }
+
   useEffect(() => {
+    // console.log("running")
     const updatedMapping = getMaterialUpdate(
       props.values,
       props.products,
@@ -822,22 +839,15 @@ function RenderingModel(props: Omit<
         models:prev.models+1
       } 
     ))
-    loader1.traverse((child: THREE.Object3D) => {
-      if ((child as THREE.Mesh).isMesh) {
-        if (Object.keys(store.meshTranslationData).length>0 && !store.meshTranslationData[props.name]) setInitialMeshTranslationData(loader1);
-        updatedMapping.map((d: any) => {
-          if (d?.target.includes(child.name)) {
-            updateMaterial(d, (child as THREE.Mesh).material,setIsMaterialLoaded);
-          }
-        });
-      }
-    });
+    // console.log(props.name)
+    applyTextureOnNodes(loader1,updatedMapping)
+    
   }, [JSON.stringify(props.values)]);
 
   const translateMesh = (
     name:string
   ) => {
-    console.log(name)
+    // console.log(name)
     const tempData = store.meshTranslationData;
     const duration = 500;
     //here tempData[props.name].translationPosition is the offset that we need to change in model position
@@ -945,6 +955,7 @@ function RenderingModel(props: Omit<
   return (
     <primitive
       ref={meshRef}
+      key={props.name}
       position={[0, 0, 0]}
       onDoubleClick={handleClick}
       name={"Primitive_"+props.product}
@@ -970,7 +981,7 @@ function RenderingModelWrapper(props: Omit<
       values={props.product.value.parts}
       product={props.product}
       products={props.products}
-      key={props.index + props.product.value.modelSrc}
+      key={props.product.value.modelSrc}
       name={props.product.key}
       animation={props.product.value.animation}
       visible={props.product.value.visible}
@@ -1480,9 +1491,7 @@ const ChildCanvasCustomModelViewer = (
           const distance = maxDimension * 2; // Adjust multiplier as needed
           // Set camera position and adjust CameraControls
           camera.position.set(center.x, center.y, center.z + distance); // Place camera behind the model
-          console.log(center.x + distance+0.5,
-            center.y + 4,
-            center.z + distance+0.5,)
+
           props.cameraControls.current.setLookAt(
             center.x + distance/2,
             center.y + 3,
@@ -1516,7 +1525,7 @@ const ChildCanvasCustomModelViewer = (
   const linePointsRefs: LinePointsType | null = linePoints.current;
   const arrowPointsRefs: LinePointsType | null = arrowPoints.current;
   const axisPointsRefs: AxisPointsType | null = axisPoints.current;
-
+  // console.log(scene);
 
   return (
     <>
@@ -1561,7 +1570,7 @@ const ChildCanvasCustomModelViewer = (
                     product={product}
                     index={index}
                     products={props.product}
-                    key={index}
+                    key={product.key}
                     showDimensions={props.showDimensions}
                     playAnimation={props.playAnimation}
                     setPlayAnimationVisibility={props.setPlayAnimationVisibility}

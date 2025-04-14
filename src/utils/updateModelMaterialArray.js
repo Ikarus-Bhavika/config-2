@@ -13,12 +13,20 @@ const applyTextureOnMaterial = (texture, material, type) => {
   material.needsUpdate = true;
 };
 
-const applyCachedTexture = async (url, material, type, tiling) => {
+const applyCachedTexture = async (url, material, type, tiling, cachedTextures) => {
   if (url) {
     if (textureCache[url]) {
+      // console.log("texture cache used",url);
       applyTextureOnMaterial(textureCache[url], material, type);
     } else {
-      const texture = await textureLoader.loadAsync(url);
+      // console.log("texture cache not used",url, textureCache);
+      let texture = null;
+      if(cachedTextures[url]){
+        console.log(cachedTextures[url]);
+        texture = cachedTextures[url]
+      }else{
+        texture = await textureLoader.loadAsync(url);
+      }
       if (type==="map" || type=="emissiveMap") texture.colorSpace = THREE.SRGBColorSpace
       texture.encoding = sRGBEncoding;
       texture.flipY = false;
@@ -27,9 +35,9 @@ const applyCachedTexture = async (url, material, type, tiling) => {
       // texture.repeat.set(5, 5);
       if (tiling && ["map", "normalMap", "metalnessMap", "roughnessMap"].includes(type)) texture.repeat.set(tiling.x, tiling.y);
       textureCache[url] = texture;
+      // console.log(textureCache);
       applyTextureOnMaterial(textureCache[url], material, type);
     }
-
   }
 };
 
@@ -47,8 +55,9 @@ export function getMaterialUpdate(parts, product, key) {
   return ans;
 }
 
-export async function updateMaterial(updates, materialRef,isMaterialLoaded) {
+export async function updateMaterial(updates, materialRef,isMaterialLoaded,cachedTextures) {
   /* Exit early if no updates are provided */
+  // console.log("calling update material")
   if (!updates) return;
   const {
     aoMap,
@@ -67,14 +76,13 @@ export async function updateMaterial(updates, materialRef,isMaterialLoaded) {
   } = updates;
 
   /* Update the Base Map Of the Material */
-  await applyCachedTexture(baseMap, materialRef, "map",tiling);
-
+  await applyCachedTexture(baseMap, materialRef, "map",tiling,cachedTextures);
   /* Setting Material Group Properties */
-  aoMap ? await applyCachedTexture(aoMap, materialRef, "aoMap",tiling) : materialRef.aoMap = null;
-  emissiveMap ? await applyCachedTexture(emissiveMap, materialRef, "emissiveMap",tiling) :  materialRef.emissiveMap  = null;
-  normalMap ? await applyCachedTexture(normalMap, materialRef, "normalMap",tiling) :  materialRef.normalMap = null;
-  metalnessMap ?  await applyCachedTexture(metalnessMap, materialRef, "metalnessMap",tiling) : materialRef.metalnessMap = null;
-  roughnessMap ? await applyCachedTexture(roughnessMap, materialRef, "roughnessMap",tiling) : materialRef.roughnessMap = null;
+  aoMap ? await applyCachedTexture(aoMap, materialRef, "aoMap",tiling,cachedTextures) : materialRef.aoMap = null;
+  emissiveMap ? await applyCachedTexture(emissiveMap, materialRef, "emissiveMap",tiling,cachedTextures) :  materialRef.emissiveMap  = null;
+  normalMap ? await applyCachedTexture(normalMap, materialRef, "normalMap",tiling,cachedTextures) :  materialRef.normalMap = null;
+  metalnessMap ?  await applyCachedTexture(metalnessMap, materialRef, "metalnessMap",tiling,cachedTextures) : materialRef.metalnessMap = null;
+  roughnessMap ? await applyCachedTexture(roughnessMap, materialRef, "roughnessMap",tiling,cachedTextures) : materialRef.roughnessMap = null;
   /* Update material settings with provided values */
   const materialSettings = {
     roughness,

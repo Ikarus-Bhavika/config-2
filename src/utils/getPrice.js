@@ -14,7 +14,7 @@ export default function getPrice(models, preset, discount) {
         })
       }
     }
-    console.log("--->",key,tempTotal);
+    // console.log("--->",key,tempTotal);
     total += tempTotal
   })
   originalPrice = total

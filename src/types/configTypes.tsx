@@ -1,3 +1,6 @@
+import { MaterialType2 } from "./editorTypes"
+import { MaterialGroupType } from "./viewerTypes"
+
 export type modelMaterialType = {
     id:string,
     name:string,
@@ -81,4 +84,9 @@ export type activeHotspots = {
     active: boolean,
     activeMenuItemId:string,
     activeData:menuItemOptionType[],
+}
+
+export interface updatedMappingItemType extends MaterialType2 {
+    target: string[],
+    metalnessMap?: string
 }
