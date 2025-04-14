@@ -813,7 +813,6 @@ function RenderingModel(props: Omit<
     loader.traverse(async (child: THREE.Object3D) => {
       if ((child as THREE.Mesh).isMesh) {
         const mesh = child as THREE.Mesh;
-        if (Object.keys(store.meshTranslationData).length>0 && !store.meshTranslationData[props.name]) setInitialMeshTranslationData(loader1);
         updatedMapping.map(async (d: any) => {
           if (d?.target.includes(child.name)) {
             // console.log(child.name)
@@ -839,6 +838,8 @@ function RenderingModel(props: Omit<
         models:prev.models+1
       } 
     ))
+    if (Object.keys(store.meshTranslationData).length>0 && !store.meshTranslationData[props.name]) setInitialMeshTranslationData(loader1);
+
     // console.log(props.name)
     applyTextureOnNodes(loader1,updatedMapping)
     
