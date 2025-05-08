@@ -46,9 +46,9 @@ export default function MenuItemsContainer(
         </div>}
         {!isHotspotMenu && (
           <div key={menuOptions[selectedIndex].label} className="flex flex-col gap-[2px] lg:pb-6">
-            <div className={`py-1 text-[13px] xl:text-[15px]`}>{menuOptions[selectedIndex].label}</div>
+            {/* <div className={`py-1 text-[13px] xl:text-[15px]`}>{menuOptions[selectedIndex].label}</div> */}
             {/* overflow not working in this */}
-            <div className="flex gap-4 overflow-x-auto w-full">
+            <div className="flex gap-5 overflow-x-auto h-[100%] overflow-y-hidden py-2 w-full">
               {menuOptions[selectedIndex].baseMaps.map((material) => (
                 <div
                   onClick={() => {
@@ -71,13 +71,14 @@ export default function MenuItemsContainer(
                       );
                   }}
                   key={material.id}
-                  className="w-14 h-14 cursor-pointer shrink-0"
+                  className="w-14 h-16 cursor-pointer shrink-0"
                 >
                   <img
                     src={material.icon}
                     alt={material.label}
                     className="w-14 h-14 rounded"
                   />
+                  <div className="text-[12px]">{material.label}</div>
                 </div>
               ))}
             </div>

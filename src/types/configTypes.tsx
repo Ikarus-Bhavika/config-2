@@ -1,5 +1,5 @@
 import { MaterialType2 } from "./editorTypes"
-import { MaterialGroupType } from "./viewerTypes"
+import { presetType } from "./presetTypes"
 
 export type modelMaterialType = {
     id:string,
@@ -89,4 +89,10 @@ export type activeHotspots = {
 export interface updatedMappingItemType extends MaterialType2 {
     target: string[],
     metalnessMap?: string
+}
+
+export type preconfiguredMenuItemType = {
+    label:string,
+    icon:string,
+    preset: presetType
 }

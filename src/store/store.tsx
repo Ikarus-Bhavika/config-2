@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { menuHotSpotType, activeHotspots, menuItemType, modelConfigInterface, productDetailsType } from "../types/configTypes";
+import { menuHotSpotType, activeHotspots, menuItemType, modelConfigInterface, productDetailsType, preconfiguredMenuItemType } from "../types/configTypes";
 import { presetType } from "../types/presetTypes";
 import * as THREE from 'three';
 import { MeshTranlationDataItemType } from "../types/viewerTypes";
@@ -39,6 +39,9 @@ type DataStoreType = {
 
     meshTranslationData: {[key:string]: MeshTranlationDataItemType}
     setMeshTranslationData: (value: {[key:string]: MeshTranlationDataItemType}) =>void,
+
+    preconfiguredMenu:preconfiguredMenuItemType[],
+    setPreconfiguredMenu: (value:preconfiguredMenuItemType[]) => void,
 }
 
 const useDataStore = create<DataStoreType>((set)=>({
@@ -81,7 +84,10 @@ const useDataStore = create<DataStoreType>((set)=>({
     setInitialAnimationCompleted:(initialAnimationCompleted:boolean)=>set({initialAnimationCompleted}),
 
     meshTranslationData: {},
-    setMeshTranslationData: (meshTranslationData:{[key:string]: MeshTranlationDataItemType}) => set({meshTranslationData})
+    setMeshTranslationData: (meshTranslationData:{[key:string]: MeshTranlationDataItemType}) => set({meshTranslationData}),
+
+    preconfiguredMenu: [],
+    setPreconfiguredMenu: (preconfiguredMenu:preconfiguredMenuItemType[]) => set({preconfiguredMenu})
 }))
 
 export default useDataStore;

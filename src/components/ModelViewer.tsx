@@ -13,6 +13,7 @@ import useDataStore from "../store/store";
 import UIOverlay from "./ModelViewerComponents/UIOverlay";
 import handleTakeScreenshot from "../utils/handleTakeScreenshot.js";
 import ModalQR from "./ModelViewerComponents/ModalQR.js";
+import { GLTFExporter } from 'three/addons/exporters/GLTFExporter.js'
 
 export default function ModelViewer() {
   const store = useDataStore();
@@ -205,6 +206,23 @@ export default function ModelViewer() {
       }
     }
   }
+
+  function downloadModel(){
+    const exporter = new GLTFExporter()
+        exporter.parse(
+          modelRef.current,
+          function (glb) {
+            console.log("FILE",glb)
+            const output = JSON.stringify(glb)
+            const blob = new Blob([output], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download="model.glb"
+            link.click()
+          },
+          err => console.error('ERR->', err)
+    )
+  }
   // console.log("showQrCode",showQrCode);
   return (
     <>
@@ -229,6 +247,7 @@ export default function ModelViewer() {
             modelRef={modelRef}
           />
         )}
+        {/* <button onClick={()=>downloadModel()} className="absolute top-10 left-10 bg-black text-white px-4 py-2 rounded z-10">download</button> */}
         <UIOverlay
           toggleDimension={() => setShowDimensions(!showDimensions)}
           disableDimension={() => setShowDimensions(false)}

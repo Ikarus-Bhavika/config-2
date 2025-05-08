@@ -16,21 +16,21 @@
                 "name": "Light gray",
                 "price": 200,
                 "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
                 "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/LKLRxsXIfDzDYCPxlNYv_Cushioning_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/LKLRxsXIfDzDYCPxlNYv_Grey_Normal.jpg.jpg",
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
                 "reflectivity": 1,
                 "opacity": 1,
                 "emissive": "#000000",
                 "emissiveIntensity": 1,
                 "tiling": {
-                  "x": 3,
-                  "y": 3
+                  "x": 20,
+                  "y": 20
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg"
+                "baseMap": "images/Coil/Coil_Grey.png"
               },
               "Dark Grey": {
                 "id": "T4IZq98C0g3LbLo1e6VB",
@@ -58,21 +58,42 @@
                 "name": "White Head",
                 "price": 200,
                 "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
                 "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/LKLRxsXIfDzDYCPxlNYv_Cushioning_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/LKLRxsXIfDzDYCPxlNYv_Grey_Normal.jpg.jpg",
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
                 "reflectivity": 1,
                 "opacity": 1,
                 "emissive": "#000000",
                 "emissiveIntensity": 1,
                 "tiling": {
-                  "x": 3,
-                  "y": 1
+                  "x": 20,
+                  "y": 20
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg"
+                "baseMap": "images/Coil/Coil_White.png"
+              },
+              "Tan": {
+                "id": "XxJS38r2Eis2wN07XT2Q",
+                "name": "Tan",
+                "price": 200,
+                "roughness": 1,
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
+                "metalness": 0.1,
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
+                "reflectivity": 1,
+                "opacity": 1,
+                "emissive": "#000000",
+                "emissiveIntensity": 1,
+                "tiling": {
+                  "x": 20,
+                  "y": 20
+                },
+                "doubleSide": true,
+                "hexCode": "#ffffff",
+                "baseMap": "images/Coil/Coil_Tan.png"
               }
             }
           },
@@ -90,21 +111,21 @@
                 "name": "Light gray",
                 "price": 200,
                 "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
                 "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/LKLRxsXIfDzDYCPxlNYv_Cushioning_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/LKLRxsXIfDzDYCPxlNYv_Grey_Normal.jpg.jpg",
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
                 "reflectivity": 1,
                 "opacity": 1,
                 "emissive": "#000000",
                 "emissiveIntensity": 1,
                 "tiling": {
-                  "x": 3,
-                  "y": 3
+                  "x": 20,
+                  "y": 20
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg"
+                "baseMap": "images/Coil/Coil_Grey.png"
               },
               "Dark Grey": {
                 "id": "T4IZq98C0g3LbLo1e6VB",
@@ -132,21 +153,42 @@
                 "name": "White Head",
                 "price": 200,
                 "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
                 "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/LKLRxsXIfDzDYCPxlNYv_Cushioning_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/LKLRxsXIfDzDYCPxlNYv_Grey_Normal.jpg.jpg",
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
                 "reflectivity": 1,
                 "opacity": 1,
                 "emissive": "#000000",
                 "emissiveIntensity": 1,
                 "tiling": {
-                  "x": 3,
-                  "y": 3
+                  "x": 20,
+                  "y": 20
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg"
+                "baseMap": "images/Coil/Coil_White.png"
+              },
+              "Tan": {
+                "id": "XxJS38r2Eis2wN07XT2Q",
+                "name": "Tan",
+                "price": 200,
+                "roughness": 1,
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
+                "metalness": 0.1,
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
+                "reflectivity": 1,
+                "opacity": 1,
+                "emissive": "#000000",
+                "emissiveIntensity": 1,
+                "tiling": {
+                  "x": 20,
+                  "y": 20
+                },
+                "doubleSide": true,
+                "hexCode": "#ffffff",
+                "baseMap": "images/Coil/Coil_Tan.png"
               }
             }
           },
@@ -164,21 +206,21 @@
                 "name": "Light gray",
                 "price": 200,
                 "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
                 "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/LKLRxsXIfDzDYCPxlNYv_Cushioning_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/LKLRxsXIfDzDYCPxlNYv_Grey_Normal.jpg.jpg",
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
                 "reflectivity": 1,
                 "opacity": 1,
                 "emissive": "#000000",
                 "emissiveIntensity": 1,
                 "tiling": {
-                  "x": 3,
-                  "y": 3
+                  "x": 20,
+                  "y": 20
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg"
+                "baseMap": "images/Coil/Coil_Grey.png"
               },
               "Dark Grey": {
                 "id": "T4IZq98C0g3LbLo1e6VB",
@@ -206,21 +248,42 @@
                 "name": "White Head",
                 "price": 200,
                 "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
                 "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/LKLRxsXIfDzDYCPxlNYv_Cushioning_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/LKLRxsXIfDzDYCPxlNYv_Grey_Normal.jpg.jpg",
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
                 "reflectivity": 1,
                 "opacity": 1,
                 "emissive": "#000000",
                 "emissiveIntensity": 1,
                 "tiling": {
-                  "x": 3,
-                  "y": 3
+                  "x": 20,
+                  "y": 20
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg"
+                "baseMap": "images/Coil/Coil_White.png"
+              },
+              "Tan": {
+                "id": "XxJS38r2Eis2wN07XT2Q",
+                "name": "Tan",
+                "price": 200,
+                "roughness": 1,
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
+                "metalness": 0.1,
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
+                "reflectivity": 1,
+                "opacity": 1,
+                "emissive": "#000000",
+                "emissiveIntensity": 1,
+                "tiling": {
+                  "x": 20,
+                  "y": 20
+                },
+                "doubleSide": true,
+                "hexCode": "#ffffff",
+                "baseMap": "images/Coil/Coil_Tan.png"
               }
             }
           },
@@ -238,21 +301,21 @@
                 "name": "Light gray",
                 "price": 200,
                 "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
                 "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/LKLRxsXIfDzDYCPxlNYv_Cushioning_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/LKLRxsXIfDzDYCPxlNYv_Grey_Normal.jpg.jpg",
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
                 "reflectivity": 1,
                 "opacity": 1,
                 "emissive": "#000000",
                 "emissiveIntensity": 1,
                 "tiling": {
-                  "x": 3,
-                  "y": 3
+                  "x": 20,
+                  "y": 20
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg"
+                "baseMap": "images/Coil/Coil_Grey.png"
               },
               "Dark Grey": {
                 "id": "T4IZq98C0g3LbLo1e6VB",
@@ -280,21 +343,42 @@
                 "name": "White Head",
                 "price": 200,
                 "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
                 "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/LKLRxsXIfDzDYCPxlNYv_Cushioning_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/LKLRxsXIfDzDYCPxlNYv_Grey_Normal.jpg.jpg",
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
                 "reflectivity": 1,
                 "opacity": 1,
                 "emissive": "#000000",
                 "emissiveIntensity": 1,
                 "tiling": {
-                  "x": 3,
-                  "y": 3
+                  "x": 20,
+                  "y": 20
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg"
+                "baseMap": "images/Coil/Coil_White.png"
+              },
+              "Tan": {
+                "id": "XxJS38r2Eis2wN07XT2Q",
+                "name": "Tan",
+                "price": 200,
+                "roughness": 1,
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
+                "metalness": 0.1,
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
+                "reflectivity": 1,
+                "opacity": 1,
+                "emissive": "#000000",
+                "emissiveIntensity": 1,
+                "tiling": {
+                  "x": 20,
+                  "y": 20
+                },
+                "doubleSide": true,
+                "hexCode": "#ffffff",
+                "baseMap": "images/Coil/Coil_Tan.png"
               }
             }
           },
@@ -312,21 +396,21 @@
                 "name": "Light gray",
                 "price": 200,
                 "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
                 "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/LKLRxsXIfDzDYCPxlNYv_Cushioning_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/LKLRxsXIfDzDYCPxlNYv_Grey_Normal.jpg.jpg",
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
                 "reflectivity": 1,
                 "opacity": 1,
                 "emissive": "#000000",
                 "emissiveIntensity": 1,
                 "tiling": {
-                  "x": 3,
-                  "y": 3
+                  "x": 20,
+                  "y": 20
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg"
+                "baseMap": "images/Coil/Coil_Grey.png"
               },
               "Dark Grey": {
                 "id": "T4IZq98C0g3LbLo1e6VB",
@@ -354,21 +438,42 @@
                 "name": "White Head",
                 "price": 200,
                 "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
                 "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/LKLRxsXIfDzDYCPxlNYv_Cushioning_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/LKLRxsXIfDzDYCPxlNYv_Grey_Normal.jpg.jpg",
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
                 "reflectivity": 1,
                 "opacity": 1,
                 "emissive": "#000000",
                 "emissiveIntensity": 1,
                 "tiling": {
-                  "x": 3,
-                  "y": 3
+                  "x": 20,
+                  "y": 20
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg"
+                "baseMap": "images/Coil/Coil_White.png"
+              },
+              "Tan": {
+                "id": "XxJS38r2Eis2wN07XT2Q",
+                "name": "Tan",
+                "price": 200,
+                "roughness": 1,
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
+                "metalness": 0.1,
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
+                "reflectivity": 1,
+                "opacity": 1,
+                "emissive": "#000000",
+                "emissiveIntensity": 1,
+                "tiling": {
+                  "x": 20,
+                  "y": 20
+                },
+                "doubleSide": true,
+                "hexCode": "#ffffff",
+                "baseMap": "images/Coil/Coil_Tan.png"
               }
             }
           },
@@ -386,21 +491,21 @@
                 "name": "Light gray",
                 "price": 200,
                 "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
                 "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/LKLRxsXIfDzDYCPxlNYv_Cushioning_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/LKLRxsXIfDzDYCPxlNYv_Grey_Normal.jpg.jpg",
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
                 "reflectivity": 1,
                 "opacity": 1,
                 "emissive": "#000000",
                 "emissiveIntensity": 1,
                 "tiling": {
-                  "x": 3,
-                  "y": 3
+                  "x": 20,
+                  "y": 20
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg"
+                "baseMap": "images/Coil/Coil_Grey.png"
               },
               "Dark Grey": {
                 "id": "T4IZq98C0g3LbLo1e6VB",
@@ -428,21 +533,42 @@
                 "name": "White Head",
                 "price": 200,
                 "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/LKLRxsXIfDzDYCPxlNYv_Grey_Roughness.jpg.jpg",
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
                 "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/LKLRxsXIfDzDYCPxlNYv_Cushioning_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/LKLRxsXIfDzDYCPxlNYv_Grey_Normal.jpg.jpg",
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
                 "reflectivity": 1,
                 "opacity": 1,
                 "emissive": "#000000",
                 "emissiveIntensity": 1,
                 "tiling": {
-                  "x": 3,
-                  "y": 3
+                  "x": 20,
+                  "y": 20
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg"
+                "baseMap": "images/Coil/Coil_White.png"
+              },
+              "Tan": {
+                "id": "XxJS38r2Eis2wN07XT2Q",
+                "name": "Tan",
+                "price": 200,
+                "roughness": 1,
+                "roughnessMap": "images/Coil/Coil_Roughness.png",
+                "metalness": 0.1,
+                "metalnessMap": null,
+                "normalMap": "images/Coil/Coil_Normal.png",
+                "reflectivity": 1,
+                "opacity": 1,
+                "emissive": "#000000",
+                "emissiveIntensity": 1,
+                "tiling": {
+                  "x": 20,
+                  "y": 20
+                },
+                "doubleSide": true,
+                "hexCode": "#ffffff",
+                "baseMap": "images/Coil/Coil_Tan.png"
               }
             }
           }
@@ -456,828 +582,6 @@
       },
       "comfortModule1": {
         "parts": {
-          "1": {
-            "name": "1",
-            "target": [
-              "1"
-            ],
-            "materialGroups": [
-              "Comfort module"
-            ],
-            "materials": {
-              "Dark tan": {
-                "id": "BjPhiitkaY3qkmNHhOBk",
-                "name": "Dark tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
-              },
-              "Dark blue": {
-                "id": "BudBPD9zWZF4fwvg3K7W",
-                "name": "Dark blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
-              },
-              "Mid blue": {
-                "id": "CMB9MUjF8ubdjO8ESqdx",
-                "name": "Mid blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
-              },
-              "Light tan": {
-                "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                "name": "Light tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
-              },
-              "Light Blue": {
-                "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
-              },
-              "Med tan": {
-                "id": "qT6giXRb3B4PYCQVRUqr",
-                "name": "Med tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
-              }
-            }
-          },
-          "2": {
-            "name": "2",
-            "target": [
-              "2"
-            ],
-            "materialGroups": [
-              "Comfort module"
-            ],
-            "materials": {
-              "Dark tan": {
-                "id": "BjPhiitkaY3qkmNHhOBk",
-                "name": "Dark tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
-              },
-              "Dark blue": {
-                "id": "BudBPD9zWZF4fwvg3K7W",
-                "name": "Dark blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
-              },
-              "Mid blue": {
-                "id": "CMB9MUjF8ubdjO8ESqdx",
-                "name": "Mid blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
-              },
-              "Light tan": {
-                "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                "name": "Light tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
-              },
-              "Light Blue": {
-                "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
-              },
-              "Med tan": {
-                "id": "qT6giXRb3B4PYCQVRUqr",
-                "name": "Med tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
-              }
-            }
-          },
-          "3": {
-            "name": "3",
-            "target": [
-              "3"
-            ],
-            "materialGroups": [
-              "Comfort module"
-            ],
-            "materials": {
-              "Dark tan": {
-                "id": "BjPhiitkaY3qkmNHhOBk",
-                "name": "Dark tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
-              },
-              "Dark blue": {
-                "id": "BudBPD9zWZF4fwvg3K7W",
-                "name": "Dark blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
-              },
-              "Mid blue": {
-                "id": "CMB9MUjF8ubdjO8ESqdx",
-                "name": "Mid blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
-              },
-              "Light tan": {
-                "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                "name": "Light tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
-              },
-              "Light Blue": {
-                "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
-              },
-              "Med tan": {
-                "id": "qT6giXRb3B4PYCQVRUqr",
-                "name": "Med tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
-              }
-            }
-          },
-          "4": {
-            "name": "4",
-            "target": [
-              "4"
-            ],
-            "materialGroups": [
-              "Comfort module"
-            ],
-            "materials": {
-              "Dark tan": {
-                "id": "BjPhiitkaY3qkmNHhOBk",
-                "name": "Dark tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
-              },
-              "Dark blue": {
-                "id": "BudBPD9zWZF4fwvg3K7W",
-                "name": "Dark blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
-              },
-              "Mid blue": {
-                "id": "CMB9MUjF8ubdjO8ESqdx",
-                "name": "Mid blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
-              },
-              "Light tan": {
-                "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                "name": "Light tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
-              },
-              "Light Blue": {
-                "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
-              },
-              "Med tan": {
-                "id": "qT6giXRb3B4PYCQVRUqr",
-                "name": "Med tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
-              }
-            }
-          },
-          "5": {
-            "name": "5",
-            "target": [
-              "5"
-            ],
-            "materialGroups": [
-              "Comfort module"
-            ],
-            "materials": {
-              "Dark tan": {
-                "id": "BjPhiitkaY3qkmNHhOBk",
-                "name": "Dark tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
-              },
-              "Dark blue": {
-                "id": "BudBPD9zWZF4fwvg3K7W",
-                "name": "Dark blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
-              },
-              "Mid blue": {
-                "id": "CMB9MUjF8ubdjO8ESqdx",
-                "name": "Mid blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
-              },
-              "Light tan": {
-                "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                "name": "Light tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
-              },
-              "Light Blue": {
-                "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
-              },
-              "Med tan": {
-                "id": "qT6giXRb3B4PYCQVRUqr",
-                "name": "Med tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
-              }
-            }
-          },
-          "6": {
-            "name": "6",
-            "target": [
-              "6"
-            ],
-            "materialGroups": [
-              "Comfort module"
-            ],
-            "materials": {
-              "Dark tan": {
-                "id": "BjPhiitkaY3qkmNHhOBk",
-                "name": "Dark tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
-              },
-              "Dark blue": {
-                "id": "BudBPD9zWZF4fwvg3K7W",
-                "name": "Dark blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
-              },
-              "Mid blue": {
-                "id": "CMB9MUjF8ubdjO8ESqdx",
-                "name": "Mid blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
-              },
-              "Light tan": {
-                "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                "name": "Light tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
-              },
-              "Light Blue": {
-                "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
-                "price": 300,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
-              },
-              "Med tan": {
-                "id": "qT6giXRb3B4PYCQVRUqr",
-                "name": "Med tan",
-                "price": 400,
-                "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
-                "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/Kf1Gx7GYnDaELBdWHcRo_Mattress_Metallic.png.png",
-                "normalMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/NormalMaps/Kf1Gx7GYnDaELBdWHcRo_Tan_Normal.jpg.jpg",
-                "reflectivity": 1,
-                "opacity": 1,
-                "emissive": "#000000",
-                "emissiveIntensity": 1,
-                "tiling": {
-                  "y": 11,
-                  "x": 11
-                },
-                "doubleSide": true,
-                "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
-              }
-            }
-          },
           "B6": {
             "name": "B6",
             "target": [
@@ -1390,7 +694,7 @@
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                "baseMap": "images/Inner_Mattress_V4_BaseColor.png"
               },
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
@@ -1527,7 +831,7 @@
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                "baseMap": "images/Inner_Mattress_V4_BaseColor.png"
               },
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
@@ -1664,7 +968,7 @@
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                "baseMap": "images/Inner_Mattress_V4_BaseColor.png"
               },
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
@@ -1801,7 +1105,7 @@
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                "baseMap": "images/Inner_Mattress_V4_BaseColor.png"
               },
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
@@ -1938,7 +1242,7 @@
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                "baseMap": "images/Inner_Mattress_V4_BaseColor.png"
               },
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
@@ -2075,7 +1379,7 @@
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                "baseMap": "images/Inner_Mattress_V4_BaseColor.png"
               },
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
@@ -2101,7 +1405,7 @@
             }
           }
         },
-        "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/831776ab-3bbf-4c59-953b-767c6306c3cfcomfortModule1 (2)-v-0-v-.glb",
+        "modelSrc": "models/comfortModule1.glb",
         "name": "comfortModule1",
         "animations": [
           "alwaysAnimate"
@@ -2119,7 +1423,7 @@
             "materials": {}
           }
         },
-        "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/831776ab-3bbf-4c59-953b-767c6306c3cfCover22-v-0-v-.glb",
+        "modelSrc": "models/Cover22.glb",
         "name": "Cover22",
         "animations": [
           "alwaysAnimate"
@@ -2240,7 +1544,7 @@
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                "baseMap": "images/Inner_Mattress_V4_BaseColor.png"
               },
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
@@ -2377,7 +1681,7 @@
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                "baseMap": "images/Inner_Mattress_V4_BaseColor.png"
               },
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
@@ -2403,7 +1707,7 @@
             }
           }
         },
-        "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/831776ab-3bbf-4c59-953b-767c6306c3cfBase-v-0-v-.glb",
+        "modelSrc": "/models/Base.glb",
         "name": "Base",
         "animations": [],
         "price": 200
@@ -2424,47 +1728,47 @@
                 "name": "Mattress Cover",
                 "price": 500,
                 "roughness": 1,
-                "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/pvtKSu25Hc4mteawrVdR_Mattress_Cover_Roughness.png.png",
+                "roughnessMap": "/images/relief/Roughness_ReliefLayer.png",
                 "metalness": 0.1,
-                "metalnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/metalnessMap/pvtKSu25Hc4mteawrVdR_Cushioning_Metallic.png.png",
-                "normalMap": "/images/Mattress_Cover_Normal.png.jpg",
+                "metalnessMap": null,
+                "normalMap": "/images/relief/Normal_ReliefLayer.png",
                 "reflectivity": 1,
                 "opacity": 1,
                 "emissive": "#000000",
                 "emissiveIntensity": 1,
                 "tiling": {
-                  "y": 1,
-                  "x": 1
+                  "y": 30,
+                  "x": 30
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/pvtKSu25Hc4mteawrVdR_Mattress_Cover_BaseColor.png"
+                "baseMap": "images/relief/Grey_ReliefLayer.png"
               },
               "Relief Layer Performance": {
                     "id": "imP9AZS3dSFPb9G3XZDS",
                     "name": "Relief Layer Performance",
                     "price": 500,
                     "roughness": 1,
-                    "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/yco8sJLdHrqlyGgRaQu4_Mattress_Cover_V1_Roughness.png.png",
+                    "roughnessMap": "/images/relief/Roughness_ReliefLayer.png",
                     "metalness": 0,
                     "metalnessMap": null,
-                    "normalMap": "/images/Mattress_Cover_V1_Normal.png.jpg",
+                    "normalMap": "/images/relief/Normal_ReliefLayer.png",
                     "reflectivity": 1,
                     "opacity": 1,
                     "emissive": "#000000",
                     "emissiveIntensity": 0,
                     "tiling": {
-                        "y": 1,
-                        "x": 1
+                        "y": 30,
+                        "x": 30
                     },
                     "doubleSide": true,
                     "hexCode": "#6b88be",
-                    "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/yco8sJLdHrqlyGgRaQu4_Clean_Relief Layer_BaseColor_Utility - sRGB - Texture.jpg"
+                    "baseMap": "/images/relief/Blue_ReliefLayer.png"
                 }
             }
           }
         },
-        "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/831776ab-3bbf-4c59-953b-767c6306c3cfreliefLayer2-v-0-v-.glb",
+        "modelSrc": "models/reliefLayer2.glb",
         "name": "reliefLayer2",
         "animations": [
           "alwaysAnimate"
@@ -2585,7 +1889,7 @@
                 },
                 "doubleSide": true,
                 "hexCode": "#ffffff",
-                "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                "baseMap": "images/Inner_Mattress_V4_BaseColor.png"
               },
               "Med tan": {
                 "id": "qT6giXRb3B4PYCQVRUqr",
@@ -2611,7 +1915,7 @@
             }
           }
         },
-        "modelSrc": "https://d3dhh9nc6fiq1.cloudfront.net/assets/3Dmodels/831776ab-3bbf-4c59-953b-767c6306c3cfCover11-v-0-v-.glb",
+        "modelSrc": "models/Cover11.glb",
         "name": "Cover111",
         "animations": [
           "alwaysAnimate"
@@ -2660,13 +1964,13 @@
                     "baseMaps": [
                         {
                             "id": "DgBBHZuhb1lr6TDDHKgI",
-                            "label": "Mattress Cover",
+                            "label": "Natural",
                             "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/pvtKSu25Hc4mteawrVdR_Mattress_Cover_BaseColor.png",
                             "hexCode": "#ffffff"
                         },
                         {
                             "id": "imP9AZS3dSFPb9G3XZDS",
-                            "label": "Relief Layer Performance",
+                            "label": "Performance",
                             "hexCode": "#6b88be",
                             "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/yco8sJLdHrqlyGgRaQu4_Clean_Relief Layer_BaseColor_Utility - sRGB - Texture.jpg"
                         }
@@ -2684,15 +1988,7 @@
                 "target": [
                     {
                         "model": "comfortModule1",
-                        "part": "1"
-                    },
-                    {
-                        "model": "comfortModule1",
                         "part": "B1"
-                    },
-                    {
-                        "model": "comfortModule1",
-                        "part": "2"
                     },
                     {
                         "model": "comfortModule1",
@@ -2700,15 +1996,7 @@
                     },
                     {
                         "model": "comfortModule1",
-                        "part": "3"
-                    },
-                    {
-                        "model": "comfortModule1",
                         "part": "B3"
-                    },
-                    {
-                        "model": "comfortModule1",
-                        "part": "4"
                     },
                     {
                         "model": "comfortModule1",
@@ -2716,15 +2004,7 @@
                     },
                     {
                         "model": "comfortModule1",
-                        "part": "5"
-                    },
-                    {
-                        "model": "comfortModule1",
                         "part": "B5"
-                    },
-                    {
-                        "model": "comfortModule1",
-                        "part": "6"
                     },
                     {
                         "model": "comfortModule1",
@@ -2766,7 +2046,7 @@
                         "id": "dcRm9IYciOPzQJlKXLBq",
                         "label": "Light Blue",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                        "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
                 ]
               },
@@ -2774,23 +2054,11 @@
                 "target": [
                     {
                         "model": "comfortModule1",
-                        "part": "4"
-                    },
-                    {
-                        "model": "comfortModule1",
                         "part": "B4"
                     },
                     {
                         "model": "comfortModule1",
-                        "part": "2"
-                    },
-                    {
-                        "model": "comfortModule1",
                         "part": "B2"
-                    },
-                    {
-                        "model": "comfortModule1",
-                        "part": "6"
                     },
                     {
                         "model": "comfortModule1",
@@ -2832,7 +2100,7 @@
                         "id": "dcRm9IYciOPzQJlKXLBq",
                         "label": "Light Blue",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                        "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
                 ]
               },
@@ -2840,23 +2108,11 @@
                 "target": [
                     {
                         "model": "comfortModule1",
-                        "part": "1"
-                    },
-                    {
-                        "model": "comfortModule1",
                         "part": "B1"
                     },
                     {
                         "model": "comfortModule1",
-                        "part": "5"
-                    },
-                    {
-                        "model": "comfortModule1",
                         "part": "B5"
-                    },
-                    {
-                        "model": "comfortModule1",
-                        "part": "3"
                     },
                     {
                         "model": "comfortModule1",
@@ -2898,7 +2154,7 @@
                         "id": "dcRm9IYciOPzQJlKXLBq",
                         "label": "Light Blue",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                        "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
                       
                 ]
@@ -2907,7 +2163,7 @@
         },
         {
             "id":"menu4",
-            "label": "Coils Module",
+            "label": "Core Module",
             "type": "material",
             "options": [
               {
@@ -2939,28 +2195,201 @@
                     }
                 ],
                 "baseMaps": [
-                    {
-                      "id": "T4IZq98C0g3LbLo1e6VB",
-                      "label": "Dark Grey",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "EyjuwSL5edoJusns0NWY",
-                      "label": "Light gray",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "XxJS38r2Eis2wN07XTIQ",
-                      "label": "White Head",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    }
+                  {
+                    "id": "T4IZq98C0g3LbLo1e6VB",
+                    "label": "Dark Grey",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "EyjuwSL5edoJusns0NWY",
+                    "label": "Light gray",
+                    "icon": "images/Coil/Coil_Grey.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XTIQ",
+                    "label": "White Head",
+                    "icon": "images/Coil/Coil_White.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XT6Q",
+                    "label": "Tan",
+                    "icon": "images/Coil/Coil_Tan.png",
+                    "hexCode": "#ffffff"
+                  }
                 ]
               }
             ]
         }
+    ],
+    "predefinedPresetMenu": [
+      {
+        "label":"Natural",
+        "icon":"images/Natural.png",
+        "preset":{
+          "Coils2": {
+              "visible": true,
+              "parts": {
+                  "C1": {
+                      "material": "Light gray",
+                      "id": "EyjuwSL5edoJusns0NWY"
+                  },
+                  "C2": {
+                      "material": "Light gray",
+                      "id": "EyjuwSL5edoJusns0NWY"
+                  },
+                  "C4": {
+                      "material": "Dark Grey",
+                      "id": "T4IZq98C0g3LbLo1e6VB"
+                  },
+                  "C6": {
+                      "material": "Light gray",
+                      "id": "EyjuwSL5edoJusns0NWY"
+                  },
+                  "C3": {
+                      "material": "Dark Grey",
+                      "id": "T4IZq98C0g3LbLo1e6VB"
+                  },
+                  "C5": {
+                      "material": "Light gray",
+                      "id": "EyjuwSL5edoJusns0NWY"
+                  }
+              }
+          },
+          "comfortModule1": {
+              "visible": true,
+              "parts": {
+                  "B6": {
+                      "material": "Light tan",
+                      "id": "MJuZEjy8ZOTE8ZWb2zuc"
+                  },
+                  "B1": {
+                      "material": "Med tan",
+                      "id": "qT6giXRb3B4PYCQVRUqr"
+                  },
+                  "B2": {
+                      "material": "Med tan",
+                      "id": "qT6giXRb3B4PYCQVRUqr"
+                  },
+                  "B3": {
+                      "material": "Dark tan",
+                      "id": "BjPhiitkaY3qkmNHhOBk"
+                  },
+                  "B4": {
+                      "material": "Dark tan",
+                      "id": "BjPhiitkaY3qkmNHhOBk"
+                  },
+                  "B5": {
+                      "material": "Light tan",
+                      "id": "MJuZEjy8ZOTE8ZWb2zuc"
+                  }
+              }
+          },
+          "Cover22": {
+              "visible": true
+          },
+          "Base": {
+              "visible": true
+          },
+          "reliefLayer2": {
+              "visible": true,
+              "parts": {
+                  "ReliefLayer": {
+                      "material": "Mattress Cover",
+                      "id": "DgBBHZuhb1lr6TDDHKgI"
+                  }
+              }
+          },
+          "Cover111": {
+              "visible": false
+          }
+        }
+      },
+      {
+        "label":"Performance",
+        "icon":"images/Performance.png",
+        "preset": {
+          "Coils2": {
+              "visible": true,
+              "parts": {
+                  "C1": {
+                      "material": "White Head",
+                      "id": "XxJS38r2Eis2wN07XTIQ"
+                  },
+                  "C2": {
+                      "material": "White Head",
+                      "id": "XxJS38r2Eis2wN07XTIQ"
+                  },
+                  "C4": {
+                      "material": "White Head",
+                      "id": "XxJS38r2Eis2wN07XTIQ"
+                  },
+                  "C6": {
+                      "material": "White Head",
+                      "id": "XxJS38r2Eis2wN07XTIQ"
+                  },
+                  "C3": {
+                      "material": "White Head",
+                      "id": "XxJS38r2Eis2wN07XTIQ"
+                  },
+                  "C5": {
+                      "material": "White Head",
+                      "id": "XxJS38r2Eis2wN07XTIQ"
+                  }
+              }
+          },
+          "comfortModule1": {
+              "visible": true,
+              "parts": {
+                  "B6": {
+                      "material": "Mid blue",
+                      "id": "CMB9MUjF8ubdjO8ESqdx"
+                  },
+                  "B1": {
+                      "material": "Light Blue",
+                      "id": "dcRm9IYciOPzQJlKXLBq"
+                  },
+                  "B2": {
+                      "material": "Light Blue",
+                      "id": "dcRm9IYciOPzQJlKXLBq"
+                  },
+                  "B3": {
+                      "material": "Dark blue",
+                      "id": "BudBPD9zWZF4fwvg3K7W"
+                  },
+                  "B4": {
+                      "material": "Dark blue",
+                      "id": "BudBPD9zWZF4fwvg3K7W"
+                  },
+                  "B5": {
+                      "material": "Mid blue",
+                      "id": "CMB9MUjF8ubdjO8ESqdx"
+                  }
+              }
+          },
+          "Cover22": {
+              "visible": false
+          },
+          "Base": {
+              "visible": true
+          },
+          "reliefLayer2": {
+              "visible": true,
+              "parts": {
+                  "ReliefLayer": {
+                      "material": "Relief Layer Performance",
+                      "id": "imP9AZS3dSFPb9G3XZDS"
+                  }
+              }
+          },
+          "Cover111": {
+              "visible": true
+          }
+        }
+      }
+      
     ],
     "productDetails":{
         "title":"Mattress Configurator",
@@ -2999,30 +2428,6 @@
         "comfortModule1": {
             "visible": true,
             "parts": {
-                "1": {
-                    "material": "Dark tan",
-                    "id": "BjPhiitkaY3qkmNHhOBk"
-                },
-                "2": {
-                    "material": "Dark tan",
-                    "id": "BjPhiitkaY3qkmNHhOBk"
-                },
-                "3": {
-                    "material": "Dark tan",
-                    "id": "BjPhiitkaY3qkmNHhOBk"
-                },
-                "4": {
-                    "material": "Dark tan",
-                    "id": "BjPhiitkaY3qkmNHhOBk"
-                },
-                "5": {
-                    "material": "Dark tan",
-                    "id": "BjPhiitkaY3qkmNHhOBk"
-                },
-                "6": {
-                    "material": "Dark tan",
-                    "id": "BjPhiitkaY3qkmNHhOBk"
-                },
                 "B6": {
                     "material": "Dark tan",
                     "id": "BjPhiitkaY3qkmNHhOBk"
@@ -3071,54 +2476,7 @@
     "hotspotMenuItems":{
         "sdfmgn58489rwpqakdofdsvn":[
             {
-                "label":"Comfort Module Upper",
-                "target":[
-                    {
-                        "model":"comfortModule1",
-                        "part":"1"
-                    }
-                ],
-                "baseMaps":[
-                    {
-                        "id": "BjPhiitkaY3qkmNHhOBk",
-                        "label": "Dark tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "qT6giXRb3B4PYCQVRUqr",
-                        "label": "Med tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                        "label": "Light tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "BudBPD9zWZF4fwvg3K7W",
-                        "label": "Dark blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "label": "Mid blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
-                      }
-                ]
-            },
-            {
-                "label":"Comfort Module Bottom",
+                "label":"",
                 "target":[
                     {
                         "model":"comfortModule1",
@@ -3160,61 +2518,14 @@
                         "id": "dcRm9IYciOPzQJlKXLBq",
                         "label": "Light Blue",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                        "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
                 ]
             }
         ],
         "smkldg903uqrwjfp498owrey":[
             {
-                "label":"Comfort Module Upper",
-                "target":[
-                    {
-                        "model":"comfortModule1",
-                        "part":"2"
-                    }
-                ],
-                "baseMaps":[
-                    {
-                        "id": "BjPhiitkaY3qkmNHhOBk",
-                        "label": "Dark tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "qT6giXRb3B4PYCQVRUqr",
-                        "label": "Med tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                        "label": "Light tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "BudBPD9zWZF4fwvg3K7W",
-                        "label": "Dark blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "label": "Mid blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
-                      }
-                ]
-            },
-            {
-                "label":"Comfort Module Bottom",
+                "label":"",
                 "target":[
                     {
                         "model":"comfortModule1",
@@ -3256,61 +2567,14 @@
                         "id": "dcRm9IYciOPzQJlKXLBq",
                         "label": "Light Blue",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                        "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
                 ]
             }
         ],
         "sdjdkoejhferwp9eoa93ifdf":[
             {
-                "label":"Comfort Module Upper",
-                "target":[
-                    {
-                        "model":"comfortModule1",
-                        "part":"3"
-                    }
-                ],
-                "baseMaps":[
-                    {
-                        "id": "BjPhiitkaY3qkmNHhOBk",
-                        "label": "Dark tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "qT6giXRb3B4PYCQVRUqr",
-                        "label": "Med tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                        "label": "Light tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "BudBPD9zWZF4fwvg3K7W",
-                        "label": "Dark blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "label": "Mid blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
-                      }
-                ]
-            },
-            {
-                "label":"Comfort Module Bottom",
+                "label":"",
                 "target":[
                     {
                         "model":"comfortModule1",
@@ -3352,61 +2616,14 @@
                         "id": "dcRm9IYciOPzQJlKXLBq",
                         "label": "Light Blue",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                        "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
                 ]
             }
         ],
         "j748wio8ruhsjdfj84hfslkd":[
             {
-                "label":"Comfort Module Upper",
-                "target":[
-                    {
-                        "model":"comfortModule1",
-                        "part":"4"
-                    }
-                ],
-                "baseMaps":[
-                    {
-                        "id": "BjPhiitkaY3qkmNHhOBk",
-                        "label": "Dark tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "qT6giXRb3B4PYCQVRUqr",
-                        "label": "Med tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                        "label": "Light tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "BudBPD9zWZF4fwvg3K7W",
-                        "label": "Dark blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "label": "Mid blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
-                      }
-                ]
-            },
-            {
-                "label":"Comfort Module Bottom",
+                "label":"",
                 "target":[
                     {
                         "model":"comfortModule1",
@@ -3448,61 +2665,14 @@
                         "id": "dcRm9IYciOPzQJlKXLBq",
                         "label": "Light Blue",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                        "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
                 ]
             }
         ],
         "kasidsljfuiuwrhgirefsdgr":[
             {
-                "label":"Comfort Module Upper",
-                "target":[
-                    {
-                        "model":"comfortModule1",
-                        "part":"5"
-                    }
-                ],
-                "baseMaps":[
-                    {
-                        "id": "BjPhiitkaY3qkmNHhOBk",
-                        "label": "Dark tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "qT6giXRb3B4PYCQVRUqr",
-                        "label": "Med tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                        "label": "Light tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "BudBPD9zWZF4fwvg3K7W",
-                        "label": "Dark blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "label": "Mid blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
-                      }
-                ]
-            },
-            {
-                "label":"Comfort Module Bottom",
+                "label":"",
                 "target":[
                     {
                         "model":"comfortModule1",
@@ -3544,61 +2714,14 @@
                         "id": "dcRm9IYciOPzQJlKXLBq",
                         "label": "Light Blue",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                        "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
                 ]
             }
         ],
         "mzodewufwehfkjsdjfhksdjf":[
             {
-                "label":"Comfort Module Upper",
-                "target":[
-                    {
-                        "model":"comfortModule1",
-                        "part":"6"
-                    }
-                ],
-                "baseMaps":[
-                    {
-                        "id": "BjPhiitkaY3qkmNHhOBk",
-                        "label": "Dark tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "qT6giXRb3B4PYCQVRUqr",
-                        "label": "Med tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                        "label": "Light tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "BudBPD9zWZF4fwvg3K7W",
-                        "label": "Dark blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "label": "Mid blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
-                      }
-                ]
-            },
-            {
-                "label":"Comfort Module Bottom",
+                "label":"",
                 "target":[
                     {
                         "model":"comfortModule1",
@@ -3640,7 +2763,7 @@
                         "id": "dcRm9IYciOPzQJlKXLBq",
                         "label": "Light Blue",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light blue_basecolor.jpg"
+                        "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
                 ]
             }
@@ -3651,28 +2774,34 @@
                 "target": [
                     {
                       "model": "Coils2",
-                      "part": "C1"
+                      "part": "C2"
                     }
                 ],
                 "baseMaps": [
-                    {
-                      "id": "T4IZq98C0g3LbLo1e6VB",
-                      "label": "Dark Grey",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "EyjuwSL5edoJusns0NWY",
-                      "label": "Light gray",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "XxJS38r2Eis2wN07XTIQ",
-                      "label": "White Head",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    }
+                  {
+                    "id": "T4IZq98C0g3LbLo1e6VB",
+                    "label": "Dark Grey",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "EyjuwSL5edoJusns0NWY",
+                    "label": "Light gray",
+                    "icon": "images/Coil/Coil_Grey.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XTIQ",
+                    "label": "White Head",
+                    "icon": "images/Coil/Coil_White.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XT6Q",
+                    "label": "Tan",
+                    "icon": "images/Coil/Coil_Tan.png",
+                    "hexCode": "#ffffff"
+                  }
                 ]
             }
         ],
@@ -3682,28 +2811,34 @@
                 "target": [
                     {
                       "model": "Coils2",
-                      "part": "C2"
+                      "part": "C1"
                     }
                 ],
                 "baseMaps": [
-                    {
-                      "id": "T4IZq98C0g3LbLo1e6VB",
-                      "label": "Dark Grey",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "EyjuwSL5edoJusns0NWY",
-                      "label": "Light gray",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "XxJS38r2Eis2wN07XTIQ",
-                      "label": "White Head",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    }
+                  {
+                    "id": "T4IZq98C0g3LbLo1e6VB",
+                    "label": "Dark Grey",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "EyjuwSL5edoJusns0NWY",
+                    "label": "Light gray",
+                    "icon": "images/Coil/Coil_Grey.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XTIQ",
+                    "label": "White Head",
+                    "icon": "images/Coil/Coil_White.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XT6Q",
+                    "label": "Tan",
+                    "icon": "images/Coil/Coil_Tan.png",
+                    "hexCode": "#ffffff"
+                  }
                 ]
             }
         ],
@@ -3716,25 +2851,31 @@
                       "part": "C3"
                     }
                 ],
-                "baseMaps": [
-                    {
-                      "id": "T4IZq98C0g3LbLo1e6VB",
-                      "label": "Dark Grey",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "EyjuwSL5edoJusns0NWY",
-                      "label": "Light gray",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "XxJS38r2Eis2wN07XTIQ",
-                      "label": "White Head",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    }
+                "baseMaps":[
+                  {
+                    "id": "T4IZq98C0g3LbLo1e6VB",
+                    "label": "Dark Grey",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "EyjuwSL5edoJusns0NWY",
+                    "label": "Light gray",
+                    "icon": "images/Coil/Coil_Grey.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XTIQ",
+                    "label": "White Head",
+                    "icon": "images/Coil/Coil_White.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XT6Q",
+                    "label": "Tan",
+                    "icon": "images/Coil/Coil_Tan.png",
+                    "hexCode": "#ffffff"
+                  }
                 ]
             }
         ],
@@ -3748,24 +2889,30 @@
                     }
                 ],
                 "baseMaps": [
-                    {
-                      "id": "T4IZq98C0g3LbLo1e6VB",
-                      "label": "Dark Grey",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "EyjuwSL5edoJusns0NWY",
-                      "label": "Light gray",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "XxJS38r2Eis2wN07XTIQ",
-                      "label": "White Head",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    }
+                  {
+                    "id": "T4IZq98C0g3LbLo1e6VB",
+                    "label": "Dark Grey",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "EyjuwSL5edoJusns0NWY",
+                    "label": "Light gray",
+                    "icon": "images/Coil/Coil_Grey.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XTIQ",
+                    "label": "White Head",
+                    "icon": "images/Coil/Coil_White.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XT6Q",
+                    "label": "Tan",
+                    "icon": "images/Coil/Coil_Tan.png",
+                    "hexCode": "#ffffff"
+                  }
                 ]
             }
         ],
@@ -3779,24 +2926,30 @@
                     }
                 ],
                 "baseMaps": [
-                    {
-                      "id": "T4IZq98C0g3LbLo1e6VB",
-                      "label": "Dark Grey",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "EyjuwSL5edoJusns0NWY",
-                      "label": "Light gray",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "XxJS38r2Eis2wN07XTIQ",
-                      "label": "White Head",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    }
+                  {
+                    "id": "T4IZq98C0g3LbLo1e6VB",
+                    "label": "Dark Grey",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "EyjuwSL5edoJusns0NWY",
+                    "label": "Light gray",
+                    "icon": "images/Coil/Coil_Grey.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XTIQ",
+                    "label": "White Head",
+                    "icon": "images/Coil/Coil_White.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XT6Q",
+                    "label": "Tan",
+                    "icon": "images/Coil/Coil_Tan.png",
+                    "hexCode": "#ffffff"
+                  }
                 ]
             }
         ],
@@ -3810,24 +2963,30 @@
                     }
                 ],
                 "baseMaps": [
-                    {
-                      "id": "T4IZq98C0g3LbLo1e6VB",
-                      "label": "Dark Grey",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "EyjuwSL5edoJusns0NWY",
-                      "label": "Light gray",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Light gray_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    },
-                    {
-                      "id": "XxJS38r2Eis2wN07XTIQ",
-                      "label": "White Head",
-                      "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_White Head_basecolor.jpg",
-                      "hexCode": "#ffffff"
-                    }
+                  {
+                    "id": "T4IZq98C0g3LbLo1e6VB",
+                    "label": "Dark Grey",
+                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "EyjuwSL5edoJusns0NWY",
+                    "label": "Light gray",
+                    "icon": "images/Coil/Coil_Grey.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XTIQ",
+                    "label": "White Head",
+                    "icon": "images/Coil/Coil_White.png",
+                    "hexCode": "#ffffff"
+                  },
+                  {
+                    "id": "XxJS38r2Eis2wN07XT6Q",
+                    "label": "Tan",
+                    "icon": "images/Coil/Coil_Tan.png",
+                    "hexCode": "#ffffff"
+                  }
                 ]
             }
         ]
