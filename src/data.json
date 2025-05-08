@@ -675,9 +675,9 @@
                 "hexCode": "#ffffff",
                 "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
               },
-              "Light Blue": {
+              "Grey": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
+                "name": "Grey",
                 "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
@@ -812,9 +812,9 @@
                 "hexCode": "#ffffff",
                 "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
               },
-              "Light Blue": {
+              "Grey": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
+                "name": "Grey",
                 "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
@@ -949,9 +949,9 @@
                 "hexCode": "#ffffff",
                 "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
               },
-              "Light Blue": {
+              "Grey": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
+                "name": "Grey",
                 "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
@@ -1086,9 +1086,9 @@
                 "hexCode": "#ffffff",
                 "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
               },
-              "Light Blue": {
+              "Grey": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
+                "name": "Grey",
                 "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
@@ -1223,9 +1223,9 @@
                 "hexCode": "#ffffff",
                 "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
               },
-              "Light Blue": {
+              "Grey": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
+                "name": "Grey",
                 "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
@@ -1360,9 +1360,9 @@
                 "hexCode": "#ffffff",
                 "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
               },
-              "Light Blue": {
+              "Grey": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
+                "name": "Grey",
                 "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
@@ -1525,9 +1525,9 @@
                 "hexCode": "#ffffff",
                 "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
               },
-              "Light Blue": {
+              "Grey": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
+                "name": "Grey",
                 "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
@@ -1662,9 +1662,9 @@
                 "hexCode": "#ffffff",
                 "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
               },
-              "Light Blue": {
+              "Grey": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
+                "name": "Grey",
                 "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
@@ -1723,9 +1723,9 @@
               "Relief Layer"
             ],
             "materials": {
-              "Mattress Cover": {
+              "Natural": {
                 "id": "DgBBHZuhb1lr6TDDHKgI",
-                "name": "Mattress Cover",
+                "name": "Natural",
                 "price": 500,
                 "roughness": 1,
                 "roughnessMap": "/images/relief/Roughness_ReliefLayer.png",
@@ -1744,9 +1744,9 @@
                 "hexCode": "#ffffff",
                 "baseMap": "images/relief/Grey_ReliefLayer.png"
               },
-              "Relief Layer Performance": {
+              "Performance": {
                     "id": "imP9AZS3dSFPb9G3XZDS",
-                    "name": "Relief Layer Performance",
+                    "name": "Performance",
                     "price": 500,
                     "roughness": 1,
                     "roughnessMap": "/images/relief/Roughness_ReliefLayer.png",
@@ -1870,9 +1870,9 @@
                 "hexCode": "#ffffff",
                 "baseMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
               },
-              "Light Blue": {
+              "Grey": {
                 "id": "dcRm9IYciOPzQJlKXLBq",
-                "name": "Light Blue",
+                "name": "Grey",
                 "price": 300,
                 "roughness": 1,
                 "roughnessMap": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/roughMap/Kf1Gx7GYnDaELBdWHcRo_Tan_Roughness.jpg.jpg",
@@ -2044,7 +2044,7 @@
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
+                        "label": "Grey",
                         "hexCode": "#ffffff",
                         "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
@@ -2098,7 +2098,7 @@
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
+                        "label": "Grey",
                         "hexCode": "#ffffff",
                         "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
@@ -2152,7 +2152,7 @@
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
+                        "label": "Grey",
                         "hexCode": "#ffffff",
                         "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
@@ -2297,7 +2297,7 @@
               "visible": true,
               "parts": {
                   "ReliefLayer": {
-                      "material": "Mattress Cover",
+                      "material": "Natural",
                       "id": "DgBBHZuhb1lr6TDDHKgI"
                   }
               }
@@ -2348,11 +2348,11 @@
                       "id": "CMB9MUjF8ubdjO8ESqdx"
                   },
                   "B1": {
-                      "material": "Light Blue",
+                      "material": "Grey",
                       "id": "dcRm9IYciOPzQJlKXLBq"
                   },
                   "B2": {
-                      "material": "Light Blue",
+                      "material": "Grey",
                       "id": "dcRm9IYciOPzQJlKXLBq"
                   },
                   "B3": {
@@ -2379,7 +2379,7 @@
               "visible": true,
               "parts": {
                   "ReliefLayer": {
-                      "material": "Relief Layer Performance",
+                      "material": "Performance",
                       "id": "imP9AZS3dSFPb9G3XZDS"
                   }
               }
@@ -2464,7 +2464,7 @@
             "visible": true,
             "parts": {
                 "ReliefLayer": {
-                    "material": "Mattress Cover",
+                    "material": "Natural",
                     "id": "DgBBHZuhb1lr6TDDHKgI"
                 }
             }
@@ -2516,7 +2516,7 @@
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
+                        "label": "Grey",
                         "hexCode": "#ffffff",
                         "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
@@ -2565,7 +2565,7 @@
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
+                        "label": "Grey",
                         "hexCode": "#ffffff",
                         "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
@@ -2614,7 +2614,7 @@
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
+                        "label": "Grey",
                         "hexCode": "#ffffff",
                         "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
@@ -2663,7 +2663,7 @@
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
+                        "label": "Grey",
                         "hexCode": "#ffffff",
                         "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
@@ -2712,7 +2712,7 @@
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
+                        "label": "Grey",
                         "hexCode": "#ffffff",
                         "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
@@ -2761,7 +2761,7 @@
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Light Blue",
+                        "label": "Grey",
                         "hexCode": "#ffffff",
                         "icon": "images/Inner_Mattress_V4_BaseColor.png"
                       }
