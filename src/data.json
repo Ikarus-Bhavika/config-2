@@ -1926,23 +1926,26 @@
     "menu":[
         {
             "id":"menu1",
-            "label": "Select Cover",
+            "label": "Cover Selection",
             "type":"model",
+            "description":"Your bed's surface material is more than just a pretty face, it's your first point of contact every night (and sometimes lazy Sunday mornings). Choosing between our two signature covers is a llttie Ilke picking your ideal partner",
             "options": [
                 {
                     "label":"Covers",
                     "baseMaps":[
                         {
-                            "label": "Natural",
+                            "label": "Natural Cover",
                             "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/icons/C1.jpg.jpg",
                             "target": "Cover22",
-                            "id": "8567d147-fdd8-4742-a0ed-14b5fed30608"
+                            "id": "8567d147-fdd8-4742-a0ed-14b5fed30608",
+                            "description":"This Natural Cover is a quilted breathable fabric made of sustainable materials."
                         },
                         {
-                            "label": "Performance",
+                            "label": "Performance Cover",
                             "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/icons/C2.jpg.jpg",
                             "target": "Cover111",
-                            "id": "6f24191f-9a56-4b6d-8c8f-e894ad9f5c2f"
+                            "id": "6f24191f-9a56-4b6d-8c8f-e894ad9f5c2f",
+                            "description":"Made from a stretch-knit, cooling fabric, the Performance Cover is ideal for keeping cool and enhancing performance materials."
                         }
                     ]
                 }
@@ -1950,8 +1953,9 @@
         },
         {
             "id":"menu2",
-            "label": "Relief Layer",
+            "label": "Pressure Relief Selection",
             "type": "material",
+            "description":"The Initlal layer is the first feeling you experience in the TogetherBed™.",
             "options": [
                 {
                     "label": "Relief Layer",
@@ -1964,15 +1968,17 @@
                     "baseMaps": [
                         {
                             "id": "DgBBHZuhb1lr6TDDHKgI",
-                            "label": "Natural",
+                            "label": "Natural Latex",
                             "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/pvtKSu25Hc4mteawrVdR_Mattress_Cover_BaseColor.png",
-                            "hexCode": "#ffffff"
+                            "hexCode": "#ffffff",
+                            "description":"Great for those seeking a responsive, feel made from natural materials. Great for those seeking a traditional feel."
                         },
                         {
                             "id": "imP9AZS3dSFPb9G3XZDS",
-                            "label": "Performance",
+                            "label": "Performance Memory Foam",
                             "hexCode": "#6b88be",
-                            "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/yco8sJLdHrqlyGgRaQu4_Clean_Relief Layer_BaseColor_Utility - sRGB - Texture.jpg"
+                            "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/yco8sJLdHrqlyGgRaQu4_Clean_Relief Layer_BaseColor_Utility - sRGB - Texture.jpg",
+                            "description":"For those seeking Di essure-relief, memory foam is designed to relieve pressure from sensitive areas of the body"
                         }
                     ]
                 }
@@ -1980,76 +1986,11 @@
         },
         {
             "id":"menu3",
-            "label": "Comfort Module",
+            "label": "Personalized Contour Design",
             "type": "material",
+            "description":"",
             "options": [
-              {
-                "label": "Comfort Module",
-                "target": [
-                    {
-                        "model": "comfortModule1",
-                        "part": "B1"
-                    },
-                    {
-                        "model": "comfortModule1",
-                        "part": "B2"
-                    },
-                    {
-                        "model": "comfortModule1",
-                        "part": "B3"
-                    },
-                    {
-                        "model": "comfortModule1",
-                        "part": "B4"
-                    },
-                    {
-                        "model": "comfortModule1",
-                        "part": "B5"
-                    },
-                    {
-                        "model": "comfortModule1",
-                        "part": "B6"
-                    }
-                ],
-                "baseMaps": [
-                    {
-                        "id": "BjPhiitkaY3qkmNHhOBk",
-                        "label": "Dark tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "qT6giXRb3B4PYCQVRUqr",
-                        "label": "Med tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                        "label": "Light tan",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
-                      },
-                      {
-                        "id": "BudBPD9zWZF4fwvg3K7W",
-                        "label": "Dark blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "label": "Mid blue",
-                        "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
-                      },
-                      {
-                        "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Grey",
-                        "hexCode": "#ffffff",
-                        "icon": "images/Inner_Mattress_V4_BaseColor.png"
-                      }
-                ]
-              },
+             
               {"label": "Left Side",
                 "target": [
                     {
@@ -2070,37 +2011,43 @@
                         "id": "BjPhiitkaY3qkmNHhOBk",
                         "label": "Dark tan",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg",
+                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
                       },
                       {
                         "id": "qT6giXRb3B4PYCQVRUqr",
                         "label": "Med tan",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg",
+                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
                       },
                       {
                         "id": "MJuZEjy8ZOTE8ZWb2zuc",
                         "label": "Light tan",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg",
+                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
                       },
                       {
                         "id": "BudBPD9zWZF4fwvg3K7W",
                         "label": "Dark blue",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg",
+                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
                       },
                       {
                         "id": "CMB9MUjF8ubdjO8ESqdx",
                         "label": "Mid blue",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg",
+                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
                         "label": "Grey",
                         "hexCode": "#ffffff",
-                        "icon": "images/Inner_Mattress_V4_BaseColor.png"
+                        "icon": "images/Inner_Mattress_V4_BaseColor.png",
+                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
                       }
                 ]
               },
@@ -2124,37 +2071,43 @@
                         "id": "BjPhiitkaY3qkmNHhOBk",
                         "label": "Dark tan",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg"
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark tan_basecolor.jpg",
+                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
                       },
                       {
                         "id": "qT6giXRb3B4PYCQVRUqr",
                         "label": "Med tan",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg"
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Med tan_basecolor.jpg",
+                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
                       },
                       {
                         "id": "MJuZEjy8ZOTE8ZWb2zuc",
                         "label": "Light tan",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg"
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Light tan_basecolor.jpg",
+                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
                       },
                       {
                         "id": "BudBPD9zWZF4fwvg3K7W",
                         "label": "Dark blue",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg"
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_dark blue_basecolor.jpg",
+                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
                       },
                       {
                         "id": "CMB9MUjF8ubdjO8ESqdx",
                         "label": "Mid blue",
                         "hexCode": "#ffffff",
-                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg"
+                        "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/Kf1Gx7GYnDaELBdWHcRo_Mid blue_basecolor.jpg",
+                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
                         "label": "Grey",
                         "hexCode": "#ffffff",
-                        "icon": "images/Inner_Mattress_V4_BaseColor.png"
+                        "icon": "images/Inner_Mattress_V4_BaseColor.png",
+                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
                       }
                       
                 ]
@@ -2163,8 +2116,9 @@
         },
         {
             "id":"menu4",
-            "label": "Core Module",
+            "label": "Personalized Support Design",
             "type": "material",
+            "description":"",
             "options": [
               {
                 "label": "Coils Module",
@@ -2212,13 +2166,8 @@
                     "label": "White Head",
                     "icon": "images/Coil/Coil_White.png",
                     "hexCode": "#ffffff"
-                  },
-                  {
-                    "id": "XxJS38r2Eis2wN07XT6Q",
-                    "label": "Tan",
-                    "icon": "images/Coil/Coil_Tan.png",
-                    "hexCode": "#ffffff"
                   }
+                  
                 ]
               }
             ]
@@ -2228,6 +2177,8 @@
       {
         "label":"Natural",
         "icon":"images/Natural.png",
+        "description": "Loves long walks through the farmers’ market, cares about sustainability, and probably wears linen to the beach.",
+        
         "preset":{
           "Coils2": {
               "visible": true,
@@ -2306,10 +2257,12 @@
               "visible": false
           }
         }
+      
       },
       {
         "label":"Performance",
         "icon":"images/Performance.png",
+        "description": "Into hot yoga, wears tech gear, and is all about getting stuff done without breaking a sweat.",
         "preset": {
           "Coils2": {
               "visible": true,
@@ -2392,8 +2345,8 @@
       
     ],
     "productDetails":{
-        "title":"Mattress Configurator",
-        "description":  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates fugit doloribus asperiores ipsum quaerat, rem ipsam in voluptatum quam odio fugiat repudiandae possimus est libero delectus esse. Optio, voluptatem."
+        "title":"TogetherBed Design Studio",
+        "description":  "Design the perfect mattress for you and your sleeping partner here!  choose one of your standard builds, then customize the layers to your prefrence."
     },
     "defaultPreset":{
         "Coils2": {

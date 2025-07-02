@@ -569,15 +569,19 @@ const Hotspot = (props: Omit<
       
         {isActiveSpot &&
           <div className={`absolute bg-white p-2 rounded-md w-[200px] xl:w-[300px] shadow-lg`}>
-            <h2 className='p-2'>
-              {store.expandedComponent=="menu3" ? "Comfort" : "Coils"} Layer
-            </h2>
-            <MenuItemsContainer 
-              isHotspotMenu
-              menuId="dfmjg543u209qwejdfhg5487o"
-              menuOptions={store.allowHotspots.activeData}
-              // menuTarget={store.allowHotspots.activeData.}
-            />
+          <h2 className='p-2'>
+            {store.expandedComponent=="menu3" ? "Contour" : "Coils"} Layer
+          </h2>
+          {store.expandedComponent === "menu3" && (
+    <h3 className="py-1 text-[13px] xl:text-[15px]">
+      Contour Module
+    </h3>
+  )}
+          <MenuItemsContainer 
+isHotspotMenu
+menuId={props.spot.targetMenuId}
+menuOptions={store.allowHotspots.activeData}
+/>
           </div>
         }
       

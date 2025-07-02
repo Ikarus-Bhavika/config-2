@@ -15,10 +15,11 @@ import handleTakeScreenshot from "../utils/handleTakeScreenshot.js";
 import ModalQR from "./ModelViewerComponents/ModalQR.js";
 import { GLTFExporter } from 'three/addons/exporters/GLTFExporter.js'
 
-export default function ModelViewer() {
+export default function ModelViewer({ canvasRef }: { canvasRef: React.RefObject<HTMLDivElement | null> }) {
+
   const store = useDataStore();
 
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+ 
   const modelViewerRef = useRef<HTMLDivElement>(null);
 
   const [isModelLoaded, setIsModelLoaded] = useState<boolean>(false);
@@ -43,6 +44,7 @@ export default function ModelViewer() {
   const [pageBackgroundColor, setPageBackgroundColor] = useState("#ffffff");
   const [isSharedVariants, setIsSharedVariants] = useState(false);
   const [loadingAr, setLoadingAr] = useState(false);
+  
   const [playAnimation, setPlayAnimation] = useState(false);
   const [playAnimationVisibility, setPlayAnimationVisibility] = useState<
     string[]
@@ -256,11 +258,12 @@ export default function ModelViewer() {
           toggleFullScreen={handleFullScreen}
           toggleAR={() => setShowQrCode(!showQrCode)}
         />
+        <div ref={canvasRef} className="relative w-full h-full">
         <CustomModelViewer
           setModelRef={setModelRef}
           product={{ models: store.modelConfig }}
           currentProduct={store.preset}
-          canvasRef={canvasRef}
+         
           showDimensions={showDimensions}
           theme={theme}
           setIsModelLoaded={setIsModelLoaded}
@@ -268,7 +271,10 @@ export default function ModelViewer() {
           playAnimationVisibility={playAnimationVisibility}
           setPlayAnimationVisibility={setPlayAnimationVisibility}
         />
+        </div>
       </div>
     </>
   );
 }
+
+

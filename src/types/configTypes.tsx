@@ -41,9 +41,13 @@ export type menuItemBaseMapType = {
     icon:string
     hexCode?:string,
     target?:string
+    description:string;
 }
 
 export type menuItemOptionType = {
+    id:string;
+    icon:string;
+   
     label:string,
     target?:menuTargetType[],
     baseMaps:menuItemBaseMapType[]
@@ -59,6 +63,7 @@ export type menuItemType = {
     label:string,
     type:string,
     options: menuItemOptionType[],
+    description:string;
 }
 
 export interface modelConfigInterface {
@@ -94,5 +99,7 @@ export interface updatedMappingItemType extends MaterialType2 {
 export type preconfiguredMenuItemType = {
     label:string,
     icon:string,
-    preset: presetType
+    preset: presetType,
+    description:string
+
 }
