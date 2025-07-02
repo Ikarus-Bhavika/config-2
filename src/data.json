@@ -2748,12 +2748,6 @@
                     "label": "White Head",
                     "icon": "images/Coil/Coil_White.png",
                     "hexCode": "#ffffff"
-                  },
-                  {
-                    "id": "XxJS38r2Eis2wN07XT6Q",
-                    "label": "Tan",
-                    "icon": "images/Coil/Coil_Tan.png",
-                    "hexCode": "#ffffff"
                   }
                 ]
             }
@@ -2784,12 +2778,6 @@
                     "id": "XxJS38r2Eis2wN07XTIQ",
                     "label": "White Head",
                     "icon": "images/Coil/Coil_White.png",
-                    "hexCode": "#ffffff"
-                  },
-                  {
-                    "id": "XxJS38r2Eis2wN07XT6Q",
-                    "label": "Tan",
-                    "icon": "images/Coil/Coil_Tan.png",
                     "hexCode": "#ffffff"
                   }
                 ]
@@ -2822,12 +2810,6 @@
                     "label": "White Head",
                     "icon": "images/Coil/Coil_White.png",
                     "hexCode": "#ffffff"
-                  },
-                  {
-                    "id": "XxJS38r2Eis2wN07XT6Q",
-                    "label": "Tan",
-                    "icon": "images/Coil/Coil_Tan.png",
-                    "hexCode": "#ffffff"
                   }
                 ]
             }
@@ -2858,12 +2840,6 @@
                     "id": "XxJS38r2Eis2wN07XTIQ",
                     "label": "White Head",
                     "icon": "images/Coil/Coil_White.png",
-                    "hexCode": "#ffffff"
-                  },
-                  {
-                    "id": "XxJS38r2Eis2wN07XT6Q",
-                    "label": "Tan",
-                    "icon": "images/Coil/Coil_Tan.png",
                     "hexCode": "#ffffff"
                   }
                 ]
@@ -2896,13 +2872,8 @@
                     "label": "White Head",
                     "icon": "images/Coil/Coil_White.png",
                     "hexCode": "#ffffff"
-                  },
-                  {
-                    "id": "XxJS38r2Eis2wN07XT6Q",
-                    "label": "Tan",
-                    "icon": "images/Coil/Coil_Tan.png",
-                    "hexCode": "#ffffff"
                   }
+                  
                 ]
             }
         ],
@@ -2933,13 +2904,8 @@
                     "label": "White Head",
                     "icon": "images/Coil/Coil_White.png",
                     "hexCode": "#ffffff"
-                  },
-                  {
-                    "id": "XxJS38r2Eis2wN07XT6Q",
-                    "label": "Tan",
-                    "icon": "images/Coil/Coil_Tan.png",
-                    "hexCode": "#ffffff"
                   }
+                  
                 ]
             }
         ]

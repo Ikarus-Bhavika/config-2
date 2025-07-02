@@ -30,7 +30,7 @@ export default function Main() {
 
       {/* ✅ Pass same canvasRef to Menu → PriceContainer */}
       <Menu canvasRef={canvasRef} />
-      <MobileMenu />
+      <MobileMenu configRef={canvasRef}/>
     </div>
   );
 }
