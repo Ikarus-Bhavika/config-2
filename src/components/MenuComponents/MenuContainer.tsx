@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useDataStore from "../../store/store";
 import MenuItemsContainer from "./MenuItemsContainer";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function MenuContainer() {
   const store = useDataStore();
@@ -10,14 +11,14 @@ export default function MenuContainer() {
     if (id.length > 0) {
       store.setExpandedComponent(id);
 
-      if (id == "menu3") {
+      if (id === "menu3") {
         store.setAllowHotspots({
           for: "comfort",
           active: store.allowHotspots.active,
           activeMenuItemId: "",
           activeData: [],
         });
-      } else if (id == "menu4") {
+      } else if (id === "menu4") {
         store.setAllowHotspots({
           for: "coils",
           active: store.allowHotspots.active,
@@ -116,48 +117,58 @@ export default function MenuContainer() {
 
       {/* Other Menus */}
       {store.menu.map((menu, index) => {
-  const isOpen = store.expandedComponent === menu.id;
+        const isOpen = store.expandedComponent === menu.id;
 
-  return (
-    <div
-      key={menu.id}
-      className={`cursor-pointer ${
-        store.expandModel ? "" : "opacity-30"
-      } flex flex-col gap-2 pb-4 ${
-        index < store.menu.length - 1 ? "border-b border-[#aaa7a72e] pb-3" : ""
-      }`}
-    >
-      {/* ✅ FULL clickable block from heading till separator */}
-      <div
-        onClick={() => handleClick(isOpen ? "" : menu.id)}
-        className="w-full flex flex-col gap-1 cursor-pointer py-3"
-      >
-        <div className="flex justify-between items-start w-full">
-          <div className="flex flex-col">
-            <div className="font-medium">{menu.label}</div>
-            {isOpen && menu.description && (
-              <p className="text-sm text-black-600 pt-1">{menu.description}</p>
-            )}
+        return (
+          <div
+            key={menu.id}
+            className="flex flex-col gap-1 pb-4 border-b border-[#aaa7a72e]"
+          >
+            {/* Heading area always visible & clickable */}
+            <div
+              onClick={() => handleClick(isOpen ? "" : menu.id)}
+              className="w-full flex flex-col gap-1 cursor-pointer py-3"
+            >
+              <div className="flex justify-between items-start w-full">
+                <div className="flex flex-col">
+                  <div className="font-medium">{menu.label}</div>
+                  {isOpen && menu.description && (
+                    <p className="text-sm text-black-600 pt-1">{menu.description}</p>
+                  )}
+                </div>
+                <img
+                  src={"/images/arrow.png"}
+                  alt={"down arrow"}
+                  className={`w-4 h-4 mt-1 transition-transform duration-300 ease-in-out ${
+                    isOpen ? "rotate-180" : "rotate-0"
+                  }`}
+                />
+              </div>
+            </div>
+
+            {/* Dropdown content with animation */}
+            <AnimatePresence initial={false}>
+              {isOpen && (
+                <motion.div
+                  key="menu-content"
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                  className="overflow-hidden"
+                >
+                  <MenuItemsContainer
+                    isHotspotMenu={false}
+                    menuId={menu.id}
+                    menuOptions={menu.options}
+                    menuType={menu.type}
+                  />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
-          <img
-            src={"/images/arrow.png"}
-            alt={"down arrow"}
-            className={`w-4 h-4 mt-1 transition-transform duration-200 ${
-              isOpen ? "rotate-180" : "rotate-0"
-            }`}
-          />
-        </div>
-      </div>
-
-      <MenuItemsContainer
-        isHotspotMenu={false}
-        menuId={menu.id}
-        menuOptions={menu.options}
-        menuType={menu.type}
-        />
-        </div>
-      );
-    })}
-  </div>
-);
+        );
+      })}
+    </div>
+  );
 }
