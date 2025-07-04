@@ -48,10 +48,10 @@ export default function MenuItemsContainer({
     // Determine transform based on position
     if (relativePosition < -50) {
       // Item is significantly left of center - show tooltip to the right
-      return "translateX(6%)";
+      return "translateX(-17%)";
     } else if (relativePosition > 50) {
       // Item is significantly right of center - show tooltip to the left
-      return "translateX(-70%)";
+      return "translateX(-53%)";
     } else {
       // Item is near center - show tooltip centered
       return "translateX(-50%)";
@@ -319,48 +319,47 @@ export default function MenuItemsContainer({
           </>
         )}
 
-        {isHotspotMenu &&
-          menuOptions.map((option) => (
-            <div key={option.label} className="flex flex-col gap-[6px] lg:pb-6">
-              <div className="py-1 text-[13px] xl:text-[15px] font-semibold text-black">
-                {option.label}
+{isHotspotMenu &&
+  menuOptions.map((option, optionIdx) => (
+    <div key={option.label + "-hotspot"} className="flex flex-col gap-6 pt-3 lg:pb-6">
+      {[0, 3].map((startIdx, groupIdx) => (
+        <div key={`hotspot-group-${optionIdx}-${groupIdx}`} className="flex flex-col gap-2">
+          <div className="grid grid-cols-3 gap-4">
+            {option.baseMaps.slice(startIdx, startIdx + 3).map((material) => (
+              <div
+                key={material.id}
+                onClick={() => {
+                  if (menuType === "model" && material.target) {
+                    store.setPreset(
+                      updateModelInPreset(material.target, option.baseMaps, store.preset)
+                    );
+                  } else if (menuType === "material" && option.target) {
+                    store.setPreset(
+                      updateMaterialInPreset(option.target, material.label, material.id, store.preset)
+                    );
+                  }
+                }}
+                className="flex flex-col items-center gap-1 cursor-pointer w-20"
+              >
+                <div
+                  className="rounded-xl border border-transparent transition-all p-2 text-center"
+                  style={{ width: "72px", boxSizing: "border-box" }}
+                >
+                  <img
+                    src={material.icon}
+                    alt={material.label}
+                    className="w-14 h-14 object-contain"
+                  />
+                  <div className="text-xs font-medium mt-1">{material.label}</div>
+                </div>
               </div>
-              <div className="flex gap-4 overflow-x-auto">
-                {option.baseMaps.map((material) => (
-                  <div
-                    onClick={() => {
-                      if (menuType === "model" && material.target)
-                        store.setPreset(
-                          updateModelInPreset(
-                            material.target,
-                            option.baseMaps,
-                            store.preset
-                          )
-                        );
-                      else if (menuType === "material" && option.target)
-                        store.setPreset(
-                          updateMaterialInPreset(
-                            option.target,
-                            material.label,
-                            material.id,
-                            store.preset
-                          )
-                        );
-                    }}
-                    key={material.id}
-                    className="flex flex-col items-center cursor-pointer shrink-0"
-                  >
-                    <img
-                      src={material.icon}
-                      alt={material.label}
-                      className="w-10 h-10 rounded"
-                    />
-                    <span className="text-[10px] text-center mt-1">{material.label}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  ))}
+
       </div>
     </div>
   );

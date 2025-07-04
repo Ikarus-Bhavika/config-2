@@ -576,9 +576,16 @@ const Hotspot = (props: Omit<
             {store.expandedComponent=="menu3" ? "Contour" : "Coils"} Layer
           </h2>
           {store.expandedComponent === "menu3" && (
-    <h3 className="py-1 text-[13px] xl:text-[15px]">
-      Contour Module
+    <h3 className="py-1 text-[11px] xl:text-[13px] ml-2">
+         Contour Module
     </h3>
+
+  )}
+    {store.expandedComponent === "menu4" && (
+    <h4 className="py-1 text-[11px] xl:text-[13px] ml-2">
+      Coils Module
+    </h4>
+    
   )}
           <MenuItemsContainer 
 isHotspotMenu
