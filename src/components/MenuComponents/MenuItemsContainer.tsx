@@ -9,6 +9,7 @@ export default function MenuItemsContainer({
   isHotspotMenu = false,
   menuType = "material",
   menuOptions,
+  
 }: {
   menuId: string;
   isHotspotMenu: boolean;

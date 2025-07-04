@@ -12,6 +12,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Main from './components/Main'
 import ARView from './components/ar-view/ARView'
 import ModelViewerContextProvider from './store/modelViewerContext'
+import AdminPanel from './AdminPanel'
+import AdminGate from './AdminGate'
 
 extend(THREE)
 
@@ -35,6 +37,7 @@ console.log(store.preset)
           <Route path='/' element={<Main/>}/>
           <Route path='/shared' element={<Main/>}/>
           <Route path='/ar-view' element={<ARView />}/>
+          <Route path="/admin" element={<AdminGate />} />
         </Routes>
       </BrowserRouter>
     </ModelViewerContextProvider>

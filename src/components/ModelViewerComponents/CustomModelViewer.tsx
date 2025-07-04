@@ -399,6 +399,7 @@ export type RenderingModelCompProps = {
   playAnimationVisibility?:string[];
   onSuccessfulRender:()=>void;
   setPlayAnimationVisibility?: React.Dispatch<React.SetStateAction<string[]>>;
+  isModelLoaded?: boolean
   index:number;
   setCurrentCount:React.Dispatch<React.SetStateAction<{
     models: number;
@@ -436,6 +437,7 @@ export type ChildCanvasCustomModelViewerProps = {
   playAnimationVisibility?:string[];
   setPlayAnimationVisibility?: React.Dispatch<React.SetStateAction<string[]>>;
   setIsModelLoaded?: React.Dispatch<React.SetStateAction<boolean>>;
+  isModelLoaded?: boolean;
 };
 export type RenderingModelWrapperType = {
   product: any;
@@ -444,6 +446,7 @@ export type RenderingModelWrapperType = {
   showDimensions: any;
   modelViewerStore: UseBoundStore<StoreApi<any>>;
   cameraControls?: any;
+  isModelLoaded?:boolean;
   playAnimation?:boolean;
   playAnimationVisibility?:string[];
   onSuccessfulRender: ()=>void
@@ -685,51 +688,100 @@ function RenderingModel(props: Omit<
   }
 
   useEffect(() => {
-    
-    const action = actions["alwaysAnimate"];
-    if (initialAnimationCompleted || !action || !meshRef.current) return;
-    const mesh = meshRef.current;
+    const rawAction = actions["alwaysAnimate"];
+    if (initialAnimationCompleted || !rawAction || !meshRef.current) return;
+  
+    const action = rawAction as THREE.AnimationAction;
     const mixer = action.getMixer();
-    
-    const duration = animationCompletionDuration;
-    
-    function handleFinish(e) {
-      if (action && e.action.getClip().name === action.getClip().name) {
-        // console.log("Setting mesh")
-        animationCompletionDuration=e.action.getClip().duration;
+  
+    // Apply first animation frame immediately to prevent flicker
+    action.reset();
+    action.play();
+    action.paused = true;
+    action.time = 0;
+    mixer.update(0);
+  
+    function handleFinish(e: THREE.Event) {
+      const finishedAction = (e as any).action as THREE.AnimationAction;
+  
+      if (finishedAction?.getClip().name === action.getClip().name) {
+        animationCompletionDuration = action.getClip().duration;
       }
-      // console.log("Initial Animation completed",animationCompletionDuration)
-      setInitialAnimationCompleted(true)
+  
+      setInitialAnimationCompleted(true);
       setInitialMeshTranslationData(loader1);
       mixer.removeEventListener("finished", handleFinish);
     }
-    function playInitialAnimation(){
-      if(!action || initialAnimationCompleted) return;
-      
-      mixer.removeEventListener("finished", handleFinish); // prevent duplicates
+  
+    function playInitialAnimation() {
+      if (!action || initialAnimationCompleted) return;
+  
+      mixer.removeEventListener("finished", handleFinish);
       mixer.addEventListener("finished", handleFinish);
-      
-      if (duration) {
-        action.time = duration;
-        action.play().setLoop(THREE.LoopOnce, 1);
-      } else {
-        action.reset().fadeIn(0.5).play().setLoop(THREE.LoopOnce, 1);
-      }
-    
-      action.enabled = true;
+  
+      action.reset();
+      action.setLoop(THREE.LoopOnce, 1);
       action.clampWhenFinished = true;
+      action.enabled = true;
+      action.fadeIn(0.5).play();
     }
-    setTimeout(playInitialAnimation,2000)
-
-    if (duration) {
-      action.time = duration;
-      action.play().setLoop(THREE.LoopOnce, 1);
-    }
+  
+    const timeout = setTimeout(playInitialAnimation, 600);
   
     return () => {
       mixer.removeEventListener("finished", handleFinish);
+      clearTimeout(timeout);
     };
-  }, [actions]);
+  }, [actions, props]);
+  
+  
+  // useEffect(() => {
+  //   const rawAction = actions["alwaysAnimate"];
+  //   if (
+  //     initialAnimationCompleted ||
+  //     !rawAction ||
+  //     !meshRef.current ||
+  //     !props.isModelLoaded
+  //   ) return;
+  
+  //   const action = rawAction as THREE.AnimationAction;
+  //   const mixer = action.getMixer();
+  
+  //   function handleFinish(e: THREE.Event) {
+  //     if ((e as any).action?.getClip().name === action.getClip().name) {
+  //       animationCompletionDuration = action.getClip().duration;
+  //     }
+  //     console.log("✅ Initial animation finished");
+  //     setInitialAnimationCompleted(true);
+  //     setInitialMeshTranslationData(loader1);
+  //     mixer.removeEventListener("finished", handleFinish);
+  //   }
+  
+  //   function playInitialAnimation() {
+  //     if (!action || initialAnimationCompleted) return;
+  
+  //     console.log("🎬 Playing initial animation");
+  
+  //     mixer.removeEventListener("finished", handleFinish);
+  //     mixer.addEventListener("finished", handleFinish);
+  
+  //     action.reset();
+  //     action.enabled = true;
+  //     action.clampWhenFinished = true;
+  //     action.setLoop(THREE.LoopOnce, 1);
+  //     action.fadeIn(0.5).play();
+  //   }
+  
+  //   const timeout = setTimeout(playInitialAnimation, 1000);
+  
+  //   return () => {
+  //     mixer.removeEventListener("finished", handleFinish);
+  //     clearTimeout(timeout);
+  //   };
+  // }, [actions, props.isModelLoaded]);
+  
+  
+  
   
   useEffect(() => {
     
@@ -997,6 +1049,7 @@ function RenderingModelWrapper(props: Omit<
       setPlayAnimationVisibility={props.setPlayAnimationVisibility}
       playAnimationVisibility={props.playAnimationVisibility}
       setCurrentCount={props.setCurrentCount}
+      isModelLoaded={props.isModelLoaded}
     />
 }
 
@@ -1188,6 +1241,8 @@ const ChildCanvasCustomModelViewer = (
   const measurementRef = useRef<THREE.Group<THREE.Object3DEventMap>>(null);
   const modelRef = useRef<THREE.Group<THREE.Object3DEventMap>>(new THREE.Group());
   const [y, setY] = useState<number>(0);
+  
+
   const [modelSize, setModelSize] = useState<THREE.Vector3>(
     new THREE.Vector3(0, 0, 0)
   );
@@ -1582,6 +1637,7 @@ const ChildCanvasCustomModelViewer = (
                     playAnimationVisibility={props.playAnimationVisibility}
                     onSuccessfulRender={setContactShadowY}
                     setCurrentCount={setCurrentCount}
+                    isModelLoaded={props.isModelLoaded}
                   />
                   </Suspense>
               ))}
@@ -1698,7 +1754,26 @@ export default function CustomModelViewer(props:Omit<
   "modelViewerSettings" |
   "modelViewerStore"
 >) {
-  
+  const [isModelLoaded, setIsModelLoaded] = useState(false);
+  const [tooltipText, setTooltipText] = useState("");
+const [tooltipPosition, setTooltipPosition] = useState({ top: 0, left: 0 });
+const [showTooltip, setShowTooltip] = useState(false);
+
+const updateTooltipPosition = (e: React.MouseEvent) => {
+  const tooltipWidth = 250;
+  const tooltipHeight = 60;
+
+  let left = e.clientX + 20;
+  let top = e.clientY + 20;
+
+  if (left + tooltipWidth > window.innerWidth) left = e.clientX - tooltipWidth - 20;
+  if (top + tooltipHeight > window.innerHeight) top = window.innerHeight - tooltipHeight - 20;
+  if (left < 0) left = e.clientX + 20;
+  if (top < 0) top = e.clientY + 20;
+
+  setTooltipPosition({ top, left });
+};
+
   const modelSettings = {
     verticalAdjustment: 0,
     canvasSettings: {
@@ -1763,10 +1838,24 @@ export default function CustomModelViewer(props:Omit<
               {...props}
               modelSettings={modelSettings}
               setIsModelLoaded={props.setIsModelLoaded}
+              isModelLoaded={isModelLoaded}
             />
           {/* )} */}
         </Canvas>
       </Suspense>
+      {showTooltip && (
+        <div
+          className="fixed z-[9999] bg-black text-white text-xs rounded-md px-3 py-2 shadow-md max-w-[250px] pointer-events-none"
+          style={{
+            top: tooltipPosition.top,
+            left: tooltipPosition.left,
+          }}
+        >
+          {tooltipText}
+        </div>
+      )}
+   
+
     </>
   );
 }
