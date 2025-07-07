@@ -57,7 +57,7 @@ export default function AdminPanel() {
               return (
                 <div
                   key={entry.id}
-                  className="flex items-center gap-90 px-2 py-2"
+                   className="grid grid-cols-[500px_800px_190px_140px] items-center px-2 py-2 gap-4"
                 >
                   {/* Image + Name */}
                   <div className="flex items-center gap-4 min-w-[180px]">

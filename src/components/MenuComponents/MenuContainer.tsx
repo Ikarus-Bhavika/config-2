@@ -100,10 +100,11 @@ export default function MenuContainer() {
                     </div>
 
                     {/* RIGHT: description text */}
-                    <div className="flex flex-col text-sm text-black-700 leading-snug">
-                      <span className="font-semibold">{menu.label}:</span>
-                      <span>{menu.description}</span>
-                    </div>
+                    <div className="text-sm text-black-700 leading-snug">
+  <span className="font-semibold">{menu.label}:</span>{" "}
+  <span>{menu.description}</span>
+</div>
+
                   </div>
                 );
               })}

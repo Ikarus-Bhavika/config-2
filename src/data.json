@@ -1968,6 +1968,7 @@
                     "baseMaps": [
                         {
                             "id": "DgBBHZuhb1lr6TDDHKgI",
+                            "key":"Natural",
                             "label": "Natural Latex",
                             "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/pvtKSu25Hc4mteawrVdR_Mattress_Cover_BaseColor.png",
                             "hexCode": "#ffffff",
@@ -1975,9 +1976,10 @@
                         },
                         {
                             "id": "imP9AZS3dSFPb9G3XZDS",
+                            "key":"Performance",
                             "label": "Performance Memory Foam",
-                            "hexCode": "#6b88be",
                             "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/yco8sJLdHrqlyGgRaQu4_Clean_Relief Layer_BaseColor_Utility - sRGB - Texture.jpg",
+                            "hexCode": "#6b88be",
                             "description":"For those seeking Di essure-relief, memory foam is designed to relieve pressure from sensitive areas of the body"
                         }
                     ]

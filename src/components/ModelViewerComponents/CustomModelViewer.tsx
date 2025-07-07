@@ -51,7 +51,39 @@ import cacheTexture from '../../utils/cacheTexture.js';
 
 
 const diplayedOnce={}
-
+// const hotspotsComfort = [
+//   { 
+//     targetMenuId:"sdfmgn58489rwpqakdofdsvn",
+//     text:"Edit",
+//     point:{x: 2.163306866133267, y: 0.5878, z: 0.7266957592936525}// 1
+//   },
+//   {
+//     targetMenuId:"sdjdkoejhferwp9eoa93ifdf",
+//     text:"Edit",
+//     point:{x: 2.1693037831961828, y: 0.5878, z: 0.07512792061767617}//2s
+//   },
+//   {
+//     targetMenuId:"kasidsljfuiuwrhgirefsdgr",
+//     text:"Edit",
+//     point:{x: 2.1495794663848313, y: 0.5878, z: -0.709863264912324}//3
+//   },
+//   {
+//     targetMenuId:"smkldg903uqrwjfp498owrey",
+//     text:"Edit",
+//     // point:{x: 0.7646976058974313, y: 0.5878, z: 0.652572240579195}//4
+//     point:{x: 0.6073, y: 0.5878, z: 0.652572240579195}
+//   },
+//   {
+//     targetMenuId:"j748wio8ruhsjdfj84hfslkd",
+//     text:"Edit",
+//     point:{x: 0.6200, y: 0.5878, z: -0.0784104725733182}//5
+//   },
+//   {
+//     targetMenuId:"mzodewufwehfkjsdjfhksdjf",
+//     text:"Edit",
+//     point:{x: 0.5550, y: 0.5878, z: -0.6709727926677533}//6
+//   },
+// ]
 
 const hotspotsComfort = [
   { 
@@ -571,7 +603,8 @@ const Hotspot = (props: Omit<
         </div>
       
         {isActiveSpot &&
-          <div className={`absolute bg-white p-2 rounded-md w-[200px] xl:w-[300px] shadow-lg`}>
+         <div className="absolute bg-white p-2 rounded-md w-[250px] sm:w-[280px] xl:w-[320px] shadow-lg">
+
           <h2 className='p-2'>
             {store.expandedComponent=="menu3" ? "Contour" : "Coils"} Layer
           </h2>
@@ -638,6 +671,12 @@ function RenderingModel(props: Omit<
     e.stopPropagation();
     // console.log(e.object.name);
     // console.log(e.point)
+    const point = e.point;
+    console.log("🟢 Clicked position:", {
+      x: Number(point.x.toFixed(4)),
+      y: Number(point.y.toFixed(4)),
+      z: Number(point.z.toFixed(4))
+    });
   };
 
   const handlePointerOver = (e: any) => {
@@ -1825,6 +1864,7 @@ const updateTooltipPosition = (e: React.MouseEvent) => {
   return (
     <>
       <Suspense fallback={<LoaderLottie />}>
+      <div className="h-[80vh] md:h-[90vh] w-full">
         <Canvas dpr={Math.min(window.devicePixelRatio, 2)}  {...modelSettings.canvasSettings} ref={props.canvasRef}>
           {/* <OutlineEffectManager /> */}
           <PerspectiveCamera name='Main Perspective Camera'
@@ -1849,6 +1889,7 @@ const updateTooltipPosition = (e: React.MouseEvent) => {
             />
           {/* )} */}
         </Canvas>
+        </div>
       </Suspense>
       {showTooltip && (
         <div
