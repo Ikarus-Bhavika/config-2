@@ -52,7 +52,7 @@ export default function MenuContainer() {
           onClick={() => setIsPresetOpen(!isPresetOpen)}
           className="flex justify-between items-center cursor-pointer"
         >
-          <div className="font-medium">TogetherBed Models</div>
+          <div className="font-medium">TogetherBed™ Models</div>
           <img
             src="/images/arrow.png"
             alt="Toggle"
