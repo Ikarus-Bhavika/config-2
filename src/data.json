@@ -2200,7 +2200,7 @@
               "visible": true,
               "parts": {
                   "C1": {
-                      "material": "Light gray",
+                      "material": "White Head",
                       "id": "EyjuwSL5edoJusns0NWY"
                   },
                   "C2": {
@@ -2208,15 +2208,15 @@
                       "id": "EyjuwSL5edoJusns0NWY"
                   },
                   "C4": {
-                      "material": "Dark Grey",
+                      "material": "Light gray",
                       "id": "T4IZq98C0g3LbLo1e6VB"
                   },
                   "C6": {
-                      "material": "Light gray",
+                      "material": "Dark Grey",
                       "id": "EyjuwSL5edoJusns0NWY"
                   },
                   "C3": {
-                      "material": "Dark Grey",
+                      "material": "White Head",
                       "id": "T4IZq98C0g3LbLo1e6VB"
                   },
                   "C5": {
@@ -2229,11 +2229,11 @@
               "visible": true,
               "parts": {
                   "B6": {
-                      "material": "Light tan",
+                      "material": "Dark tan",
                       "id": "MJuZEjy8ZOTE8ZWb2zuc"
                   },
                   "B1": {
-                      "material": "Med tan",
+                      "material": "Light tan",
                       "id": "qT6giXRb3B4PYCQVRUqr"
                   },
                   "B2": {
@@ -2241,15 +2241,15 @@
                       "id": "qT6giXRb3B4PYCQVRUqr"
                   },
                   "B3": {
-                      "material": "Dark tan",
+                      "material": "Light tan",
                       "id": "BjPhiitkaY3qkmNHhOBk"
                   },
                   "B4": {
-                      "material": "Dark tan",
+                      "material": "Med tan",
                       "id": "BjPhiitkaY3qkmNHhOBk"
                   },
                   "B5": {
-                      "material": "Light tan",
+                      "material": "Med tan",
                       "id": "MJuZEjy8ZOTE8ZWb2zuc"
                   }
               }
@@ -2313,7 +2313,7 @@
               "visible": true,
               "parts": {
                   "B6": {
-                      "material": "Mid blue",
+                      "material": "Dark blue",
                       "id": "CMB9MUjF8ubdjO8ESqdx"
                   },
                   "B1": {
@@ -2321,15 +2321,15 @@
                       "id": "dcRm9IYciOPzQJlKXLBq"
                   },
                   "B2": {
-                      "material": "Grey",
+                      "material": "Mid blue",
                       "id": "dcRm9IYciOPzQJlKXLBq"
                   },
                   "B3": {
-                      "material": "Dark blue",
+                      "material": "Grey",
                       "id": "BudBPD9zWZF4fwvg3K7W"
                   },
                   "B4": {
-                      "material": "Dark blue",
+                      "material": "Mid blue",
                       "id": "BudBPD9zWZF4fwvg3K7W"
                   },
                   "B5": {
