@@ -91,7 +91,8 @@ export default function MenuItemsContainer({
       store.setPreset(
         updateMaterialInPreset(
           menuOptions[selectedIndex].target,
-          material.key||material.label,
+          material.materialkey || material.key||material.label,
+
           material.id,
           store.preset
         )
