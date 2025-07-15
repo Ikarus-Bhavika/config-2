@@ -24,9 +24,9 @@ export default function MenuItemsContainer({
   useEffect(() => {
     setSelectedIndex(0);
     // Set initial selected material for menu1 and menu2
-    if ((menuId === "menu1" || menuId === "menu2") && menuOptions[0]?.baseMaps?.[0]) {
-      setSelectedMaterialId(menuOptions[0].baseMaps[0].id);
-    }
+    // if ((menuId === "menu1" || menuId === "menu2") && menuOptions[0]?.baseMaps?.[0]) {
+    //   setSelectedMaterialId(menuOptions[0].baseMaps[0].id);
+    // }
   }, [menuId, menuOptions]);
 
   // Function to check if a material is currently selected/active
