@@ -2280,32 +2280,32 @@
         "icon":"images/Performance.png",
         "description": "Into hot yoga, wears tech gear, and is all about getting stuff done without breaking a sweat.",
         "preset": {
-          "Coils2": {
+         "Coils2": {
               "visible": true,
               "parts": {
                   "C1": {
                       "material": "White Head",
-                      "id": "XxJS38r2Eis2wN07XTIQ"
+                      "id": "EyjuwSL5edoJusns0NWY"
                   },
                   "C2": {
-                      "material": "White Head",
-                      "id": "XxJS38r2Eis2wN07XTIQ"
+                      "material": "Light gray",
+                      "id": "EyjuwSL5edoJusns0NWY"
                   },
                   "C4": {
-                      "material": "White Head",
-                      "id": "XxJS38r2Eis2wN07XTIQ"
+                      "material": "Light gray",
+                      "id": "T4IZq98C0g3LbLo1e6VB"
                   },
                   "C6": {
-                      "material": "White Head",
-                      "id": "XxJS38r2Eis2wN07XTIQ"
+                      "material": "Dark Grey",
+                      "id": "EyjuwSL5edoJusns0NWY"
                   },
                   "C3": {
                       "material": "White Head",
-                      "id": "XxJS38r2Eis2wN07XTIQ"
+                      "id": "T4IZq98C0g3LbLo1e6VB"
                   },
                   "C5": {
-                      "material": "White Head",
-                      "id": "XxJS38r2Eis2wN07XTIQ"
+                      "material": "Light gray",
+                      "id": "EyjuwSL5edoJusns0NWY"
                   }
               }
           },
@@ -2455,37 +2455,44 @@
                 "baseMaps":[
                     {
                         "id": "BjPhiitkaY3qkmNHhOBk",
-                        "label": "Dark tan",
+                        
+                        "label": "Plush",
+                        "materialkey": "Dark tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Plush (1).jpg"
                       },
                       {
                         "id": "qT6giXRb3B4PYCQVRUqr",
-                        "label": "Med tan",
+                        "label": "Medium",
+                        "materialkey": "Med tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium (1).jpg"
                       },
                       {
                         "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                        "label": "Light tan",
+                        "label": "Firm",
+                        "materialkey": "Light tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm (1).jpg"
                       },
                       {
                         "id": "BudBPD9zWZF4fwvg3K7W",
-                        "label": "Dark blue",
+                        "label": "Plush",
+                        "materialkey": "Dark blue",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Plush.jpg"
                       },
                       {
                         "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "label": "Mid blue",
+                        "label": "Medium",
+                        "materialkey": "Mid blue",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium.jpg"
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Grey",
+                        "label": "Firm",
+                        "materialkey": "Grey",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm.jpg"
                       }
@@ -2504,37 +2511,43 @@
                 "baseMaps":[
                     {
                         "id": "BjPhiitkaY3qkmNHhOBk",
-                        "label": "Dark tan",
+                        "label": "Plush",
+                        "materialkey": "Dark tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Plush (1).jpg"
                       },
                       {
                         "id": "qT6giXRb3B4PYCQVRUqr",
-                        "label": "Med tan",
+                        "label": "Medium",
+                        "materialkey": "Med tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium (1).jpg"
                       },
                       {
                         "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                        "label": "Light tan",
+                        "label": "Firm",
+                        "materialkey": "Light tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm (1).jpg"
                       },
                       {
                         "id": "BudBPD9zWZF4fwvg3K7W",
-                        "label": "Dark blue",
+                        "label": "Plush",
+                        "materialkey": "Dark blue",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Plush.jpg"
                       },
                       {
                         "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "label": "Mid blue",
+                        "label": "Medium",
+                        "materialkey": "Mid blue",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium.jpg"
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Grey",
+                        "label": "Firm",
+                        "materialkey": "Grey",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm.jpg"
                       }
@@ -2553,37 +2566,43 @@
                 "baseMaps":[
                     {
                         "id": "BjPhiitkaY3qkmNHhOBk",
-                        "label": "Dark tan",
+                        "label": "Plush",
+                        "materialkey": "Dark tan",  
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Plush (1).jpg"
                       },
                       {
                         "id": "qT6giXRb3B4PYCQVRUqr",
-                        "label": "Med tan",
+                        "label": "Medium",
+                        "materialkey": "Med tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium (1).jpg"
                       },
                       {
                         "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                        "label": "Light tan",
+                        "label": "Firm",
+                        "materialkey": "Light tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm (1).jpg"
                       },
                       {
                         "id": "BudBPD9zWZF4fwvg3K7W",
-                        "label": "Dark blue",
+                        "label": "Plush",
+                        "materialkey": "Dark blue",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Plush.jpg"
                       },
                       {
                         "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "label": "Mid blue",
+                        "label": "Medium",
+                        "materialkey": "Mid blue",  
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium.jpg"
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Grey",
+                        "label": "Firm",
+                        "materialkey": "Grey",  
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm.jpg"
                       }
@@ -2602,37 +2621,43 @@
                 "baseMaps":[
                     {
                         "id": "BjPhiitkaY3qkmNHhOBk",
-                        "label": "Dark tan",
+                        "label": "Plush",
+                        "materialkey": "Dark tan",  
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Plush (1).jpg"
                       },
                       {
                         "id": "qT6giXRb3B4PYCQVRUqr",
-                        "label": "Med tan",
+                        "label": "Medium",
+                        "materialkey": "Med tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium (1).jpg"
                       },
                       {
                         "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                        "label": "Light tan",
+                        "label": "Firm",
+                        "materialkey": "Light tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm (1).jpg"
                       },
                       {
                         "id": "BudBPD9zWZF4fwvg3K7W",
-                        "label": "Dark blue",
+                        "label": "Plush",
+                        "materialkey": "Dark blue",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Plush.jpg"
                       },
                       {
                         "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "label": "Mid blue",
+                        "label": "Medium",
+                        "materialkey": "Mid blue",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium.jpg"
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Grey",
+                        "label": "Firm",
+                        "materialkey": "Grey",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm.jpg"
                       }
@@ -2651,37 +2676,43 @@
                 "baseMaps":[
                     {
                         "id": "BjPhiitkaY3qkmNHhOBk",
-                        "label": "Dark tan",
+                        "label": "Plush",
+                        "materialkey": "Dark tan",  
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Plush (1).jpg"
                       },
                       {
                         "id": "qT6giXRb3B4PYCQVRUqr",
-                        "label": "Med tan",
+                        "label": "Medium",
+                        "materialkey": "Med tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium (1).jpg"
                       },
                       {
                         "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                        "label": "Light tan",
+                        "label": "Firm",
+                        "materialkey": "Light tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm (1).jpg"
                       },
                       {
                         "id": "BudBPD9zWZF4fwvg3K7W",
-                        "label": "Dark blue",
+                        "label": "Plush",
+                        "materialkey": "Dark blue",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Plush.jpg"
                       },
                       {
                         "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "label": "Mid blue",
+                        "label": "Medium",
+                        "materialkey": "Mid blue",  
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium.jpg"
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Grey",
+                        "label": "Firm",
+                        "materialkey": "Grey",  
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm.jpg"
                       }
@@ -2700,37 +2731,43 @@
                 "baseMaps":[
                     {
                         "id": "BjPhiitkaY3qkmNHhOBk",
-                        "label": "Dark tan",
+                        "label": "Plush",
+                        "materialkey": "Dark tan",  
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Plush (1).jpg"
                       },
                       {
                         "id": "qT6giXRb3B4PYCQVRUqr",
-                        "label": "Med tan",
+                        "label": "Medium",
+                        "materialkey": "Med tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium (1).jpg"
                       },
                       {
                         "id": "MJuZEjy8ZOTE8ZWb2zuc",
-                        "label": "Light tan",
+                        "label": "Firm",
+                        "materialkey": "Light tan",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm (1).jpg"
                       },
                       {
                         "id": "BudBPD9zWZF4fwvg3K7W",
-                        "label": "Dark blue",
+                        "label": "Plush",
+                        "materialkey": "Dark blue",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Plush.jpg"
                       },
                       {
                         "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "label": "Mid blue",
+                        "label": "Medium",
+                        "materialkey": "Mid blue",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium.jpg"
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
-                        "label": "Grey",
+                        "label": "Firm",
+                        "materialkey": "Grey",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm.jpg"
                       }
