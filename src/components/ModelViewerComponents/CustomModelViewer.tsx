@@ -588,7 +588,7 @@ const Hotspot = (props: Omit<
   const position = props.spot.point.isVector3? props.spot.point : new THREE.Vector3(props.spot.point.x,props.spot.point.y,props.spot.point.z);
 
   return (
-    <Html position={[position.x, position.y, position.z]} zIndexRange={[101, 0]}    portal={{ current: document.body }}
+     <Html position={[position.x, position.y, position.z]} zIndexRange={[1, 0]}   // portal={{ current: document.body }}
  
   // distanceFactor={3.3} // adjust based on zoom level
   >
