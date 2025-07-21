@@ -57,7 +57,7 @@ export default function UIOverlay({
     const iconSize=25
 
     return (
-        <div className='absolute bottom-2 lg:bottom-16 w-full z-[1] flex flex-col gap-4'>
+        <div className='absolute bottom-2 lg:bottom-16 w-full z-[99] flex flex-col gap-4'>
 
             <div className={`flex gap-2 justify-center`}>
                 <button onClick={handleToggleExpand} className='rounded-full p-2 lg:px-3 border border-[#eaedf0] shadow bg-white cursor-pointer flex aspect-square lg:aspect-auto lg:min-w-[15%] gap-2'>

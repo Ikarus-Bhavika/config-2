@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-duplicate-enum-values */
-import { Canvas, CanvasProps, RaycasterProps, RootState, useFrame, useThree } from '@react-three/fiber';
+import { Canvas, CanvasProps, ObjectMap, RaycasterProps, RootState, useFrame, useThree } from '@react-three/fiber';
 import {
   CameraControls,
   ContactShadows,
@@ -49,6 +49,7 @@ import { useSearchParams } from 'react-router-dom';
 import { Perf } from 'r3f-perf'
 import cacheTexture from '../../utils/cacheTexture.js';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
+import { GLTF, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 
 
@@ -654,18 +655,21 @@ function RenderingModel(props: Omit<
     ...store
   } = useDataStore() 
 
- const thisLoader = useGLTF(props.src, false, false, (loader) => {
-  const dracoLoader = new DRACOLoader();
-  dracoLoader.setDecoderPath('/draco/');
-loader.setDRACOLoader(dracoLoader as any);
+  const thisLoader = useGLTF(props.src,true,false,(loader)=>{
+     const dracoLoader = new DRACOLoader();
+     dracoLoader.setDecoderPath('/draco/');
+     loader.setDRACOLoader(dracoLoader as any);
+  }); 
 
-});
   const [isMaterialLoaded,setIsMaterialLoaded] = useState(false);
   const loader1 = thisLoader.scene as THREE.Object3D;
   const meshRef = useRef<THREE.Object3D>(loader1);
   const { animations } = thisLoader;
   const [currentAnimation, setCurrentAnimation] = useState<string[]>([]);
   const { actions } = useAnimations(animations, meshRef);
+
+
+  
   
   const [newRender,setNewRender] = useState<boolean>(diplayedOnce[props.name]!=undefined?diplayedOnce[props.name]:true)
   //Hovering with responses
@@ -739,6 +743,8 @@ loader.setDRACOLoader(dracoLoader as any);
     tempData[props.name] = newData;
     store.setMeshTranslationData(tempData); 
   }
+
+  
 
   useEffect(() => {
     const rawAction = actions["alwaysAnimate"];
