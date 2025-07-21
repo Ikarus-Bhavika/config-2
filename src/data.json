@@ -2789,19 +2789,22 @@
                 "baseMaps": [
                   {
                     "id": "T4IZq98C0g3LbLo1e6VB",
-                    "label": "Dark Grey",
+                    "label": "Dark",
+                    "materialkey": "Dark Grey",
                     "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
                     "hexCode": "#ffffff"
                   },
                   {
                     "id": "EyjuwSL5edoJusns0NWY",
-                    "label": "Light gray",
+                    "label": "Light",
+                    "materialkey": "Light gray",
                     "icon": "images/Coil/Coil_Grey.png",
                     "hexCode": "#ffffff"
                   },
                   {
                     "id": "XxJS38r2Eis2wN07XTIQ",
-                    "label": "White Head",
+                    "label": "White",
+                    "materialkey": "White Head",  
                     "icon": "images/Coil/Coil_White.png",
                     "hexCode": "#ffffff"
                   }
@@ -2820,19 +2823,22 @@
                 "baseMaps": [
                   {
                     "id": "T4IZq98C0g3LbLo1e6VB",
-                    "label": "Dark Grey",
+                    "label": "Dark",
+                    "materialkey": "Dark Grey", 
                     "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
                     "hexCode": "#ffffff"
                   },
                   {
                     "id": "EyjuwSL5edoJusns0NWY",
-                    "label": "Light gray",
+                    "label": "Light",
+                    "materialkey": "Light gray",
                     "icon": "images/Coil/Coil_Grey.png",
                     "hexCode": "#ffffff"
                   },
                   {
                     "id": "XxJS38r2Eis2wN07XTIQ",
-                    "label": "White Head",
+                    "label": "White",
+                    "materialkey": "White Head",
                     "icon": "images/Coil/Coil_White.png",
                     "hexCode": "#ffffff"
                   }
@@ -2851,19 +2857,22 @@
                 "baseMaps":[
                   {
                     "id": "T4IZq98C0g3LbLo1e6VB",
-                    "label": "Dark Grey",
+                    "label": "Dark",
+                    "materialkey": "Dark Grey", 
                     "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
                     "hexCode": "#ffffff"
                   },
                   {
                     "id": "EyjuwSL5edoJusns0NWY",
-                    "label": "Light gray",
+                    "label": "Light",
+                    "materialkey": "Light gray",
                     "icon": "images/Coil/Coil_Grey.png",
                     "hexCode": "#ffffff"
                   },
                   {
                     "id": "XxJS38r2Eis2wN07XTIQ",
-                    "label": "White Head",
+                    "label": "White",
+                    "materialkey": "White Head",
                     "icon": "images/Coil/Coil_White.png",
                     "hexCode": "#ffffff"
                   }
@@ -2882,19 +2891,23 @@
                 "baseMaps": [
                   {
                     "id": "T4IZq98C0g3LbLo1e6VB",
-                    "label": "Dark Grey",
+                    "label": "Dark",
+                    "materialkey": "Dark Grey", 
                     "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
                     "hexCode": "#ffffff"
                   },
                   {
                     "id": "EyjuwSL5edoJusns0NWY",
-                    "label": "Light gray",
+                    "label": "Light",
+
+                    "materialkey": "Light gray",
                     "icon": "images/Coil/Coil_Grey.png",
                     "hexCode": "#ffffff"
                   },
                   {
                     "id": "XxJS38r2Eis2wN07XTIQ",
-                    "label": "White Head",
+                    "label": "White",
+                    "materialkey": "White Head",
                     "icon": "images/Coil/Coil_White.png",
                     "hexCode": "#ffffff"
                   }
@@ -2913,19 +2926,22 @@
                 "baseMaps": [
                   {
                     "id": "T4IZq98C0g3LbLo1e6VB",
-                    "label": "Dark Grey",
+                    "label": "Dark",
+                    "materialkey": "Dark Grey",
                     "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
                     "hexCode": "#ffffff"
                   },
                   {
                     "id": "EyjuwSL5edoJusns0NWY",
-                    "label": "Light gray",
+                    "label": "Light",
+                    "materialkey": "Light gray",
                     "icon": "images/Coil/Coil_Grey.png",
                     "hexCode": "#ffffff"
                   },
                   {
                     "id": "XxJS38r2Eis2wN07XTIQ",
-                    "label": "White Head",
+                    "label": "White",
+                    "materialkey": "White Head",
                     "icon": "images/Coil/Coil_White.png",
                     "hexCode": "#ffffff"
                   }
@@ -2945,19 +2961,22 @@
                 "baseMaps": [
                   {
                     "id": "T4IZq98C0g3LbLo1e6VB",
-                    "label": "Dark Grey",
+                    "label": "Dark",
+                    "materialkey": "Dark Grey", 
                     "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
                     "hexCode": "#ffffff"
                   },
                   {
                     "id": "EyjuwSL5edoJusns0NWY",
-                    "label": "Light gray",
+                    "label": "Light",
+                    "materialkey": "Light gray",
                     "icon": "images/Coil/Coil_Grey.png",
                     "hexCode": "#ffffff"
                   },
                   {
                     "id": "XxJS38r2Eis2wN07XTIQ",
-                    "label": "White Head",
+                    "label": "White",
+                    "materialkey": "White Head",
                     "icon": "images/Coil/Coil_White.png",
                     "hexCode": "#ffffff"
                   }

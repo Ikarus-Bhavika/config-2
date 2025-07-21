@@ -588,8 +588,12 @@ const Hotspot = (props: Omit<
   const position = props.spot.point.isVector3? props.spot.point : new THREE.Vector3(props.spot.point.x,props.spot.point.y,props.spot.point.z);
 
   return (
-    <Html position={[position.x, position.y, position.z]} zIndexRange={[1, 0]}>
-      <div className='relative z-50'>
+    <Html position={[position.x, position.y, position.z]} zIndexRange={[101, 0]}    portal={{ current: document.body }}
+ 
+  // distanceFactor={3.3} // adjust based on zoom level
+  className="z-[9999]" >
+      
+      <div className='relative z-50' >
         <div
           onClick={isAllowedVisible?handleClick:()=>{}}
           className={`
@@ -606,7 +610,7 @@ const Hotspot = (props: Omit<
         </div>
       
         {isActiveSpot &&
-         <div className="absolute bg-white p-2 rounded-md w-[250px] sm:w-[280px] xl:w-[320px] shadow-lg">
+         <div className="absolute bg-white p-2 z-[9999] rounded-md w-[250px] sm:w-[280px] xl:w-[320px] shadow-lg" >
 
           <h2 className='p-2'>
             {store.expandedComponent=="menu3" ? "Contour" : "Coils"} Layer
@@ -654,6 +658,7 @@ function RenderingModel(props: Omit<
     setInitialAnimationCompleted,
     ...store
   } = useDataStore() 
+  
 
   const thisLoader = useGLTF(props.src,true,false,(loader)=>{
      const dracoLoader = new DRACOLoader();
@@ -1872,7 +1877,7 @@ const updateTooltipPosition = (e: React.MouseEvent) => {
     fov: 45,
     maxDistance: 20,
     minDistance: 1.25,
-    position: [1.5, 0.8, 0.8],
+    position: [0, 1.4, 3],
   }
   return (
     <>
