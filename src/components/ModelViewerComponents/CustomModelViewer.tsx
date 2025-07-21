@@ -48,6 +48,8 @@ import { MeshTranlationDataItemType } from '../../types/viewerTypes';
 import { useSearchParams } from 'react-router-dom';
 import { Perf } from 'r3f-perf'
 import cacheTexture from '../../utils/cacheTexture.js';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
+
 
 
 const diplayedOnce={}
@@ -652,7 +654,12 @@ function RenderingModel(props: Omit<
     ...store
   } = useDataStore() 
 
-  const thisLoader = useGLTF(props.src);
+ const thisLoader = useGLTF(props.src, false, false, (loader) => {
+  const dracoLoader = new DRACOLoader();
+  dracoLoader.setDecoderPath('/draco/');
+loader.setDRACOLoader(dracoLoader as any);
+
+});
   const [isMaterialLoaded,setIsMaterialLoaded] = useState(false);
   const loader1 = thisLoader.scene as THREE.Object3D;
   const meshRef = useRef<THREE.Object3D>(loader1);

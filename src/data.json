@@ -1928,7 +1928,7 @@
             "id":"menu1",
             "label": "Cover Selection",
             "type":"model",
-            "description":"Your bed's surface material is more than just a pretty face, it's your first point of contact every night (and sometimes lazy Sunday mornings). Choosing between our two signature covers is a llttie Ilke picking your ideal partner",
+            "description":"Your bed's surface material is more than just a pretty face, it's your first point of contact every night (and sometimes lazy Sunday mornings). Choosing between our two signature covers is a little like picking your ideal partner",
             "options": [
                 {
                     "label":"Covers",
@@ -1955,7 +1955,7 @@
             "id":"menu2",
             "label": "Pressure Relief Selection",
             "type": "material",
-            "description":"The Initlal layer is the first feeling you experience in the TogetherBed™.",
+            "description":"The Initial layer is the first feeling you experience in the TogetherBed™.",
             "options": [
                 {
                     "label": "Relief Layer",
@@ -1980,7 +1980,7 @@
                             "label": "Performance Memory Foam",
                             "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Memory Foam.Memory Foam",
                             "hexCode": "#6b88be",
-                            "description":"For those seeking Di essure-relief, memory foam is designed to relieve pressure from sensitive areas of the body"
+                            "description":"For those seeking pressure-relief, memory foam is designed to relieve pressure from sensitive areas of the body."
                         }
                     ]
                 }

@@ -14,8 +14,14 @@ import ARView from './components/ar-view/ARView'
 import ModelViewerContextProvider from './store/modelViewerContext'
 import AdminPanel from './AdminPanel'
 import AdminGate from './AdminGate'
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
+
+
+
 
 extend(THREE)
+
+
 
 function App() {
   const store = useDataStore();
@@ -27,6 +33,9 @@ function App() {
     // console.log(intializePreset(data.models))
     store.setHotSpotMenu(data.hotspotMenuItems);
     store.setPreconfiguredMenu(data.predefinedPresetMenu);
+
+
+
   },[])
 console.log(store.preset)
   return (
