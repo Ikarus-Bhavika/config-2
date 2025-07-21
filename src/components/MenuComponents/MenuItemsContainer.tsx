@@ -4,6 +4,7 @@ import { menuItemOptionType } from "../../types/configTypes";
 import updateModelInPreset from "../../utils/updateModelInPreset";
 import updateMaterialInPreset from "../../utils/updateMaterialInPreset";
 
+
 export default function MenuItemsContainer({
   menuId,
   isHotspotMenu = false,

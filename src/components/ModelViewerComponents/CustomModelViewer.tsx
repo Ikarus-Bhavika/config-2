@@ -591,7 +591,7 @@ const Hotspot = (props: Omit<
     <Html position={[position.x, position.y, position.z]} zIndexRange={[101, 0]}    portal={{ current: document.body }}
  
   // distanceFactor={3.3} // adjust based on zoom level
-  className="z-[9999]" >
+  >
       
       <div className='relative z-50' >
         <div
