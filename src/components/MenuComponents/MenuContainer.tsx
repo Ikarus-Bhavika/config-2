@@ -64,10 +64,10 @@ export default function MenuContainer() {
 
         {isPresetOpen && (
           <>
-            <p className="text-sm text-black-600">
+            <p className="text-sm text-gray-600">
               Design the perfect mattress for you and your sleeping partner here! Choose one of your standard builds, then customize the layers to your preference.
             </p>
-            <div className="flex flex-col gap-4 px-2 pt-3 pb-3 border-b border-[#aaa7a72e]">
+            <div className="flex flex-col gap-4 px-2 pt-3 pb-3 border-t-4 border-[#65646412]  " style={{ backgroundColor: "#fafafa" }}> 
               {store.preconfiguredMenu.map((menu) => {
                 const isSelected = store.preset === menu.preset;
 
@@ -83,7 +83,7 @@ export default function MenuContainer() {
                         isSelected ? "bg-gray-200 border-gray-400" : "border-transparent"
                       }`}
                       style={{
-                        width: "72px",
+                        width: "90px",
                         padding: "8px",
                         textAlign: "center",
                         boxSizing: "border-box",
@@ -95,14 +95,14 @@ export default function MenuContainer() {
                           className="w-14 h-14 object-contain"
                           alt={menu.label}
                         />
-                        <div className="text-xs font-medium">{menu.label}</div>
+                        <div className="text-xs mt-1 font-medium">{menu.label}</div>
                       </div>
                     </div>
 
                     {/* RIGHT: description text */}
                     <div className="text-sm text-black-700 leading-snug">
   <span className="font-semibold">{menu.label}:</span>{" "}
-  <span>{menu.description}</span>
+   <span className="text-gray-600">{menu.description || "No description available."}</span>
 </div>
 
                   </div>
@@ -134,7 +134,7 @@ export default function MenuContainer() {
                 <div className="flex flex-col">
                   <div className="font-medium">{menu.label}</div>
                   {isOpen && menu.description && (
-                    <p className="text-sm text-black-600 pt-1">{menu.description}</p>
+                    <p className="text-sm text-gray-600 pt-1">{menu.description}</p>
                   )}
                 </div>
                 <img

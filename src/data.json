@@ -1928,13 +1928,13 @@
             "id":"menu1",
             "label": "Cover Selection",
             "type":"model",
-            "description":"Your bed's surface material is more than just a pretty face, it's your first point of contact every night (and sometimes lazy Sunday mornings). Choosing between our two signature covers is a little like picking your ideal partner",
+            "description":"Your bed's surface material is more than just a pretty face, it's your first point of contact every night (and sometimes lazy Sunday mornings). Choosing between our two signature covers is a little like picking your ideal partner.",
             "options": [
                 {
                     "label":"Covers",
                     "baseMaps":[
                         {
-                            "label": "Natural Cover",
+                            "label": "Naturals Cover",
                             "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/icons/C1.jpg.jpg",
                             "target": "Cover22",
                             "id": "8567d147-fdd8-4742-a0ed-14b5fed30608",
@@ -1969,7 +1969,7 @@
                         {
                             "id": "DgBBHZuhb1lr6TDDHKgI",
                             "key":"Natural",
-                            "label": "Natural Latex",
+                            "label": "Naturals Latex",
                             "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Natural Latex.Natural Latex",
                             "hexCode": "#ffffff",
                             "description":"Great for those seeking a responsive, feel made from natural materials. Great for those seeking a traditional feel."
@@ -2130,71 +2130,81 @@
               }
             ]
         },
+       {
+  "id": "menu4",
+  "label": "Personalized Support Design",
+  "type": "material",
+  "description": "",
+  "options": [
+    {
+      "label": "Left Side",
+      "target": [
+        { "model": "Coils2", "part": "C2" },
+        { "model": "Coils2", "part": "C4" },
+        { "model": "Coils2", "part": "C6" }
+      ],
+      "baseMaps": [
         {
-            "id":"menu4",
-            "label": "Personalized Support Design",
-            "type": "material",
-            "description":"",
-            "options": [
-              {
-                "label": "Coils Module",
-                "target": [
-                    {
-                      "model": "Coils2",
-                      "part": "C1"
-                    },
-                    {
-                      "model": "Coils2",
-                      "part": "C2"
-                    },
-                    {
-                      "model": "Coils2",
-                      "part": "C4"
-                    },
-                    {
-                      "model": "Coils2",
-                      "part": "C5"
-                    },
-                    {
-                      "model": "Coils2",
-                      "part": "C3"
-                    },
-                    {
-                      "model": "Coils2",
-                      "part": "C6"
-                    }
-                ],
-                "baseMaps": [
-                  {
-                    "id": "T4IZq98C0g3LbLo1e6VB",
-                    "materialkey": "Dark Grey",
-                    "label": "Dark",
-                    "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
-                    "hexCode": "#ffffff"
-                  },
-                  {
-                    "id": "EyjuwSL5edoJusns0NWY",
-                    "materialkey":"Light gray",
-                    "label": "Light",
-                    "icon": "images/Coil/Coil_Grey.png",
-                    "hexCode": "#ffffff"
-                  },
-                  {
-                    "id": "XxJS38r2Eis2wN07XTIQ",
-                    "materialkey": "White Head",
-                    "label": "White",
-                    "icon": "images/Coil/Coil_White.png",
-                    "hexCode": "#ffffff"
-                  }
-                  
-                ]
-              }
-            ]
+          "id": "T4IZq98C0g3LbLo1e6VB",
+          "materialkey": "Dark Grey",
+          "label": "Dark",
+          "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+          "hexCode": "#ffffff"
+        },
+        {
+          "id": "EyjuwSL5edoJusns0NWY",
+          "materialkey": "Light gray",
+          "label": "Light",
+          "icon": "images/Coil/Coil_Grey.png",
+          "hexCode": "#ffffff"
+        },
+        {
+          "id": "XxJS38r2Eis2wN07XTIQ",
+          "materialkey": "White Head",
+          "label": "White",
+          "icon": "images/Coil/Coil_White.png",
+          "hexCode": "#ffffff"
         }
+      ]
+    },
+    {
+      "label": "Right Side",
+      "target": [
+        { "model": "Coils2", "part": "C1" },
+        { "model": "Coils2", "part": "C3" },
+        { "model": "Coils2", "part": "C5" }
+      ],
+      "baseMaps": [
+        {
+          "id": "T4IZq98C0g3LbLo1e6VB",
+          "materialkey": "Dark Grey",
+          "label": "Dark",
+          "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
+          "hexCode": "#ffffff"
+        },
+        {
+          "id": "EyjuwSL5edoJusns0NWY",
+          "materialkey": "Light gray",
+          "label": "Light",
+          "icon": "images/Coil/Coil_Grey.png",
+          "hexCode": "#ffffff"
+        },
+        {
+          "id": "XxJS38r2Eis2wN07XTIQ",
+          "materialkey": "White Head",
+          "label": "White",
+          "icon": "images/Coil/Coil_White.png",
+          "hexCode": "#ffffff"
+        }
+      ]
+    }
+  ]
+}
+
     ],
     "predefinedPresetMenu": [
       {
-        "label":"Natural",
+        "label":"Naturals",
         "icon":"images/Natural.png",
         "description": "Loves long walks through the farmers’ market, cares about sustainability, and probably wears linen to the beach.",
         

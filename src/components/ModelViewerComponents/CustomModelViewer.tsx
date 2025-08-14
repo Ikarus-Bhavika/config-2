@@ -613,7 +613,7 @@ const Hotspot = (props: Omit<
          <div className="absolute bg-white p-2 z-[9999] rounded-md w-[250px] sm:w-[280px] xl:w-[320px] shadow-lg" >
 
           <h2 className='p-2'>
-            {store.expandedComponent=="menu3" ? "Contour" : "Coils"} Layer
+            {store.expandedComponent=="menu3" ? "Contour" : "Support"} Layer
           </h2>
           {store.expandedComponent === "menu3" && (
     <h3 className="py-1 text-[11px] xl:text-[13px] ml-2">
@@ -623,7 +623,7 @@ const Hotspot = (props: Omit<
   )}
     {store.expandedComponent === "menu4" && (
     <h4 className="py-1 text-[11px] xl:text-[13px] ml-2">
-      Coils Module
+      Support Module
     </h4>
     
   )}
@@ -1556,6 +1556,7 @@ const ChildCanvasCustomModelViewer = (
     const maxLineWidth = 3;
     const minZoom = 10;
     const maxZoom = 90;
+   
 
     if (percentageZoom >= maxZoom) return maxLineWidth;
     if (percentageZoom <= minZoom) return minLineWidth;
@@ -1572,6 +1573,7 @@ const ChildCanvasCustomModelViewer = (
     if (props.cameraControls.current && props.showDimensions) {
       const maxDistance = props.cameraControls.current.maxDistance;
       const minDistance = props.cameraControls.current.minDistance;
+     
       const currentDistance = props.cameraControls.current._lastDistance;
       const percentageZoom =
         100 -
@@ -1612,6 +1614,7 @@ const ChildCanvasCustomModelViewer = (
   
           // Determine the distance the camera should be to fit the model
           const maxDimension = Math.max(size.x, size.y, size.z);
+          
           const distance = maxDimension * 2; // Adjust multiplier as needed
           // Set camera position and adjust CameraControls
           camera.position.set(center.x, center.y, center.z + distance); // Place camera behind the model
@@ -1876,7 +1879,7 @@ const updateTooltipPosition = (e: React.MouseEvent) => {
     damping: 1,
     fov: 45,
     maxDistance: 20,
-    minDistance: 1.25,
+    minDistance: 3,
     position: [0, 1.4, 3],
   }
   return (
