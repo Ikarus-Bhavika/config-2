@@ -1128,7 +1128,7 @@ const Annotation = (props: AnnotationPropsTypes) => {
   })
   return (
     <>
-      <Html
+      {/* <Html
         position={[props.topLineCenter.x, props.topLineCenter.y, props.topLineCenter.z]}
         className={`${props.show ? 'block' : 'hidden'}`}
         zIndexRange={[1, 0]}
@@ -1187,7 +1187,41 @@ const Annotation = (props: AnnotationPropsTypes) => {
             )
           }
         </div>
-      </Html>
+      </Html> */}
+    <Html
+  position={[props.topLineCenter.x, props.topLineCenter.y, props.topLineCenter.z]}
+  className={`${props.show ? 'block' : 'hidden'}`}
+  zIndexRange={[1, 0]}
+>
+  <div className=" bg-white text-black border font-medium p-2 rounded-md text-[14px] flex gap-1">
+    <div>{Math.round(props.xSize.get() * 100 * 0.393701)}″</div>
+  
+  </div>
+</Html>
+
+<Html
+  position={[props.leftLineCenter.x, props.leftLineCenter.y, props.leftLineCenter.z]}
+  className={`${props.show ? 'block' : 'hidden'}`}
+  zIndexRange={[1, 0]}
+>
+  <div className=" bg-white text-black border font-medium p-2 rounded-md text-[14px] flex gap-1">
+    <div>{Math.round(props.ySize.get() * 100 * 0.393701)}″</div>
+   
+  </div>
+</Html>
+
+<Html
+  position={[props.frontLineCenter.x, props.frontLineCenter.y, props.frontLineCenter.z]}
+  className={`${props.show ? 'block' : 'hidden'}`}
+  zIndexRange={[1, 0]}
+>
+  <div className=" bg-white text-black border font-medium p-2 rounded-md text-[14px] flex gap-1">
+    <div>{Math.round(props.zSize.get() * 100 * 0.393701)}″</div>
+    
+  </div>
+</Html>
+
+
     </>
   );
 };

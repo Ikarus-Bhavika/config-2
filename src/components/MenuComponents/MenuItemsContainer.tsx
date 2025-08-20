@@ -21,14 +21,205 @@ export default function MenuItemsContainer({
   const menuItemRef = useRef<HTMLDivElement>(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedMaterialId, setSelectedMaterialId] = useState<string | null>(null);
+  const [selectedMaterialLeft, setSelectedMaterialLeft] = useState<string | null>(null);
+const [selectedMaterialRight, setSelectedMaterialRight] = useState<string | null>(null);
+// Menu 3 specific selection states
+const [menu3SelectedLeft, setMenu3SelectedLeft] = useState<string | null>(null);
+const [menu3SelectedRight, setMenu3SelectedRight] = useState<string | null>(null);
 
-  useEffect(() => {
-    setSelectedIndex(0);
-    // Set initial selected material for menu1 and menu2
-    // if ((menuId === "menu1" || menuId === "menu2") && menuOptions[0]?.baseMaps?.[0]) {
-    //   setSelectedMaterialId(menuOptions[0].baseMaps[0].id);
-    // }
-  }, [menuId, menuOptions]);
+
+  // useEffect(() => {
+  //   setSelectedIndex(0);
+  //   // Set initial selected material for menu1 and menu2
+  //   if ((menuId === "menu1" || menuId === "menu2") && menuOptions[0]?.baseMaps?.[0]) {
+  //     setSelectedMaterialId(menuOptions[0].baseMaps[0].id);
+  //   }
+    
+  // }, [menuId, menuOptions]);
+
+
+
+// useEffect(() => {
+//   if ((menuId === "menu1" || menuId === "menu2") && menuOptions[0]?.baseMaps?.[0]) {
+//     const configuration = store.preset?.configuration || store.preset;
+
+//     let matched = false;
+
+//     if (configuration) {
+//       console.log("🔍 Checking preset config for", menuId, configuration);
+
+//       menuOptions.forEach((option, index) => {
+//         option.baseMaps?.forEach((material) => {
+//           option.target?.forEach((targetPart) => {
+//             console.log("➡️ Checking target", targetPart);
+
+//             const modelConfig = configuration[targetPart.model];
+//             const selectedPart = modelConfig?.parts?.[targetPart.part];
+//             console.log("🎯 Found part", selectedPart, "for material", material.id);
+
+//             if (selectedPart?.id === material.id) {
+//               console.log("✅ Match found for menu", menuId, "→", material.label);
+//               setSelectedMaterialId(material.id);
+//               setSelectedIndex(index);
+//               matched = true;
+//             }
+//           });
+//         });
+//       });
+//     }
+
+//     if (!matched) {
+//       console.log("⚠️ No match found → defaulting to 0th");
+//       setSelectedIndex(0);
+//       setSelectedMaterialId(menuOptions[0].baseMaps[0].id);
+//     }
+//   }
+// }, [store.preset, menuId, menuOptions]);
+
+
+
+// useEffect(() => {
+//   if (!menuOptions?.[0]?.baseMaps?.[0]) return;
+//   const configuration = store.preset?.configuration || store.preset;
+//   if (!configuration) return;
+
+//   let matched = false;
+//   console.log("🔍 Checking preset config for", menuId, configuration);
+
+//   menuOptions.forEach((option, index) => {
+//     option.baseMaps?.forEach((material) => {
+//       // ----------------------
+//       // CASE 1: Menu1 (model)
+//       // ----------------------
+//       if (menuId === "menu1") {
+//         const targetModel = material.target as string; // "Cover22"
+//         const modelConfig = configuration[targetModel];
+
+//         if (modelConfig?.visible) {
+//           console.log("✅ Match found for Menu1 →", material.label);
+//           setSelectedMaterialId(material.id);
+//           setSelectedIndex(index);
+//           matched = true;
+//         }
+//       }
+
+//       // ----------------------
+//       // CASE 2: Menu2 (material)
+//       // ----------------------
+//       if (menuId === "menu2") {
+//         option.target?.forEach((targetPart) => {
+//           const modelConfig = configuration[targetPart.model];
+//           const selectedPart = modelConfig?.parts?.[targetPart.part];
+
+//           if (selectedPart?.id === material.id) {
+//             console.log("✅ Match found for Menu2 →", material.label);
+//             setSelectedMaterialId(material.id);
+//             setSelectedIndex(index);
+//             matched = true;
+//           }
+//         });
+//       }
+//     });
+//   });
+
+//   // ----------------------
+//   // fallback logic
+//   // ----------------------
+//   if (!matched) {
+//     if (menuId === "menu1" && menuOptions[0]?.baseMaps?.[1]) {
+//       console.log("⚠️ No match found → fallback to index 1 (Menu1)");
+//       setSelectedIndex(1);
+//       setSelectedMaterialId(menuOptions[0].baseMaps[1].id);
+//     } else {
+//       console.log("⚠️ No match found → fallback to index 0");
+//       setSelectedIndex(0);
+//       setSelectedMaterialId(menuOptions[0].baseMaps[0].id);
+//     }
+//   }
+// }, [store.preset, menuId, menuOptions]);
+
+
+
+useEffect(() => {
+  if (!menuOptions?.[0]?.baseMaps?.[0]) return;
+
+  // ----------------------
+  // Only handle menu1 & menu2 via configuration matching
+  // ----------------------
+  if (menuId === "menu1" || menuId === "menu2") {
+    const configuration = store.preset?.configuration || store.preset;
+    if (!configuration) return;
+
+    let matched = false;
+    menuOptions.forEach((option, index) => {
+      option.baseMaps?.forEach((material) => {
+        if (menuId === "menu1") {
+          const targetModel = material.target as string;
+          const modelConfig = configuration[targetModel];
+          if (modelConfig?.visible) {
+            setSelectedMaterialId(material.id);
+            setSelectedIndex(index);
+            matched = true;
+          }
+        }
+
+        if (menuId === "menu2") {
+          option.target?.forEach((targetPart) => {
+            const modelConfig = configuration[targetPart.model];
+            const selectedPart = modelConfig?.parts?.[targetPart.part];
+            if (selectedPart?.id === material.id) {
+              setSelectedMaterialId(material.id);
+              setSelectedIndex(index);
+              matched = true;
+            }
+          });
+        }
+      });
+    });
+
+    // fallback for menu1 & 2
+    if (!matched) {
+      if (menuId === "menu1" && menuOptions[0]?.baseMaps?.[1]) {
+        setSelectedIndex(1);
+        setSelectedMaterialId(menuOptions[0].baseMaps[1].id);
+      } else {
+        setSelectedIndex(0);
+        setSelectedMaterialId(menuOptions[0].baseMaps[0].id);
+      }
+    }
+
+    return; // important: exit useEffect here for menu1 & 2
+  }
+
+  // ----------------------
+  // Menu3 & Menu4 default selections
+  // ----------------------
+if (menuId === "menu3" && menuOptions[0]?.baseMaps?.[0]) {
+  const defaultLeft = menuOptions[0].baseMaps[0].id;
+  const defaultRight = menuOptions[0].baseMaps[1]?.id || defaultLeft;
+
+  setMenu3SelectedLeft(defaultLeft);
+  setMenu3SelectedRight(defaultRight);
+}
+
+  else if (menuId === "menu4" && menuOptions[0]?.baseMaps?.[1]) {
+  const defaultId = menuOptions[0].baseMaps[1].id;
+
+  setSelectedMaterialLeft(defaultId);
+  setSelectedMaterialRight(defaultId);
+}
+
+}, [store.preset, menuId, menuOptions]);
+
+
+
+
+
+
+
+
+
+
 
   // Function to check if a material is currently selected/active
   const isMaterialSelected = (materialId: string) => {
@@ -70,37 +261,114 @@ export default function MenuItemsContainer({
     }
   };
 
-  const handleMaterialClick = (material: any) => {
-    // Set selected material for menu1 and menu2
-    if (menuId === "menu1" || menuId === "menu2") {
-      setSelectedMaterialId(material.id);
+  // const handleMaterialClick = (material: any) => {
+  //   // Set selected material for menu1 and menu2
+  //   if (menuId === "menu1" || menuId === "menu2") {
+  //     setSelectedMaterialId(material.id);
+  //   }
+
+  //   // Execute the original click logic
+  //   if (menuType === "model" && material.target) {
+  //     store.setPreset(
+  //       updateModelInPreset(
+  //         material.target,
+  //         menuOptions[selectedIndex].baseMaps,
+  //         store.preset
+  //       )
+  //     );
+  //   } else if (
+  //     menuType === "material" &&
+  //     menuOptions[selectedIndex].target
+  //   ) {
+  //     store.setPreset(
+  //       updateMaterialInPreset(
+  //         menuOptions[selectedIndex].target,
+  //         material.materialkey || material.key||material.label,
+
+  //         material.id,
+  //         store.preset
+  //       )
+  //     );
+  //   }
+  // };
+// const handleMaterialClick = (material: any) => {
+//   // Set selected material for menu1, menu2, menu3, menu4
+//   if (["menu1", "menu2", "menu3", "menu4"].includes(menuId)) {
+//     setSelectedMaterialId(material.id);
+//   }
+
+//   // Execute the original click logic
+//   if (menuType === "model" && material.target) {
+//     store.setPreset(
+//       updateModelInPreset(
+//         material.target,
+//         menuOptions[selectedIndex].baseMaps,
+//         store.preset
+//       )
+//     );
+//   } else if (
+//     menuType === "material" &&
+//     menuOptions[selectedIndex].target
+//   ) {
+//     store.setPreset(
+//       updateMaterialInPreset(
+//         menuOptions[selectedIndex].target,
+//         material.materialkey || material.key || material.label,
+//         material.id,
+//         store.preset
+//       )
+//     );
+//   }
+// };
+const handleMaterialClick = (material: any) => {
+  // Menu 1 & 2
+  if (["menu1", "menu2"].includes(menuId)) {
+    setSelectedMaterialId(material.id);
+  }
+
+  // Menu 3 left/right
+  if (menuId === "menu3") {
+    const activeLabel = menuOptions[selectedIndex].label.toLowerCase();
+    if (activeLabel.includes("left")) {
+      setMenu3SelectedLeft(material.id);
+    } else if (activeLabel.includes("right")) {
+      setMenu3SelectedRight(material.id);
     }
+  }
 
-    // Execute the original click logic
-    if (menuType === "model" && material.target) {
-      store.setPreset(
-        updateModelInPreset(
-          material.target,
-          menuOptions[selectedIndex].baseMaps,
-          store.preset
-        )
-      );
-    } else if (
-      menuType === "material" &&
-      menuOptions[selectedIndex].target
-    ) {
-      store.setPreset(
-        updateMaterialInPreset(
-          menuOptions[selectedIndex].target,
-          material.materialkey || material.key||material.label,
-
-          material.id,
-          store.preset
-        )
-      );
+  // Menu 4 left/right
+  if (menuId === "menu4") {
+    const activeLabel = menuOptions[selectedIndex].label.toLowerCase();
+    if (activeLabel.includes("left")) {
+      setSelectedMaterialLeft(material.id);
+    } else if (activeLabel.includes("right")) {
+      setSelectedMaterialRight(material.id);
     }
-  };
+  }
 
+  // Original preset update logic
+  if (menuType === "model" && material.target) {
+    store.setPreset(
+      updateModelInPreset(
+        material.target,
+        menuOptions[selectedIndex].baseMaps,
+        store.preset
+      )
+    );
+  } else if (
+    menuType === "material" &&
+    menuOptions[selectedIndex].target
+  ) {
+    store.setPreset(
+      updateMaterialInPreset(
+        menuOptions[selectedIndex].target,
+        material.materialkey || material.key || material.label,
+        material.id,
+        store.preset
+      )
+    );
+  }
+};
   return (
     <div
       className={`flex gap-4 flex-col w-full transition-all duration-400 ease-in-out overflow-visible relative z-[0] cursor-default
@@ -157,9 +425,18 @@ export default function MenuItemsContainer({
                       className="flex flex-col items-center gap-1 cursor-pointer w-20"
                     >
                       <div
-                        className="relative group rounded-xl border border-transparent transition-all p-2 text-center"
-                        style={{ width: "72px", boxSizing: "border-box" }}
-                      >
+  className={`relative group rounded-xl border ${
+    (menuOptions[selectedIndex]?.label.toLowerCase().includes("left") &&
+      menu3SelectedLeft === material.id) ||
+    (menuOptions[selectedIndex]?.label.toLowerCase().includes("right") &&
+      menu3SelectedRight === material.id)
+      ? "bg-gray-200 border-gray-400 border"
+      : "border border-transparent"
+  } transition-all p-2 text-center`}
+  style={{ width: "72px", boxSizing: "border-box" }}
+>
+
+
                         <img
                           src={material.icon}
                           alt={material.label}
@@ -242,28 +519,37 @@ export default function MenuItemsContainer({
         <div className="grid grid-cols-4 gap-4">
           {menuOptions[selectedIndex].baseMaps.map((material) => (
             <div
-              key={material.id}
-              onClick={() => handleMaterialClick(material)}
-              className="flex flex-col items-center gap-1 cursor-pointer w-20"
-            >
-              <div
-                className={`rounded-xl border ${
-                  selectedMaterialId === material.id
-                    ? "border-black"
-                    : "border-transparent"
-                } transition-all p-2 text-center`}
-                style={{ width: "72px", boxSizing: "border-box" }}
-              >
-                <img
-                  src={material.icon}
-                  alt={material.label}
-                  className="w-14 h-14 object-contain"
-                />
-                <div className="text-xs font-medium mt-1 w-full text-center">
-                  {material.label}
-                </div>
-              </div>
-            </div>
+  key={material.id}
+  onClick={() => {
+    if (menuOptions[selectedIndex]?.label?.toLowerCase().includes("left")) {
+      setSelectedMaterialLeft(material.id);
+    } else if (menuOptions[selectedIndex]?.label?.toLowerCase().includes("right")) {
+      setSelectedMaterialRight(material.id);
+    }
+    handleMaterialClick(material);
+  }}
+  className="flex flex-col items-center gap-1 cursor-pointer w-20"
+>
+  <div
+    className={`rounded-xl border ${
+      (menuOptions[selectedIndex]?.label?.toLowerCase().includes("left") && selectedMaterialLeft === material.id) ||
+      (menuOptions[selectedIndex]?.label?.toLowerCase().includes("right") && selectedMaterialRight === material.id)
+        ? "bg-gray-200 border-gray-400 border"
+        : "border border-transparent"
+    } transition-all p-2 text-center`}
+    style={{ width: "72px", boxSizing: "border-box" }}
+  >
+    <img
+      src={material.icon}
+      alt={material.label}
+      className="w-14 h-14 object-contain"
+    />
+    <div className="text-xs font-medium mt-1 w-full text-center">
+      {material.label}
+    </div>
+  </div>
+</div>
+
           ))}
         </div>
 

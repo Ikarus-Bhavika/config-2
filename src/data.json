@@ -2024,7 +2024,7 @@
                         "label": "Medium",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium (1).jpg",
-                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
+                        "description": "Fast response with a balanced conforming action. Popular for all sleep positions and zones."
                       },
                       {
                         "id": "MJuZEjy8ZOTE8ZWb2zuc",
@@ -2032,11 +2032,11 @@
                         "label": "Firm",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm (1).jpg",
-                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
+                        "description": "Fast response with low levels of give. Popular for stomach sleeping and mid-section for back support."
                       },
                       {
                         "id": "BudBPD9zWZF4fwvg3K7W",
-                        "materialkey": "Dark blue",
+                       "materialkey": "Dark blue",
                         "label": "Plush",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Plush.jpg",
@@ -2044,11 +2044,11 @@
                       },
                       {
                         "id": "CMB9MUjF8ubdjO8ESqdx",
-                        "materialkey":"Mid blue",
+                       "materialkey":"Mid blue",
                         "label": "Medium",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium.jpg",
-                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
+                        "description": " Faster response with a balanced conforming action. Popular for all sleep positions and zones."
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
@@ -2056,8 +2056,9 @@
                         "label": "Firm",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm.jpg",
-                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
+                        "description": "Slowest response with low levels of give.Popular for stomach sleeping and mid-section for back support."
                       }
+                      
                 ]
               },
               {"label": "Right Side",
@@ -2091,7 +2092,7 @@
                         "label": "Medium",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium (1).jpg",
-                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
+                        "description": "Fast response with a balanced conforming action. Popular for all sleep positions and zones."
                       },
                       {
                         "id": "MJuZEjy8ZOTE8ZWb2zuc",
@@ -2099,7 +2100,7 @@
                         "label": "Firm",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm (1).jpg",
-                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
+                        "description": "Fast response with low levels of give. Popular for stomach sleeping and mid-section for back support."
                       },
                       {
                         "id": "BudBPD9zWZF4fwvg3K7W",
@@ -2115,7 +2116,7 @@
                         "label": "Medium",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Medium.jpg",
-                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
+                        "description": " Faster response with a balanced conforming action. Popular for all sleep positions and zones."
                       },
                       {
                         "id": "dcRm9IYciOPzQJlKXLBq",
@@ -2123,7 +2124,7 @@
                         "label": "Firm",
                         "hexCode": "#ffffff",
                         "icon": "https://d3ecp0do4cosz.cloudfront.net/assets/textures/BaseMaps/LtgDml1Mk8vNR42pEX8G_Firm.jpg",
-                        "description": "Fast to Medium response with deep contouring action. Popular for side sleepers and in the shoulder area for pressure relief."
+                        "description": "Slowest response with low levels of give.Popular for stomach sleeping and mid-section for back support."
                       }
                       
                 ]
@@ -2147,21 +2148,21 @@
         {
           "id": "T4IZq98C0g3LbLo1e6VB",
           "materialkey": "Dark Grey",
-          "label": "Dark",
+          "label": "Firm",
           "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
           "hexCode": "#ffffff"
         },
         {
           "id": "EyjuwSL5edoJusns0NWY",
           "materialkey": "Light gray",
-          "label": "Light",
+          "label": "Medium",
           "icon": "images/Coil/Coil_Grey.png",
           "hexCode": "#ffffff"
         },
         {
           "id": "XxJS38r2Eis2wN07XTIQ",
           "materialkey": "White Head",
-          "label": "White",
+          "label": "Plush",
           "icon": "images/Coil/Coil_White.png",
           "hexCode": "#ffffff"
         }
@@ -2178,21 +2179,21 @@
         {
           "id": "T4IZq98C0g3LbLo1e6VB",
           "materialkey": "Dark Grey",
-          "label": "Dark",
+          "label": "Firm",
           "icon": "https://d3dhh9nc6fiq1.cloudfront.net/assets/textures/BaseMaps/LKLRxsXIfDzDYCPxlNYv_Dark Grey_basecolor.jpg",
           "hexCode": "#ffffff"
         },
         {
           "id": "EyjuwSL5edoJusns0NWY",
           "materialkey": "Light gray",
-          "label": "Light",
+          "label": "Medium",
           "icon": "images/Coil/Coil_Grey.png",
           "hexCode": "#ffffff"
         },
         {
           "id": "XxJS38r2Eis2wN07XTIQ",
           "materialkey": "White Head",
-          "label": "White",
+          "label": "Plush",
           "icon": "images/Coil/Coil_White.png",
           "hexCode": "#ffffff"
         }
