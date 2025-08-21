@@ -196,7 +196,7 @@ useEffect(() => {
   // ----------------------
 if (menuId === "menu3" && menuOptions[0]?.baseMaps?.[0]) {
   const defaultLeft = menuOptions[0].baseMaps[0].id;
-  const defaultRight = menuOptions[0].baseMaps[1]?.id || defaultLeft;
+  const defaultRight = menuOptions[0].baseMaps[0]?.id || defaultLeft;
 
   setMenu3SelectedLeft(defaultLeft);
   setMenu3SelectedRight(defaultRight);
