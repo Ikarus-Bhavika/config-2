@@ -28,118 +28,6 @@ const [menu3SelectedLeft, setMenu3SelectedLeft] = useState<string | null>(null);
 const [menu3SelectedRight, setMenu3SelectedRight] = useState<string | null>(null);
 
 
-  // useEffect(() => {
-  //   setSelectedIndex(0);
-  //   // Set initial selected material for menu1 and menu2
-  //   if ((menuId === "menu1" || menuId === "menu2") && menuOptions[0]?.baseMaps?.[0]) {
-  //     setSelectedMaterialId(menuOptions[0].baseMaps[0].id);
-  //   }
-    
-  // }, [menuId, menuOptions]);
-
-
-
-// useEffect(() => {
-//   if ((menuId === "menu1" || menuId === "menu2") && menuOptions[0]?.baseMaps?.[0]) {
-//     const configuration = store.preset?.configuration || store.preset;
-
-//     let matched = false;
-
-//     if (configuration) {
-//       console.log("🔍 Checking preset config for", menuId, configuration);
-
-//       menuOptions.forEach((option, index) => {
-//         option.baseMaps?.forEach((material) => {
-//           option.target?.forEach((targetPart) => {
-//             console.log("➡️ Checking target", targetPart);
-
-//             const modelConfig = configuration[targetPart.model];
-//             const selectedPart = modelConfig?.parts?.[targetPart.part];
-//             console.log("🎯 Found part", selectedPart, "for material", material.id);
-
-//             if (selectedPart?.id === material.id) {
-//               console.log("✅ Match found for menu", menuId, "→", material.label);
-//               setSelectedMaterialId(material.id);
-//               setSelectedIndex(index);
-//               matched = true;
-//             }
-//           });
-//         });
-//       });
-//     }
-
-//     if (!matched) {
-//       console.log("⚠️ No match found → defaulting to 0th");
-//       setSelectedIndex(0);
-//       setSelectedMaterialId(menuOptions[0].baseMaps[0].id);
-//     }
-//   }
-// }, [store.preset, menuId, menuOptions]);
-
-
-
-// useEffect(() => {
-//   if (!menuOptions?.[0]?.baseMaps?.[0]) return;
-//   const configuration = store.preset?.configuration || store.preset;
-//   if (!configuration) return;
-
-//   let matched = false;
-//   console.log("🔍 Checking preset config for", menuId, configuration);
-
-//   menuOptions.forEach((option, index) => {
-//     option.baseMaps?.forEach((material) => {
-//       // ----------------------
-//       // CASE 1: Menu1 (model)
-//       // ----------------------
-//       if (menuId === "menu1") {
-//         const targetModel = material.target as string; // "Cover22"
-//         const modelConfig = configuration[targetModel];
-
-//         if (modelConfig?.visible) {
-//           console.log("✅ Match found for Menu1 →", material.label);
-//           setSelectedMaterialId(material.id);
-//           setSelectedIndex(index);
-//           matched = true;
-//         }
-//       }
-
-//       // ----------------------
-//       // CASE 2: Menu2 (material)
-//       // ----------------------
-//       if (menuId === "menu2") {
-//         option.target?.forEach((targetPart) => {
-//           const modelConfig = configuration[targetPart.model];
-//           const selectedPart = modelConfig?.parts?.[targetPart.part];
-
-//           if (selectedPart?.id === material.id) {
-//             console.log("✅ Match found for Menu2 →", material.label);
-//             setSelectedMaterialId(material.id);
-//             setSelectedIndex(index);
-//             matched = true;
-//           }
-//         });
-//       }
-//     });
-//   });
-
-//   // ----------------------
-//   // fallback logic
-//   // ----------------------
-//   if (!matched) {
-//     if (menuId === "menu1" && menuOptions[0]?.baseMaps?.[1]) {
-//       console.log("⚠️ No match found → fallback to index 1 (Menu1)");
-//       setSelectedIndex(1);
-//       setSelectedMaterialId(menuOptions[0].baseMaps[1].id);
-//     } else {
-//       console.log("⚠️ No match found → fallback to index 0");
-//       setSelectedIndex(0);
-//       setSelectedMaterialId(menuOptions[0].baseMaps[0].id);
-//     }
-//   }
-// }, [store.preset, menuId, menuOptions]);
-
-
-
 useEffect(() => {
   if (!menuOptions?.[0]?.baseMaps?.[0]) return;
 
@@ -254,7 +142,7 @@ if (menuId === "menu3" && menuOptions[0]?.baseMaps?.[0]) {
       return "translateX(-17%)";
     } else if (relativePosition > 50) {
       // Item is significantly right of center - show tooltip to the left
-      return "translateX(-53%)";
+      return "translateX(-66%)";
     } else {
       // Item is near center - show tooltip centered
       return "translateX(-50%)";

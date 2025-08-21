@@ -225,19 +225,21 @@ export default function PriceContainer({
             </div>
           </div>
 
-          <div className="flex gap-4 items-center w-full 3xl:pt-2">
-  {/* Store near you */}
-  <button className="flex gap-2 items-center justify-center text-[16px] border border-gray-400 rounded-md py-2 px-4 min-w-[120px]">
-    <img src="/Online Store.png" className="w-6 h-6" alt="store" />
-    Store near you
+          <div className="flex w-full justify-end gap-2 overflow-hidden">
+  <button className="flex items-center gap-2 border border-gray-400 rounded-md py-2 px-3 text-[14px] 2xl:text-[16px] w-1/2 lg:w-auto min-w-0">
+    <img src="/Online Store.png" className="w-6 h-6 shrink-0" alt="store" />
+    <span className="text-sm lg:text-base">Store near you</span>
   </button>
 
-  {/* Book an appointment */}
-  <button className="flex gap-2 items-center justify-center text-[16px] border border-gray-400 rounded-md py-2 px-4 min-w-[120px]">
-    <img src="/Timesheet.png" className="w-6 h-6" alt="appointment" />
-    Book an appointment
+  <button className="flex items-center gap-2 border border-gray-400 rounded-md py-2 px-3 text-[14px] 2xl:text-[16px] w-1/2 lg:w-auto min-w-0">
+    <img src="/Timesheet.png" className="w-6 h-6 shrink-0" alt="appointment" />
+    <span className="text-sm lg:text-base">Book an appointment</span>
   </button>
 </div>
+
+
+
+
 
         </div>
       )}

@@ -30,6 +30,19 @@ export default function UIOverlay({
     } = useDataStore()
 
     const [rerenderPreset,setRerenderPreset] = useState<boolean>(false);
+    const [windowWidth, setWindowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024);
+
+    // Handle window resize
+    useEffect(() => {
+        function handleResize() {
+            setWindowWidth(window.innerWidth);
+        }
+
+        window.addEventListener('resize', handleResize);
+        
+        // Cleanup
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     useEffect(()=>{
         if(rerenderPreset){
@@ -55,6 +68,7 @@ export default function UIOverlay({
     }}
 
     const iconSize=25
+    const isLargeScreen = windowWidth >= 1024;
 
     return (
         <div className='absolute bottom-2 lg:bottom-16 w-full z-[99] flex flex-col gap-4'>
@@ -65,7 +79,7 @@ export default function UIOverlay({
                         ?<img height={iconSize} width={iconSize} src='icons/Decompress.png' alt='toggle expand'/>
                         :<img height={iconSize} width={iconSize} src='icons/Compress.png' alt='toggle expand'/>
                     }
-                    {window.innerWidth>=1024 &&
+                    {isLargeScreen &&
                     <div className='w-full'>
                         {!expandModel?"Expand":"Collapse"}
                     </div>}
@@ -73,14 +87,14 @@ export default function UIOverlay({
 
                 <button disabled={!enableButtons} onClick={toggleAR} className={`${expandModel?"opacity-15":""} rounded-full p-2 lg:px-3 border border-[#eaedf0] shadow bg-white cursor-pointer flex aspect-square lg:aspect-auto lg:min-w-[15%] gap-2`}>
                     <img height={iconSize} width={iconSize} src='icons/ARV4.png' alt='Ar Icon'/>
-                    {window.innerWidth>=1024 &&
+                    {isLargeScreen &&
                     <div className='w-full'>
                         View in AR
                     </div>}
                 </button>
                 <button disabled={!enableButtons} onClick={getScreenShot} className={`${expandModel?"opacity-15":""} rounded-full p-2 lg:px-3 border border-[#eaedf0] shadow bg-white cursor-pointer flex aspect-square lg:aspect-auto lg:min-w-[15%] gap-2`}>
                     <img height={iconSize} width={iconSize} src='icons/ScreenshotV4.png' alt='Screenshot icon'/>
-                    {window.innerWidth>=1024 &&
+                    {isLargeScreen &&
                     <div className='w-full'>
                         Screenshot
                     </div>}
@@ -90,14 +104,14 @@ export default function UIOverlay({
                         ?<img height={iconSize} width={iconSize} src='icons/Minimize.png' alt='fullscreen Icon'/>
                         :<img height={iconSize} width={iconSize} src='icons/ExpandV4.png' alt='fullscreen Icon'/>
                     }
-                    {window.innerWidth>1024 &&
+                    {isLargeScreen &&
                     <div className='w-full'>
                         Fullscreen
                     </div>}
                 </button> */}
                 <button disabled={!enableButtons} onClick={toggleDimension} className={`${expandModel?"opacity-15":""} rounded-full p-2 lg:px-3 border border-[#eaedf0] shadow bg-white cursor-pointer flex aspect-square lg:aspect-auto lg:min-w-[15%] gap-2`}>
                     <img height={iconSize} width={iconSize} src='icons/MeasurementV4.png' alt='Measurements Icon'/>
-                    {window.innerWidth>=1024 &&
+                    {isLargeScreen &&
                     <div className='w-full'>
                         Measurements
                     </div>}
