@@ -80,24 +80,29 @@ useEffect(() => {
   }
 
   // ----------------------
-  // Menu3 & Menu4 default selections
+  // Menu3 & Menu4 - Only set defaults if not already set
   // ----------------------
-if (menuId === "menu3" && menuOptions[0]?.baseMaps?.[0]) {
-  const defaultLeft = menuOptions[0].baseMaps[0].id;
-  const defaultRight = menuOptions[0].baseMaps[0]?.id || defaultLeft;
+  if (menuId === "menu3" && menuOptions[0]?.baseMaps?.[0]) {
+    // Only set defaults if the states are null (first time)
+    if (menu3SelectedLeft === null && menu3SelectedRight === null) {
+      const defaultLeft = menuOptions[0].baseMaps[0].id;
+      const defaultRight = menuOptions[0].baseMaps[0]?.id || defaultLeft;
 
-  setMenu3SelectedLeft(defaultLeft);
-  setMenu3SelectedRight(defaultRight);
-}
-
+      setMenu3SelectedLeft(defaultLeft);
+      setMenu3SelectedRight(defaultRight);
+    }
+  }
   else if (menuId === "menu4" && menuOptions[0]?.baseMaps?.[1]) {
-  const defaultId = menuOptions[0].baseMaps[1].id;
+    // Only set defaults if the states are null (first time)
+    if (selectedMaterialLeft === null && selectedMaterialRight === null) {
+      const defaultId = menuOptions[0].baseMaps[1].id;
 
-  setSelectedMaterialLeft(defaultId);
-  setSelectedMaterialRight(defaultId);
-}
+      setSelectedMaterialLeft(defaultId);
+      setSelectedMaterialRight(defaultId);
+    }
+  }
 
-}, [store.preset, menuId, menuOptions]);
+}, [store.preset, menuId, menuOptions, menu3SelectedLeft, menu3SelectedRight, selectedMaterialLeft, selectedMaterialRight]);
 
 
 
@@ -392,6 +397,13 @@ const handleMaterialClick = (material: any) => {
                 ...store.preset,
                 configuration: newConfig,
               });
+              if (activeLabel.includes("left")) {
+                // Copying from left to right - set right side to what left side had
+                setMenu3SelectedRight(menu3SelectedLeft);
+              } else {
+                // Copying from right to left - set left side to what right side had
+                setMenu3SelectedLeft(menu3SelectedRight);
+              }
 
               console.log("✅ Copied material", selectedMaterial.material, "to", toLabel);
             }}
@@ -481,6 +493,13 @@ const handleMaterialClick = (material: any) => {
                 ...store.preset,
                 configuration: newConfig,
               });
+              if (activeLabel.includes("left")) {
+                // Copying from left to right - set right side to what left side had
+                setSelectedMaterialRight(selectedMaterialLeft);
+              } else {
+                // Copying from right to left - set left side to what right side had
+                setSelectedMaterialLeft(selectedMaterialRight);
+              }
 
               console.log("✅ Copied material", selectedMaterial.material, "to", toLabel);
             }}
