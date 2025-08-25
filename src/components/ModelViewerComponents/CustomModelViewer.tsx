@@ -1595,7 +1595,7 @@ const ChildCanvasCustomModelViewer = (
   }
   const totalCount = getTotalModelAndMaterialsToLoad(props.currentProduct);
   useEffect(()=>{
-    if(currentCount.models==totalCount.totalModels && currentCount.materials==totalCount.totalMaterials){
+    if(currentCount.models==totalCount.totalModels){
         props.setIsModelLoaded && props.setIsModelLoaded(true);
     }
   },[currentCount])
@@ -1948,6 +1948,7 @@ const updateTooltipPosition = (e: React.MouseEvent) => {
     minDistance: 3,
     position: [0, 1.4, 3],
   }
+  
   return (
     <>
       <Suspense fallback={<LoaderLottie />}>

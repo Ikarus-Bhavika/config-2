@@ -228,13 +228,16 @@ export default function ModelViewer({ canvasRef }: { canvasRef: React.RefObject<
   // console.log("showQrCode",showQrCode);
   return (
     <>
-      {showQrCode && <div className="absolute lg:hidden top-0 left-0 w-full h-full z-10 flex justify-center items-center">
+      {showQrCode && (
+        <div className="absolute lg:hidden top-0 left-0 w-full h-full z-10 flex justify-center items-center">
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
           <div className="bg-white p-3 rounded-md z-10 flex gap-2 justify-center items-center">
             <div className="w-6 h-6 border-4 border-gray-500 border-t-transparent rounded-full animate-spin"></div>
             <div className="">Getting your model ready for AR</div>
           </div>
-        </div>}
+        </div>
+      )}
+  
       <div
         ref={modelViewerRef}
         className="h-[55%] lg:h-[100dvh] lg:w-3/5 xl:w-[75%] bg-white relative"
@@ -249,7 +252,7 @@ export default function ModelViewer({ canvasRef }: { canvasRef: React.RefObject<
             modelRef={modelRef}
           />
         )}
-        {/* <button onClick={()=>downloadModel()} className="absolute top-10 left-10 bg-black text-white px-4 py-2 rounded z-10">download</button> */}
+  
         <UIOverlay
           toggleDimension={() => setShowDimensions(!showDimensions)}
           disableDimension={() => setShowDimensions(false)}
@@ -258,23 +261,49 @@ export default function ModelViewer({ canvasRef }: { canvasRef: React.RefObject<
           toggleFullScreen={handleFullScreen}
           toggleAR={() => setShowQrCode(!showQrCode)}
         />
+  
+        {/* Canvas Container */}
         <div ref={canvasRef} className="relative w-full h-full">
-        <CustomModelViewer
-          setModelRef={setModelRef}
-          product={{ models: store.modelConfig }}
-          currentProduct={store.preset}
-         
-          showDimensions={showDimensions}
-          theme={theme}
-          setIsModelLoaded={setIsModelLoaded}
-          playAnimation={playAnimation}
-          playAnimationVisibility={playAnimationVisibility}
-          setPlayAnimationVisibility={setPlayAnimationVisibility}
-        />
+          <CustomModelViewer
+            setModelRef={setModelRef}
+            product={{ models: store.modelConfig }}
+            currentProduct={store.preset}
+            showDimensions={showDimensions}
+            theme={theme}
+            setIsModelLoaded={setIsModelLoaded}
+            playAnimation={playAnimation}
+            playAnimationVisibility={playAnimationVisibility}
+            setPlayAnimationVisibility={setPlayAnimationVisibility}
+          />
+  
+          {/* Loader Overlay */}
+          {!isSharedVariants && !isModelLoaded && (
+            <div
+              style={{
+                position: "absolute",
+                inset: 0, // covers only the canvas area
+                zIndex: 10,
+                backgroundColor: "white",
+                // backdropFilter: "blur(10px)",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <img
+                src={"./loader.gif"}
+                width={100}
+                height={100}
+                alt="loader"
+                className="w-[100px] h-[100px]"
+              />
+            </div>
+          )}
         </div>
       </div>
     </>
   );
+  
 }
 
 
